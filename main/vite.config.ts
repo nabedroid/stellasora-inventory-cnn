@@ -1,1 +1,39 @@
-aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSAndml0ZScKaW1wb3J0IHsgdml0ZVN0YXRpY0NvcHkgfSBmcm9tICd2aXRlLXBsdWdpbi1zdGF0aWMtY29weSc7CmltcG9ydCByZWFjdCBmcm9tICdAdml0ZWpzL3BsdWdpbi1yZWFjdCcKCi8vIF9fZGlybmFtZSDjgpLop6PmsbrjgZnjgosKaW1wb3J0IHBhdGggZnJvbSAncGF0aCcKaW1wb3J0IHsgZmlsZVVSTFRvUGF0aCB9IGZyb20gJ3VybCc7CmNvbnN0IF9fZmlsZW5hbWUgPSBmaWxlVVJMVG9QYXRoKGltcG9ydC5tZXRhLnVybCk7CmNvbnN0IF9fZGlybmFtZSA9IHBhdGguZGlybmFtZShfX2ZpbGVuYW1lKTsKCmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7CiAgLy8g44Oq44Od44K444OI44Oq5ZCN44Go5ZCI44KP44Gb44KL44GT44GoCiAgYmFzZTogJy9zdGVsbGFzb3JhLWludmVudG9yeS1jbm4vJywKICBwbHVnaW5zOiBbCiAgICByZWFjdCgpLAogICAgLy8gY29tbW9uL3B1YmxpYyDjgpLjg6vjg7zjg4jjgavjgrPjg5Tjg7wKICAgIHZpdGVTdGF0aWNDb3B5KHsKICAgICAgdGFyZ2V0czogWwogICAgICAgIHsKICAgICAgICAgIHNyYzogJy4uL2NvbW1vbi9wdWJsaWMvKiovKicsCiAgICAgICAgICBkZXN0OiAnJywKICAgICAgICAgIHJlbmFtZTogeyBzdHJpcEJhc2U6IDIgfSwKICAgICAgICB9LAogICAgICBdLAogICAgfSksCiAgXSwKICByZXNvbHZlOiB7CiAgICBhbGlhczogewogICAgICAnQGNvbW1vbic6IHBhdGgucmVzb2x2ZShfX2Rpcm5hbWUsICcuLi9jb21tb24vc3JjJyksCiAgICB9LAogIH0sCiAgc2VydmVyOiB7CiAgICBob3N0OiB0cnVlLAogICAgcG9ydDogMzAwMCwKICAgIHdhdGNoOiB7CiAgICAgIHVzZVBvbGxpbmc6IHRydWUsCiAgICB9LAogIH0sCn0pCg==
+import { defineConfig } from 'vite'
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+import react from '@vitejs/plugin-react'
+
+// __dirname を解決する
+import path from 'path'
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default defineConfig({
+  // リポジトリ名と合わせること
+  base: '/stellasora-inventory-cnn/',
+  plugins: [
+    react(),
+    // common/public をルートにコピー
+    viteStaticCopy({
+      targets: [
+        {
+          src: '../common/public/**/*',
+          dest: '',
+          rename: { stripBase: 2 },
+        },
+      ],
+    }),
+  ],
+  resolve: {
+    alias: {
+      '@common': path.resolve(__dirname, '../common/src'),
+    },
+  },
+  server: {
+    host: true,
+    port: 3000,
+    watch: {
+      usePolling: true,
+    },
+  },
+})
