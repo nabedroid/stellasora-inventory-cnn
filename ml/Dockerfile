@@ -10,5 +10,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ml/ ./
 
+# predict.py のプロット描画用に日本語フォントをビルド時に取得する
+# (バイナリは Git 管理しない。配置先は ml/fonts/MPLUS1p-Regular.ttf)
+RUN python -c "import urllib.request; urllib.request.urlretrieve('https://raw.githubusercontent.com/google/fonts/main/ofl/mplus1p/MPLUS1p-Regular.ttf', 'fonts/MPLUS1p-Regular.ttf')"
+
 # 常駐させて docker compose exec で各スクリプトを実行する使い方を想定
 CMD ["sleep", "infinity"]
