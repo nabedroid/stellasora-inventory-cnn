@@ -1,1 +1,73 @@
-aW1wb3J0IHsgY3JlYXRlV29ya2VyIH0gZnJvbSAndGVzc2VyYWN0LmpzJzsKaW1wb3J0IHsgdG9JbWFnZURhdGEgfSBmcm9tICcuLi91dGlscy9tYXQnOwoKLyoqCiAqIFRlc3NlcmFjdC5qcyDjgpLnlKjjgYTjgZ8gT0NSIOOCteODvOODk+OCueWun+ijhQogKi8KZXhwb3J0IGNsYXNzIFRlc3NlcmFjdE9jclNlcnZpY2UgewogIHByaXZhdGUgd29ya2VyOiBhbnkgPSBudWxsOwoKICBwcml2YXRlIGNvbnN0cnVjdG9yKHdvcmtlcjogYW55KSB7CiAgICB0aGlzLndvcmtlciA9IHdvcmtlcjsKICB9CgogIHB1YmxpYyBzdGF0aWMgYXN5bmMgZ2V0SW5zdGFuY2VBc3luYyh7CiAgICBsYW5nID0gJ2VuZycsCiAgICB3aGl0ZWxpc3QgPSBudWxsLAogICAgcHNtID0gbnVsbCwKICB9OiB7CiAgICBsYW5nPzogc3RyaW5nOwogICAgd2hpdGVsaXN0Pzogc3RyaW5nIHwgbnVsbDsKICAgIHBzbT86IG51bWJlciB8IG51bGw7CiAgfSA9IHt9KTogUHJvbWlzZTxUZXNzZXJhY3RPY3JTZXJ2aWNlPiB7CiAgICBjb25zdCB3b3JrZXIgPSBhd2FpdCBjcmVhdGVXb3JrZXIobGFuZyk7CiAgICBjb25zdCBwYXJhbXM6IFJlY29yZDxzdHJpbmcsIGFueT4gPSB7fTsKCiAgICBpZiAod2hpdGVsaXN0ICE9PSBudWxsKSBwYXJhbXMudGVzc2VkaXRfY2hhcl93aGl0ZWxpc3QgPSB3aGl0ZWxpc3Q7CiAgICBpZiAocHNtICE9PSBudWxsKSBwYXJhbXMudGVzc2VkaXRfcGFnZXNlZ19tb2RlID0gcHNtOwoKICAgIGlmIChPYmplY3Qua2V5cyhwYXJhbXMpLmxlbmd0aCA+IDApIHsKICAgICAgYXdhaXQgd29ya2VyLnNldFBhcmFtZXRlcnMocGFyYW1zKTsKICAgIH0KCiAgICByZXR1cm4gbmV3IFRlc3NlcmFjdE9jclNlcnZpY2Uod29ya2VyKTsKICB9CgogIHB1YmxpYyBhc3luYyByZWNvZ25pemVBc3luYygKICAgIG1hdDogYW55LAogICAgcmVjdGFuZ2xlOiB7CiAgICAgIHg6IG51bWJlciwgeTogbnVtYmVyLCB3aWR0aDogbnVtYmVyLCBoZWlnaHQ6IG51bWJlcgogICAgfSB8IG51bGwgPSBudWxsLAogICk6IFByb21pc2U8c3RyaW5nPiB7CgogICAgY29uc3QgaW1hZ2VEYXRhID0gdG9JbWFnZURhdGEobWF0KTsKICAgIGNvbnN0IGNhbnZhcyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2NhbnZhcycpOwogICAgY2FudmFzLndpZHRoID0gbWF0LmNvbHM7CiAgICBjYW52YXMuaGVpZ2h0ID0gbWF0LnJvd3M7CiAgICBjYW52YXMuZ2V0Q29udGV4dCgnMmQnKT8ucHV0SW1hZ2VEYXRhKGltYWdlRGF0YSwgMCwgMCk7CgogICAgbGV0IHJlc3VsdDogc3RyaW5nOwogICAgaWYgKHJlY3RhbmdsZSkgewogICAgICBjb25zdCB7IGRhdGE6IHsgdGV4dCB9IH0gPSBhd2FpdCB0aGlzLndvcmtlci5yZWNvZ25pemUoY2FudmFzLCB7CiAgICAgICAgcmVjdGFuZ2xlOiB7IHRvcDogcmVjdGFuZ2xlLnksIGxlZnQ6IHJlY3RhbmdsZS54LCB3aWR0aDogcmVjdGFuZ2xlLndpZHRoLCBoZWlnaHQ6IHJlY3RhbmdsZS5oZWlnaHQgfSwKICAgICAgfSk7CiAgICAgIHJlc3VsdCA9IHRleHQ7CiAgICB9IGVsc2UgewogICAgICBjb25zdCB7IGRhdGE6IHsgdGV4dCB9IH0gPSBhd2FpdCB0aGlzLndvcmtlci5yZWNvZ25pemUoY2FudmFzKTsKICAgICAgcmVzdWx0ID0gdGV4dDsKICAgIH0KCiAgICByZXR1cm4gcmVzdWx0LnRyaW0oKTsKICB9CgogIHB1YmxpYyBhc3luYyBkaXNwb3NlKCk6IFByb21pc2U8dm9pZD4gewogICAgaWYgKHRoaXMud29ya2VyKSB7CiAgICAgIGF3YWl0IHRoaXMud29ya2VyLnRlcm1pbmF0ZSgpOwogICAgICB0aGlzLndvcmtlciA9IG51bGw7CiAgICB9CiAgfQoKICBhc3luYyBbU3ltYm9sLmFzeW5jRGlzcG9zZV0oKTogUHJvbWlzZTx2b2lkPiB7CiAgICBhd2FpdCB0aGlzLmRpc3Bvc2UoKTsKICB9Cn0K
+import { createWorker } from 'tesseract.js';
+import { toImageData } from '../utils/mat';
+
+/**
+ * Tesseract.js を用いた OCR サービス実装
+ */
+export class TesseractOcrService {
+  private worker: any = null;
+
+  private constructor(worker: any) {
+    this.worker = worker;
+  }
+
+  public static async getInstanceAsync({
+    lang = 'eng',
+    whitelist = null,
+    psm = null,
+  }: {
+    lang?: string;
+    whitelist?: string | null;
+    psm?: number | null;
+  } = {}): Promise<TesseractOcrService> {
+    const worker = await createWorker(lang);
+    const params: Record<string, any> = {};
+
+    if (whitelist !== null) params.tessedit_char_whitelist = whitelist;
+    if (psm !== null) params.tessedit_pageseg_mode = psm;
+
+    if (Object.keys(params).length > 0) {
+      await worker.setParameters(params);
+    }
+
+    return new TesseractOcrService(worker);
+  }
+
+  public async recognizeAsync(
+    mat: any,
+    rectangle: {
+      x: number, y: number, width: number, height: number
+    } | null = null,
+  ): Promise<string> {
+
+    const imageData = toImageData(mat);
+    const canvas = document.createElement('canvas');
+    canvas.width = mat.cols;
+    canvas.height = mat.rows;
+    canvas.getContext('2d')?.putImageData(imageData, 0, 0);
+
+    let result: string;
+    if (rectangle) {
+      const { data: { text } } = await this.worker.recognize(canvas, {
+        rectangle: { top: rectangle.y, left: rectangle.x, width: rectangle.width, height: rectangle.height },
+      });
+      result = text;
+    } else {
+      const { data: { text } } = await this.worker.recognize(canvas);
+      result = text;
+    }
+
+    return result.trim();
+  }
+
+  public async dispose(): Promise<void> {
+    if (this.worker) {
+      await this.worker.terminate();
+      this.worker = null;
+    }
+  }
+
+  async [Symbol.asyncDispose](): Promise<void> {
+    await this.dispose();
+  }
+}

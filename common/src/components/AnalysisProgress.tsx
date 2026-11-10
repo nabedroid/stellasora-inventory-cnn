@@ -1,1 +1,22 @@
-aW1wb3J0IHR5cGUgeyBBbmFseXNpc1Byb2dyZXNzIGFzIFByb2dyZXNzVHlwZSB9IGZyb20gJy4uL3R5cGVzJwoKaW50ZXJmYWNlIEFuYWx5c2lzUHJvZ3Jlc3NQcm9wcyB7CiAgcHJvZ3Jlc3M6IFByb2dyZXNzVHlwZQp9CgpleHBvcnQgZnVuY3Rpb24gQW5hbHlzaXNQcm9ncmVzcyh7IHByb2dyZXNzIH06IEFuYWx5c2lzUHJvZ3Jlc3NQcm9wcykgewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0iYW5hbHlzaXMtcHJvZ3Jlc3MiPgogICAgICA8ZGl2IGNsYXNzTmFtZT0icHJvZ3Jlc3MtaW5mbyI+CiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzdGVwLWxhYmVsIj57cHJvZ3Jlc3MubWVzc2FnZX08L3NwYW4+CiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJwZXJjZW50LWxhYmVsIj57TWF0aC5yb3VuZChwcm9ncmVzcy5wZXJjZW50KX0lPC9zcGFuPgogICAgICA8L2Rpdj4KICAgICAgPGRpdiBjbGFzc05hbWU9InByb2dyZXNzLWJhci1jb250YWluZXIiPgogICAgICAgIDxkaXYKICAgICAgICAgIGNsYXNzTmFtZT0icHJvZ3Jlc3MtYmFyLWZpbGwiCiAgICAgICAgICBzdHlsZT17eyB3aWR0aDogYCR7cHJvZ3Jlc3MucGVyY2VudH0lYCB9fQogICAgICAgID48L2Rpdj4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApCn0K
+import type { AnalysisProgress as ProgressType } from '../types'
+
+interface AnalysisProgressProps {
+  progress: ProgressType
+}
+
+export function AnalysisProgress({ progress }: AnalysisProgressProps) {
+  return (
+    <div className="analysis-progress">
+      <div className="progress-info">
+        <span className="step-label">{progress.message}</span>
+        <span className="percent-label">{Math.round(progress.percent)}%</span>
+      </div>
+      <div className="progress-bar-container">
+        <div
+          className="progress-bar-fill"
+          style={{ width: `${progress.percent}%` }}
+        ></div>
+      </div>
+    </div>
+  )
+}

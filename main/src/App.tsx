@@ -1,1 +1,260 @@
-aW1wb3J0IHsgdXNlU3RhdGUsIHVzZUNhbGxiYWNrLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCcKaW1wb3J0IHsgSW1hZ2VVcGxvYWRlciB9IGZyb20gJ0Bjb21tb24vY29tcG9uZW50cy9JbWFnZVVwbG9hZGVyJwppbXBvcnQgeyBBbmFseXNpc1Byb2dyZXNzIH0gZnJvbSAnQGNvbW1vbi9jb21wb25lbnRzL0FuYWx5c2lzUHJvZ3Jlc3MnCmltcG9ydCB7IEludmVudG9yeUV4dHJhY3Rpb25TZXJ2aWNlIH0gZnJvbSAnLi9zZXJ2aWNlcy9pbnZlbnRvcnlFeHRyYWN0aW9uU2VydmljZScKaW1wb3J0IHsgSXRlbU1hc3RlclNlcnZpY2UgfSBmcm9tICcuLi8uLi9jb21tb24vc3JjL3NlcnZpY2VzL2l0ZW1NYXN0ZXJTZXJ2aWNlJwppbXBvcnQgeyBTdW1tYXJ5VmlldyB9IGZyb20gJy4vY29tcG9uZW50cy9TdW1tYXJ5VmlldycKaW1wb3J0IHR5cGUgeyBBbmFseXplZEl0ZW0sIEFuYWx5c2lzUHJvZ3Jlc3MgYXMgUHJvZ3Jlc3NUeXBlIH0gZnJvbSAnQGNvbW1vbi90eXBlcycKCmRlY2xhcmUgY29uc3QgY3Y6IGFueTsKCmZ1bmN0aW9uIEFwcCgpIHsKICBjb25zdCBbaW1hZ2VzLCBzZXRJbWFnZXNdID0gdXNlU3RhdGU8RmlsZVtdPihbXSkKICBjb25zdCBbcmVzdWx0cywgc2V0UmVzdWx0c10gPSB1c2VTdGF0ZTxBbmFseXplZEl0ZW1bXT4oW10pCiAgY29uc3QgW2lzQW5hbHl6aW5nLCBzZXRJc0FuYWx5emluZ10gPSB1c2VTdGF0ZShmYWxzZSkKICBjb25zdCBbcHJvZ3Jlc3MsIHNldFByb2dyZXNzXSA9IHVzZVN0YXRlPFByb2dyZXNzVHlwZSB8IG51bGw+KG51bGwpCiAgY29uc3QgW3ZpZXdNb2RlLCBzZXRWaWV3TW9kZV0gPSB1c2VTdGF0ZTwnbGlzdCcgfCAnc3VtbWFyeSc+KCdsaXN0JykKICBjb25zdCBbbWFzdGVyRGF0YSwgc2V0TWFzdGVyRGF0YV0gPSB1c2VTdGF0ZTxhbnlbXT4oW10pCgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBJdGVtTWFzdGVyU2VydmljZS5nZXRJbnN0YW5jZUFzeW5jKCkudGhlbihzZXJ2aWNlID0+IHsKICAgICAgc2V0TWFzdGVyRGF0YShzZXJ2aWNlLm1hc3RlckRhdGEpOwogICAgfSk7CiAgfSwgW10pOwoKICBjb25zdCBoYW5kbGVJbWFnZXNTZWxlY3RlZCA9IHVzZUNhbGxiYWNrKChmaWxlczogRmlsZVtdKSA9PiB7CiAgICBzZXRJbWFnZXMoKHByZXY6IEZpbGVbXSkgPT4gWy4uLnByZXYsIC4uLmZpbGVzXSkKICB9LCBbXSkKCiAgY29uc3QgaGFuZGxlUmVtb3ZlSW1hZ2UgPSB1c2VDYWxsYmFjaygoaW5kZXg6IG51bWJlcikgPT4gewogICAgc2V0SW1hZ2VzKChwcmV2OiBGaWxlW10pID0+IHByZXYuZmlsdGVyKChfLCBpKSA9PiBpICE9PSBpbmRleCkpCiAgfSwgW10pCgogIGNvbnN0IGhhbmRsZUFuYWx5emUgPSB1c2VDYWxsYmFjayhhc3luYyAoKSA9PiB7CiAgICBpZiAoaW1hZ2VzLmxlbmd0aCA9PT0gMCkgcmV0dXJuCiAgICBzZXRJc0FuYWx5emluZyh0cnVlKQogICAgc2V0UmVzdWx0cyhbXSkKCiAgICBjb25zdCBpbnZlbnRvcnlFeHRyYWN0aW9uU2VydmljZSA9IGF3YWl0IEludmVudG9yeUV4dHJhY3Rpb25TZXJ2aWNlLmdldEluc3RhbmNlQXN5bmMoKQoKICAgIHRyeSB7CgogICAgICBjb25zdCBpdGVtcyA9IGF3YWl0IGludmVudG9yeUV4dHJhY3Rpb25TZXJ2aWNlLmV4dHJhY3RBbGxBc3luYyhpbWFnZXMsIChwZXJjZW50LCBtZXNzYWdlKSA9PiB7CiAgICAgICAgc2V0UHJvZ3Jlc3MoeyBzdGVwOiAnb2NyJywgcGVyY2VudCwgbWVzc2FnZSB9KQogICAgICB9KQoKICAgICAgc2V0UmVzdWx0cyhpdGVtcykKCiAgICAgIHNldFByb2dyZXNzKHsgc3RlcDogJ2RvbmUnLCBwZXJjZW50OiAxMDAsIG1lc3NhZ2U6ICfop6PmnpDlrozkuobvvIEnIH0pCiAgICB9IGNhdGNoIChlOiBhbnkpIHsKICAgICAgY29uc29sZS5lcnJvcihlKQogICAgICBzZXRQcm9ncmVzcyh7IHN0ZXA6ICdkb25lJywgcGVyY2VudDogMCwgbWVzc2FnZTogYOOCqOODqeODvOOBjOeZuueUn+OBl+OBvuOBl+OBnzogJHtlLm1lc3NhZ2V9YCB9KQogICAgfSBmaW5hbGx5IHsKICAgICAgc2V0SXNBbmFseXppbmcoZmFsc2UpCiAgICAgIGludmVudG9yeUV4dHJhY3Rpb25TZXJ2aWNlLmRpc3Bvc2UoKQogICAgfQogIH0sIFtpbWFnZXNdKQoKICBjb25zdCBoYW5kbGVFeHBvcnRDU1YgPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBjb25zdCBjc3ZSb3dzID0gWyfjgqLjgqTjg4bjg6DlkI0s5omA5oyB5pWwJ10KICAgIHJlc3VsdHMuZm9yRWFjaCgoaXRlbTogQW5hbHl6ZWRJdGVtKSA9PiB7CiAgICAgIGNzdlJvd3MucHVzaChgJHtpdGVtLm5hbWUgfHwgJ+acqueZu+mMsid9LCR7aXRlbS5xdWFudGl0eX1gKQogICAgfSkKICAgIGNvbnN0IGNzdkNvbnRlbnQgPSAnXHVGRUZGJyArIGNzdlJvd3Muam9pbignXG4nKSAvLyBCT00gZm9yIEV4Y2VsCiAgICBjb25zdCBibG9iID0gbmV3IEJsb2IoW2NzdkNvbnRlbnRdLCB7IHR5cGU6ICd0ZXh0L2NzdjtjaGFyc2V0PXV0Zi04OycgfSkKICAgIGNvbnN0IHVybCA9IFVSTC5jcmVhdGVPYmplY3RVUkwoYmxvYikKICAgIGNvbnN0IGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdhJykKICAgIGEuaHJlZiA9IHVybAogICAgYS5kb3dubG9hZCA9IGBpbnZlbnRvcnlfJHtuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCkuc2xpY2UoMCwgMTApfS5jc3ZgCiAgICBhLmNsaWNrKCkKICAgIFVSTC5yZXZva2VPYmplY3RVUkwodXJsKQogIH0sIFtyZXN1bHRzXSkKCiAgY29uc3QgaGFuZGxlUmVzZXQgPSB1c2VDYWxsYmFjaygoKSA9PiB7CiAgICBzZXRJbWFnZXMoW10pCiAgICBzZXRSZXN1bHRzKFtdKQogICAgc2V0UHJvZ3Jlc3MobnVsbCkKICB9LCBbXSkKCiAgY29uc3QgaGFuZGxlVXBkYXRlUmVzdWx0ID0gdXNlQ2FsbGJhY2soKGluZGV4OiBudW1iZXIsIGZpZWxkOiBrZXlvZiBBbmFseXplZEl0ZW0sIHZhbHVlOiBhbnkpID0+IHsKICAgIHNldFJlc3VsdHMoKHByZXYpID0+IHsKICAgICAgY29uc3QgdXBkYXRlZCA9IFsuLi5wcmV2XQogICAgICB1cGRhdGVkW2luZGV4XSA9IHsgLi4udXBkYXRlZFtpbmRleF0sIFtmaWVsZF06IHZhbHVlIH0KICAgICAgcmV0dXJuIHVwZGF0ZWQKICAgIH0pCiAgfSwgW10pCgogIGNvbnN0IGhhbmRsZVJlbW92ZVJlc3VsdCA9IHVzZUNhbGxiYWNrKChpbmRleDogbnVtYmVyKSA9PiB7CiAgICBzZXRSZXN1bHRzKChwcmV2KSA9PiBwcmV2LmZpbHRlcigoXywgaSkgPT4gaSAhPT0gaW5kZXgpKQogIH0sIFtdKQoKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9ImFwcCI+CiAgICAgIDxoZWFkZXIgY2xhc3NOYW1lPSJhcHAtaGVhZGVyIiBzdHlsZT17eyBwYWRkaW5nOiAnMjBweCcsIGJhY2tncm91bmRDb2xvcjogJyNmZmZmZmYnLCBjb2xvcjogJyMwMDAwMDAnLCBkaXNwbGF5OiAnZmxleCcsIGp1c3RpZnlDb250ZW50OiAnc3BhY2UtYmV0d2VlbicsIGFsaWduSXRlbXM6ICdjZW50ZXInIH19PgogICAgICAgIDxoMSBzdHlsZT17eyBtYXJnaW46IDAgfX0+44K544OG44Op44K944OpIOOCouOCpOODhuODoOaJgOaMgeaVsOODgeOCp+ODg+OCq+ODvO+8iENOTueJiO+8iTwvaDE+CiAgICAgICAgPGRpdiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGdhcDogJzEwcHgnIH19PgogICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRWaWV3TW9kZShwcmV2ID0+IHByZXYgPT09ICdsaXN0JyA/ICdzdW1tYXJ5JyA6ICdsaXN0Jyl9CiAgICAgICAgICAgIHN0eWxlPXt7CiAgICAgICAgICAgICAgcGFkZGluZzogJzhweCAxNnB4JywKICAgICAgICAgICAgICBiYWNrZ3JvdW5kQ29sb3I6IHZpZXdNb2RlID09PSAnbGlzdCcgPyAnI2YzOWMxMicgOiAnIzRhNjliZCcsCiAgICAgICAgICAgICAgY29sb3I6ICd3aGl0ZScsCiAgICAgICAgICAgICAgYm9yZGVyOiAnbm9uZScsCiAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAnNHB4JywKICAgICAgICAgICAgICBjdXJzb3I6ICdwb2ludGVyJywKICAgICAgICAgICAgICBmb250V2VpZ2h0OiAnYm9sZCcKICAgICAgICAgICAgfX0KICAgICAgICAgID4KICAgICAgICAgICAge3ZpZXdNb2RlID09PSAnbGlzdCcgPyAn44K144Oe44Oq44O86KGo56S644Gr5YiH5pu/JyA6ICfjg6rjgrnjg4jooajnpLrjgavmiLvjgosnfQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvaGVhZGVyPgoKICAgICAgPG1haW4gY2xhc3NOYW1lPSJhcHAtbWFpbiIgc3R5bGU9e3sgcGFkZGluZzogJzIwcHgnIH19PgogICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0idXBsb2FkLXNlY3Rpb24iPgogICAgICAgICAgPEltYWdlVXBsb2FkZXIKICAgICAgICAgICAgaW1hZ2VzPXtpbWFnZXN9CiAgICAgICAgICAgIG9uSW1hZ2VzU2VsZWN0ZWQ9e2hhbmRsZUltYWdlc1NlbGVjdGVkfQogICAgICAgICAgICBvblJlbW92ZUltYWdlPXtoYW5kbGVSZW1vdmVJbWFnZX0KICAgICAgICAgIC8+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWN0aW9ucyIgc3R5bGU9e3sgbWFyZ2luVG9wOiAnMTVweCcgfX0+CiAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICBjbGFzc05hbWU9ImFuYWx5emUtYnV0dG9uIgogICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZUFuYWx5emV9CiAgICAgICAgICAgICAgZGlzYWJsZWQ9e2ltYWdlcy5sZW5ndGggPT09IDAgfHwgaXNBbmFseXppbmd9CiAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgIHBhZGRpbmc6ICcxMHB4IDI0cHgnLAogICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAnIzI2NDI3OCcsCiAgICAgICAgICAgICAgICBjb2xvcjogJ3doaXRlJywKICAgICAgICAgICAgICAgIGJvcmRlcjogJ25vbmUnLAogICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAnNHB4JywKICAgICAgICAgICAgICAgIGN1cnNvcjogJ3BvaW50ZXInLAogICAgICAgICAgICAgICAgZm9udFdlaWdodDogJ2JvbGQnCiAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgPgogICAgICAgICAgICAgIHtpc0FuYWx5emluZyA/ICfop6PmnpDkuK0uLi4nIDogYOino+aekOmWi+Wni++8iCR7aW1hZ2VzLmxlbmd0aH3mnprvvIlgfQogICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAge3Byb2dyZXNzICYmIDxBbmFseXNpc1Byb2dyZXNzIHByb2dyZXNzPXtwcm9ncmVzc30gLz59CgogICAgICAgIHt2aWV3TW9kZSA9PT0gJ3N1bW1hcnknICYmICgKICAgICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ic3VtbWFyeS1zZWN0aW9uIiBzdHlsZT17eyBtYXJnaW5Ub3A6ICczMHB4JyB9fT4KICAgICAgICAgICAge3Jlc3VsdHMubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBkaXNwbGF5OiAnZmxleCcsIGp1c3RpZnlDb250ZW50OiAnZmxleC1lbmQnLCBnYXA6ICcxMHB4JywgbWFyZ2luQm90dG9tOiAnMTVweCcgfX0+CiAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZUV4cG9ydENTVn0KICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgcGFkZGluZzogJzhweCAxNnB4JywgYmFja2dyb3VuZENvbG9yOiAnIzRhNjliZCcsIGNvbG9yOiAnd2hpdGUnLCBib3JkZXI6ICdub25lJywgYm9yZGVyUmFkaXVzOiAnNHB4JywgY3Vyc29yOiAncG9pbnRlcicsIGZvbnRXZWlnaHQ6ICdib2xkJyB9fQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICBDU1bjgqjjgq/jgrnjg53jg7zjg4gKICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICBvbkNsaWNrPXtoYW5kbGVSZXNldH0KICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgcGFkZGluZzogJzhweCAxNnB4JywgYmFja2dyb3VuZENvbG9yOiAnI2U1NTAzOScsIGNvbG9yOiAnd2hpdGUnLCBib3JkZXI6ICdub25lJywgYm9yZGVyUmFkaXVzOiAnNHB4JywgY3Vyc29yOiAncG9pbnRlcicsIGZvbnRXZWlnaHQ6ICdib2xkJyB9fQogICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICDjg6rjgrvjg4Pjg4gKICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApfQogICAgICAgICAgICA8U3VtbWFyeVZpZXcgcmVzdWx0cz17cmVzdWx0c30gbWFzdGVyRGF0YT17bWFzdGVyRGF0YX0gLz4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICApfQoKICAgICAgICB7dmlld01vZGUgPT09ICdsaXN0JyAmJiByZXN1bHRzLmxlbmd0aCA+IDAgJiYgKAogICAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJyZXN1bHRzLXVzZXIiIHN0eWxlPXt7IG1hcmdpblRvcDogJzMwcHgnIH19PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywganVzdGlmeUNvbnRlbnQ6ICdzcGFjZS1iZXR3ZWVuJywgYWxpZ25JdGVtczogJ2NlbnRlcicsIG1hcmdpbkJvdHRvbTogJzE1cHgnIH19PgogICAgICAgICAgICAgIDxoMiBzdHlsZT17eyBtYXJnaW46IDAgfX0+5Zyo5bqr5oq95Ye657WQ5p6cICh7cmVzdWx0cy5sZW5ndGh9IOS7tik8L2gyPgogICAgICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZGlzcGxheTogJ2ZsZXgnLCBnYXA6ICcxMHB4JyB9fT4KICAgICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgICAgb25DbGljaz17aGFuZGxlRXhwb3J0Q1NWfQogICAgICAgICAgICAgICAgICBzdHlsZT17eyBwYWRkaW5nOiAnOHB4IDE2cHgnLCBiYWNrZ3JvdW5kQ29sb3I6ICcjNGE2OWJkJywgY29sb3I6ICd3aGl0ZScsIGJvcmRlcjogJ25vbmUnLCBib3JkZXJSYWRpdXM6ICc0cHgnLCBjdXJzb3I6ICdwb2ludGVyJywgZm9udFdlaWdodDogJ2JvbGQnIH19CiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIENTVuOCqOOCr+OCueODneODvOODiAogICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgICA8YnV0dG9uCiAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZVJlc2V0fQogICAgICAgICAgICAgICAgICBzdHlsZT17eyBwYWRkaW5nOiAnOHB4IDE2cHgnLCBiYWNrZ3JvdW5kQ29sb3I6ICcjZTU1MDM5JywgY29sb3I6ICd3aGl0ZScsIGJvcmRlcjogJ25vbmUnLCBib3JkZXJSYWRpdXM6ICc0cHgnLCBjdXJzb3I6ICdwb2ludGVyJywgZm9udFdlaWdodDogJ2JvbGQnIH19CiAgICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICAgIOODquOCu+ODg+ODiAogICAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZmxleFdyYXA6ICd3cmFwJywgZ2FwOiAnMTBweCcsIG1hcmdpblRvcDogJzIwcHgnIH19PgogICAgICAgICAgICAgIHtyZXN1bHRzLm1hcCgoaXRlbTogQW5hbHl6ZWRJdGVtLCBpZHg6IG51bWJlcikgPT4gKAogICAgICAgICAgICAgICAgPGRpdiBrZXk9e2lkeH0gc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgYm9yZGVyOiAnMXB4IHNvbGlkIHZhcigtLWJvcmRlciknLAogICAgICAgICAgICAgICAgICBwYWRkaW5nOiAnOHB4JywKICAgICAgICAgICAgICAgICAgYm9yZGVyUmFkaXVzOiAnNHB4JywKICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAndmFyKC0tYmctcGFuZWwpJywKICAgICAgICAgICAgICAgICAgd2lkdGg6ICcxMjBweCcsCiAgICAgICAgICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JywKICAgICAgICAgICAgICAgICAgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsCiAgICAgICAgICAgICAgICAgIGFsaWduSXRlbXM6ICdjZW50ZXInLAogICAgICAgICAgICAgICAgICBib3hTaGFkb3c6ICcwIDFweCAzcHggcmdiYSgwLDAsMCwwLjEpJywKICAgICAgICAgICAgICAgICAgcG9zaXRpb246ICdyZWxhdGl2ZScKICAgICAgICAgICAgICAgIH19PgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywganVzdGlmeUNvbnRlbnQ6ICdzcGFjZS1iZXR3ZWVuJywgd2lkdGg6ICcxMDAlJywgbWFyZ2luQm90dG9tOiAnNXB4JyB9fT4KICAgICAgICAgICAgICAgICAgICA8c3BhbiBzdHlsZT17eyBmb250U2l6ZTogJzAuOHJlbScsIGNvbG9yOiAndmFyKC0tdGV4dC1kaW0pJywgZm9udFdlaWdodDogJ2JvbGQnIH19PiN7aWR4ICsgMX08L3NwYW4+CiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gaGFuZGxlUmVtb3ZlUmVzdWx0KGlkeCl9CiAgICAgICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogJ3ZhcigtLWRhbmdlciknLAogICAgICAgICAgICAgICAgICAgICAgICBib3JkZXI6ICdub25lJywKICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZDogJ25vbmUnLAogICAgICAgICAgICAgICAgICAgICAgICBjdXJzb3I6ICdwb2ludGVyJywKICAgICAgICAgICAgICAgICAgICAgICAgZm9udFNpemU6ICcxcmVtJywKICAgICAgICAgICAgICAgICAgICAgICAgbGluZUhlaWdodDogMSwKICAgICAgICAgICAgICAgICAgICAgICAgcGFkZGluZzogMAogICAgICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgICAgICAgIHRpdGxlPSLliYrpmaQiCiAgICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgICAgw5cKICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPXtpdGVtLmljb25EYXRhVXJsfSBhbHQ9Imljb24iIHN0eWxlPXt7IHdpZHRoOiAnNDhweCcsIGhlaWdodDogJzQ4cHgnLCBib3JkZXJSYWRpdXM6ICc0cHgnLCBtYXJnaW5Cb3R0b206ICc4cHgnLCBib3JkZXI6ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScgfX0gLz4KICAgICAgICAgICAgICAgICAgPGlucHV0CiAgICAgICAgICAgICAgICAgICAgdHlwZT0idGV4dCIKICAgICAgICAgICAgICAgICAgICB2YWx1ZT17aXRlbS5uYW1lfQogICAgICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gaGFuZGxlVXBkYXRlUmVzdWx0KGlkeCwgJ25hbWUnLCBlLnRhcmdldC52YWx1ZSl9CiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAnMTAwJScsCiAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiAnMnB4IDRweCcsCiAgICAgICAgICAgICAgICAgICAgICBmb250U2l6ZTogJzAuOHJlbScsCiAgICAgICAgICAgICAgICAgICAgICB0ZXh0QWxpZ246ICdjZW50ZXInLAogICAgICAgICAgICAgICAgICAgICAgYm94U2l6aW5nOiAnYm9yZGVyLWJveCcsCiAgICAgICAgICAgICAgICAgICAgICBib3JkZXI6ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScsCiAgICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6ICczcHgnLAogICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICd2YXIoLS10ZXh0LW1haW4pJywKICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogJ3RyYW5zcGFyZW50JwogICAgICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgICAgIC8+CiAgICAgICAgICAgICAgICAgIDxpbnB1dAogICAgICAgICAgICAgICAgICAgIHR5cGU9InRleHQiCiAgICAgICAgICAgICAgICAgICAgdmFsdWU9e2l0ZW0ucXVhbnRpdHkgPz8gJyd9CiAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlOiBhbnkpID0+IGhhbmRsZVVwZGF0ZVJlc3VsdChpZHgsICdxdWFudGl0eScsIGUudGFyZ2V0LnZhbHVlKX0KICAgICAgICAgICAgICAgICAgICBzdHlsZT17ewogICAgICAgICAgICAgICAgICAgICAgd2lkdGg6ICc2MCUnLAogICAgICAgICAgICAgICAgICAgICAgbWFyZ2luVG9wOiAnNXB4JywKICAgICAgICAgICAgICAgICAgICAgIHBhZGRpbmc6ICcycHggNHB4JywKICAgICAgICAgICAgICAgICAgICAgIGZvbnRTaXplOiAnMXJlbScsCiAgICAgICAgICAgICAgICAgICAgICBmb250V2VpZ2h0OiAnYm9sZCcsCiAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogJ3ZhcigtLXByaW1hcnkpJywKICAgICAgICAgICAgICAgICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsCiAgICAgICAgICAgICAgICAgICAgICBib3JkZXI6ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScsCiAgICAgICAgICAgICAgICAgICAgICBib3JkZXJSYWRpdXM6ICczcHgnLAogICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiAndHJhbnNwYXJlbnQnCiAgICAgICAgICAgICAgICAgICAgfX0KICAgICAgICAgICAgICAgICAgLz4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICkpfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICApfQogICAgICA8L21haW4+CgogICAgPC9kaXY+CiAgKQp9CgpleHBvcnQgZGVmYXVsdCBBcHAK
+import { useState, useCallback, useEffect } from 'react'
+import { ImageUploader } from '@common/components/ImageUploader'
+import { AnalysisProgress } from '@common/components/AnalysisProgress'
+import { InventoryExtractionService } from './services/inventoryExtractionService'
+import { ItemMasterService } from '../../common/src/services/itemMasterService'
+import { SummaryView } from './components/SummaryView'
+import type { AnalyzedItem, AnalysisProgress as ProgressType } from '@common/types'
+
+declare const cv: any;
+
+function App() {
+  const [images, setImages] = useState<File[]>([])
+  const [results, setResults] = useState<AnalyzedItem[]>([])
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [progress, setProgress] = useState<ProgressType | null>(null)
+  const [viewMode, setViewMode] = useState<'list' | 'summary'>('list')
+  const [masterData, setMasterData] = useState<any[]>([])
+
+  useEffect(() => {
+    ItemMasterService.getInstanceAsync().then(service => {
+      setMasterData(service.masterData);
+    });
+  }, []);
+
+  const handleImagesSelected = useCallback((files: File[]) => {
+    setImages((prev: File[]) => [...prev, ...files])
+  }, [])
+
+  const handleRemoveImage = useCallback((index: number) => {
+    setImages((prev: File[]) => prev.filter((_, i) => i !== index))
+  }, [])
+
+  const handleAnalyze = useCallback(async () => {
+    if (images.length === 0) return
+    setIsAnalyzing(true)
+    setResults([])
+
+    const inventoryExtractionService = await InventoryExtractionService.getInstanceAsync()
+
+    try {
+
+      const items = await inventoryExtractionService.extractAllAsync(images, (percent, message) => {
+        setProgress({ step: 'ocr', percent, message })
+      })
+
+      setResults(items)
+
+      setProgress({ step: 'done', percent: 100, message: '解析完了！' })
+    } catch (e: any) {
+      console.error(e)
+      setProgress({ step: 'done', percent: 0, message: `エラーが発生しました: ${e.message}` })
+    } finally {
+      setIsAnalyzing(false)
+      inventoryExtractionService.dispose()
+    }
+  }, [images])
+
+  const handleExportCSV = useCallback(() => {
+    const csvRows = ['アイテム名,所持数']
+    results.forEach((item: AnalyzedItem) => {
+      csvRows.push(`${item.name || '未登録'},${item.quantity}`)
+    })
+    const csvContent = '\uFEFF' + csvRows.join('\n') // BOM for Excel
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `inventory_${new Date().toISOString().slice(0, 10)}.csv`
+    a.click()
+    URL.revokeObjectURL(url)
+  }, [results])
+
+  const handleReset = useCallback(() => {
+    setImages([])
+    setResults([])
+    setProgress(null)
+  }, [])
+
+  const handleUpdateResult = useCallback((index: number, field: keyof AnalyzedItem, value: any) => {
+    setResults((prev) => {
+      const updated = [...prev]
+      updated[index] = { ...updated[index], [field]: value }
+      return updated
+    })
+  }, [])
+
+  const handleRemoveResult = useCallback((index: number) => {
+    setResults((prev) => prev.filter((_, i) => i !== index))
+  }, [])
+
+  return (
+    <div className="app">
+      <header className="app-header" style={{ padding: '20px', backgroundColor: '#ffffff', color: '#000000', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <h1 style={{ margin: 0 }}>ステラソラ アイテム所持数チェッカー（CNN版）</h1>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <button
+            onClick={() => setViewMode(prev => prev === 'list' ? 'summary' : 'list')}
+            style={{
+              padding: '8px 16px',
+              backgroundColor: viewMode === 'list' ? '#f39c12' : '#4a69bd',
+              color: 'white',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontWeight: 'bold'
+            }}
+          >
+            {viewMode === 'list' ? 'サマリー表示に切替' : 'リスト表示に戻る'}
+          </button>
+        </div>
+      </header>
+
+      <main className="app-main" style={{ padding: '20px' }}>
+        <section className="upload-section">
+          <ImageUploader
+            images={images}
+            onImagesSelected={handleImagesSelected}
+            onRemoveImage={handleRemoveImage}
+          />
+          <div className="actions" style={{ marginTop: '15px' }}>
+            <button
+              className="analyze-button"
+              onClick={handleAnalyze}
+              disabled={images.length === 0 || isAnalyzing}
+              style={{
+                padding: '10px 24px',
+                backgroundColor: '#264278',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontWeight: 'bold'
+              }}
+            >
+              {isAnalyzing ? '解析中...' : `解析開始（${images.length}枚）`}
+            </button>
+          </div>
+        </section>
+
+        {progress && <AnalysisProgress progress={progress} />}
+
+        {viewMode === 'summary' && (
+          <section className="summary-section" style={{ marginTop: '30px' }}>
+            {results.length > 0 && (
+              <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px', marginBottom: '15px' }}>
+                <button
+                  onClick={handleExportCSV}
+                  style={{ padding: '8px 16px', backgroundColor: '#4a69bd', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}
+                >
+                  CSVエクスポート
+                </button>
+                <button
+                  onClick={handleReset}
+                  style={{ padding: '8px 16px', backgroundColor: '#e55039', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}
+                >
+                  リセット
+                </button>
+              </div>
+            )}
+            <SummaryView results={results} masterData={masterData} />
+          </section>
+        )}
+
+        {viewMode === 'list' && results.length > 0 && (
+          <section className="results-user" style={{ marginTop: '30px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
+              <h2 style={{ margin: 0 }}>在庫抽出結果 ({results.length} 件)</h2>
+              <div style={{ display: 'flex', gap: '10px' }}>
+                <button
+                  onClick={handleExportCSV}
+                  style={{ padding: '8px 16px', backgroundColor: '#4a69bd', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}
+                >
+                  CSVエクスポート
+                </button>
+                <button
+                  onClick={handleReset}
+                  style={{ padding: '8px 16px', backgroundColor: '#e55039', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}
+                >
+                  リセット
+                </button>
+              </div>
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '20px' }}>
+              {results.map((item: AnalyzedItem, idx: number) => (
+                <div key={idx} style={{
+                  border: '1px solid var(--border)',
+                  padding: '8px',
+                  borderRadius: '4px',
+                  backgroundColor: 'var(--bg-panel)',
+                  width: '120px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
+                  position: 'relative'
+                }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', marginBottom: '5px' }}>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--text-dim)', fontWeight: 'bold' }}>#{idx + 1}</span>
+                    <button
+                      onClick={() => handleRemoveResult(idx)}
+                      style={{
+                        color: 'var(--danger)',
+                        border: 'none',
+                        background: 'none',
+                        cursor: 'pointer',
+                        fontSize: '1rem',
+                        lineHeight: 1,
+                        padding: 0
+                      }}
+                      title="削除"
+                    >
+                      ×
+                    </button>
+                  </div>
+                  <img src={item.iconDataUrl} alt="icon" style={{ width: '48px', height: '48px', borderRadius: '4px', marginBottom: '8px', border: '1px solid var(--border)' }} />
+                  <input
+                    type="text"
+                    value={item.name}
+                    onChange={(e) => handleUpdateResult(idx, 'name', e.target.value)}
+                    style={{
+                      width: '100%',
+                      padding: '2px 4px',
+                      fontSize: '0.8rem',
+                      textAlign: 'center',
+                      boxSizing: 'border-box',
+                      border: '1px solid var(--border)',
+                      borderRadius: '3px',
+                      color: 'var(--text-main)',
+                      backgroundColor: 'transparent'
+                    }}
+                  />
+                  <input
+                    type="text"
+                    value={item.quantity ?? ''}
+                    onChange={(e: any) => handleUpdateResult(idx, 'quantity', e.target.value)}
+                    style={{
+                      width: '60%',
+                      marginTop: '5px',
+                      padding: '2px 4px',
+                      fontSize: '1rem',
+                      fontWeight: 'bold',
+                      color: 'var(--primary)',
+                      textAlign: 'center',
+                      border: '1px solid var(--border)',
+                      borderRadius: '3px',
+                      backgroundColor: 'transparent'
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+      </main>
+
+    </div>
+  )
+}
+
+export default App

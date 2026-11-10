@@ -1,1 +1,126 @@
-aW1wb3J0IHsgZnJvbUJhc2U2NCB9IGZyb20gJy4uL3V0aWxzL21hdCc7CgpkZWNsYXJlIGNvbnN0IGN2OiBhbnk7Cgpjb25zdCBNQVNURVJfRElDVF9VUkwgPSBgJHtpbXBvcnQubWV0YS5lbnYuQkFTRV9VUkx9bWFzdGVyLWRpY3Rpb25hcnkuanNvbmA7CgpleHBvcnQgaW50ZXJmYWNlIEl0ZW1NYXN0ZXJEYXRhSnNvbiB7CiAgaWQ6IG51bWJlcjsKICBmZWF0dXJlczogc3RyaW5nOwogIGNvbG9ySGFzaDogbnVtYmVyW107CiAgbmFtZTogc3RyaW5nOwogIGljb25EYXRhVXJsOiBzdHJpbmc7Cn0KCmV4cG9ydCBjbGFzcyBJdGVtTWFzdGVyRGF0YSB7CiAgLyoqIOOCpOODs+ODh+ODg+OCr+OCuSAoRGljdGVy55SoKSAqLwogIHB1YmxpYyBpZDogbnVtYmVyOwogIC8qKiDnibnlvrTph4/jg4fjg7zjgr8gKEJhc2U2NOWMluOBl+OBn+iomOi/sOWtkCBNYXQpICovCiAgcHVibGljIGZlYXR1cmVzOiBzdHJpbmc7CiAgLyoqIOiJsuaDheWgsSAoM3gz44Kw44Oq44OD44OJUkdCKSAqLwogIHB1YmxpYyBjb2xvckhhc2g6IG51bWJlcltdOwogIC8qKiDjgqLjgqTjg4bjg6DlkI0gKi8KICBwdWJsaWMgbmFtZTogc3RyaW5nOwogIC8qKiDjgqLjgqTjgrPjg7PnlLvlg4/vvIhCYXNlNjQgRGF0YSBVUkzvvIkgKi8KICBwdWJsaWMgaWNvbkRhdGFVcmw6IHN0cmluZzsKICAvKiog54m55b606YeP44OH44O844K/IChCYXNlNjTljJbjgZfjgZ/oqJjov7DlrZAgTWF0KSAqLwogIHByaXZhdGUgX2ZlYXR1cmVzTWF0OiBhbnkgfCBudWxsOwoKICBjb25zdHJ1Y3RvcihwYXJhbTogewogICAgaWQ6IG51bWJlciwKICAgIGZlYXR1cmVzOiBzdHJpbmcsCiAgICBjb2xvckhhc2g6IG51bWJlcltdLAogICAgbmFtZTogc3RyaW5nLAogICAgaWNvbkRhdGFVcmw6IHN0cmluZwogIH0pIHsKICAgIHRoaXMuaWQgPSBwYXJhbS5pZDsKICAgIHRoaXMuZmVhdHVyZXMgPSBwYXJhbS5mZWF0dXJlczsKICAgIHRoaXMuY29sb3JIYXNoID0gcGFyYW0uY29sb3JIYXNoOwogICAgdGhpcy5uYW1lID0gcGFyYW0ubmFtZTsKICAgIHRoaXMuaWNvbkRhdGFVcmwgPSBwYXJhbS5pY29uRGF0YVVybDsKICAgIHRoaXMuX2ZlYXR1cmVzTWF0ID0gbnVsbDsKICB9CgogIHB1YmxpYyBmZWF0dXJlc01hdCgpOiBhbnkgewogICAgaWYgKHRoaXMuX2ZlYXR1cmVzTWF0ID09PSBudWxsKSB7CiAgICAgIHRoaXMuX2ZlYXR1cmVzTWF0ID0gZnJvbUJhc2U2NCh0aGlzLmZlYXR1cmVzKTsKICAgIH0KICAgIHJldHVybiB0aGlzLl9mZWF0dXJlc01hdDsKICB9CgogIHB1YmxpYyBzdGF0aWMgZnJvbUpzb24oanNvbjogSXRlbU1hc3RlckRhdGFKc29uKTogSXRlbU1hc3RlckRhdGEgewogICAgcmV0dXJuIG5ldyBJdGVtTWFzdGVyRGF0YShqc29uKTsKICB9CgogIHB1YmxpYyB0b0pTT04oKTogSXRlbU1hc3RlckRhdGFKc29uIHsKICAgIHJldHVybiB7CiAgICAgIGlkOiB0aGlzLmlkLAogICAgICBmZWF0dXJlczogdGhpcy5mZWF0dXJlcywKICAgICAgY29sb3JIYXNoOiB0aGlzLmNvbG9ySGFzaCwKICAgICAgbmFtZTogdGhpcy5uYW1lLAogICAgICBpY29uRGF0YVVybDogdGhpcy5pY29uRGF0YVVybAogICAgfQogIH0KCiAgcHVibGljIGRpc3Bvc2UoKTogdm9pZCB7CiAgICBpZiAodGhpcy5fZmVhdHVyZXNNYXQgIT09IG51bGwpIHsKICAgICAgdGhpcy5fZmVhdHVyZXNNYXQuZGVsZXRlKCk7CiAgICAgIHRoaXMuX2ZlYXR1cmVzTWF0ID0gbnVsbDsKICAgIH0KICB9Cn0KCi8qKgogKiDjg57jgrnjgr/jg7zovp7mm7jjg4fjg7zjgr/jgpLnrqHnkIbjgZnjgovjgrXjg7zjg5PjgrkKICovCmV4cG9ydCBjbGFzcyBJdGVtTWFzdGVyU2VydmljZSB7CiAgcHJpdmF0ZSBzdGF0aWMgX2luc3RhbmNlOiBJdGVtTWFzdGVyU2VydmljZSB8IG51bGwgPSBudWxsOwogIHByaXZhdGUgX21hc3RlcjogSXRlbU1hc3RlckRhdGFbXSA9IFtdOwogIHByaXZhdGUgY29uc3RydWN0b3IoKSB7CiAgfQoKICAvKioKICAgKiDjg57jgrnjgr/jg7zjg4fjg7zjgr/jga7lhajku7bjgpLlj5blvpfjgZnjgosgKOOCteODnuODquODvOODk+ODpeODvOOCouOCpOOCs+ODs+ihqOekuuOBquOBqeOBruOBn+OCgSkKICAgKi8KICBwdWJsaWMgZ2V0IG1hc3RlckRhdGEoKTogSXRlbU1hc3RlckRhdGFbXSB7CiAgICByZXR1cm4gdGhpcy5fbWFzdGVyOwogIH0KCiAgLyoqCiAgICog44K344Oz44Kw44Or44OI44Oz44Kk44Oz44K544K/44Oz44K544KS5Y+W5b6X44GX44CB5pyq5Yid5pyf5YyW44Gq44KJ44Oe44K544K/44O844OH44O844K/44KS6Kqt44G/6L6844KACiAgICovCiAgcHVibGljIHN0YXRpYyBhc3luYyBnZXRJbnN0YW5jZUFzeW5jKCk6IFByb21pc2U8SXRlbU1hc3RlclNlcnZpY2U+IHsKICAgIGlmICghdGhpcy5faW5zdGFuY2UpIHsKICAgICAgdGhpcy5faW5zdGFuY2UgPSBuZXcgSXRlbU1hc3RlclNlcnZpY2UoKTsKICAgICAgYXdhaXQgdGhpcy5faW5zdGFuY2UubG9hZE1hc3RlckRhdGFBc3luYygpOwogICAgfQogICAgcmV0dXJuIHRoaXMuX2luc3RhbmNlOwogIH0KCiAgcHVibGljIGRpc3Bvc2UoKTogdm9pZCB7CiAgICAvLyDjg6Hjg6Ljg6rop6PmlL7jga7jgZ/jgoHjgIHjgq3jg6Pjg4Pjgrfjg6XjgZfjgabjgYTjgovnibnlvrTph4/jg4fjg7zjgr/jgpLnoLTmo4TjgZnjgosKICAgIC8vIChpbnN0YW5jZSDjga/noLTmo4TjgZfjgarjgYQpCiAgICB0aGlzLl9tYXN0ZXIuZm9yRWFjaChlbnRyeSA9PiBlbnRyeS5kaXNwb3NlKCkpOwogICAgdGhpcy5fbWFzdGVyID0gW107CiAgfQoKICAvKioKICAgKiDjg57jgrnjgr/jg7zjg4fjg7zjgr/jga7pnZ7lkIzmnJ/jg63jg7zjg4kKICAgKi8KICBwcml2YXRlIGFzeW5jIGxvYWRNYXN0ZXJEYXRhQXN5bmMoKTogUHJvbWlzZTx2b2lkPiB7CiAgICB0cnkgewogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKE1BU1RFUl9ESUNUX1VSTCk7CiAgICAgIGlmIChyZXNwb25zZS5vaykgewogICAgICAgIC8vIOaXouWtmOOBruODh+ODvOOCv+OCkuegtOajhAogICAgICAgIHRoaXMuZGlzcG9zZSgpOwogICAgICAgIGNvbnN0IGl0ZW1zID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICAgIGl0ZW1zLmZvckVhY2goKGl0ZW06IEl0ZW1NYXN0ZXJEYXRhSnNvbikgPT4gewogICAgICAgICAgdGhpcy5fbWFzdGVyLnB1c2goSXRlbU1hc3RlckRhdGEuZnJvbUpzb24oaXRlbSkpOwogICAgICAgIH0pOwogICAgICB9CiAgICB9IGNhdGNoIChlKSB7CiAgICAgIGNvbnNvbGUud2Fybign44Oe44K544K/44O844OH44O844K/44Gu6Kqt44G/6L6844G/44Gr5aSx5pWX44GX44G+44GX44Gf44CCJywgZSk7CiAgICB9CiAgfQoKfQo=
+import { fromBase64 } from '../utils/mat';
+
+declare const cv: any;
+
+const MASTER_DICT_URL = `${import.meta.env.BASE_URL}master-dictionary.json`;
+
+export interface ItemMasterDataJson {
+  id: number;
+  features: string;
+  colorHash: number[];
+  name: string;
+  iconDataUrl: string;
+}
+
+export class ItemMasterData {
+  /** インデックス (Dicter用) */
+  public id: number;
+  /** 特徴量データ (Base64化した記述子 Mat) */
+  public features: string;
+  /** 色情報 (3x3グリッドRGB) */
+  public colorHash: number[];
+  /** アイテム名 */
+  public name: string;
+  /** アイコン画像（Base64 Data URL） */
+  public iconDataUrl: string;
+  /** 特徴量データ (Base64化した記述子 Mat) */
+  private _featuresMat: any | null;
+
+  constructor(param: {
+    id: number,
+    features: string,
+    colorHash: number[],
+    name: string,
+    iconDataUrl: string
+  }) {
+    this.id = param.id;
+    this.features = param.features;
+    this.colorHash = param.colorHash;
+    this.name = param.name;
+    this.iconDataUrl = param.iconDataUrl;
+    this._featuresMat = null;
+  }
+
+  public featuresMat(): any {
+    if (this._featuresMat === null) {
+      this._featuresMat = fromBase64(this.features);
+    }
+    return this._featuresMat;
+  }
+
+  public static fromJson(json: ItemMasterDataJson): ItemMasterData {
+    return new ItemMasterData(json);
+  }
+
+  public toJSON(): ItemMasterDataJson {
+    return {
+      id: this.id,
+      features: this.features,
+      colorHash: this.colorHash,
+      name: this.name,
+      iconDataUrl: this.iconDataUrl
+    }
+  }
+
+  public dispose(): void {
+    if (this._featuresMat !== null) {
+      this._featuresMat.delete();
+      this._featuresMat = null;
+    }
+  }
+}
+
+/**
+ * マスター辞書データを管理するサービス
+ */
+export class ItemMasterService {
+  private static _instance: ItemMasterService | null = null;
+  private _master: ItemMasterData[] = [];
+  private constructor() {
+  }
+
+  /**
+   * マスターデータの全件を取得する (サマリービューアイコン表示などのため)
+   */
+  public get masterData(): ItemMasterData[] {
+    return this._master;
+  }
+
+  /**
+   * シングルトンインスタンスを取得し、未初期化ならマスターデータを読み込む
+   */
+  public static async getInstanceAsync(): Promise<ItemMasterService> {
+    if (!this._instance) {
+      this._instance = new ItemMasterService();
+      await this._instance.loadMasterDataAsync();
+    }
+    return this._instance;
+  }
+
+  public dispose(): void {
+    // メモリ解放のため、キャッシュしている特徴量データを破棄する
+    // (instance は破棄しない)
+    this._master.forEach(entry => entry.dispose());
+    this._master = [];
+  }
+
+  /**
+   * マスターデータの非同期ロード
+   */
+  private async loadMasterDataAsync(): Promise<void> {
+    try {
+      const response = await fetch(MASTER_DICT_URL);
+      if (response.ok) {
+        // 既存のデータを破棄
+        this.dispose();
+        const items = await response.json();
+        items.forEach((item: ItemMasterDataJson) => {
+          this._master.push(ItemMasterData.fromJson(item));
+        });
+      }
+    } catch (e) {
+      console.warn('マスターデータの読み込みに失敗しました。', e);
+    }
+  }
+
+}

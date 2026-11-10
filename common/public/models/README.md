@@ -1,1 +1,10 @@
-IyDjg6Ljg4fjg6vkuIDlvI/jga7nva7jgY3loLTmiYAKCm1sIOWBtOOBp+Wtpue/kuODu+abuOOBjeWHuuOBl+OBl+OBn+S7peS4i+OBrjPjg5XjgqHjgqTjg6vjgpLjgZPjgZPjgavnva7jgY/jgIIKCi0gaWNvbl9tb2RlbC5vbm54Ci0gbGFiZWxzLmpzb24KLSBwcmVwcm9jZXNzLmpzb24KCue9ruOBj+OBoOOBkeOBpyBXZWIg44Ki44OX44OqIChDTk4g5Yik5a6aKSDjgYzli5XjgY/jgILmnKrphY3nva7jga7loLTlkIjjga/jgqLjg5fjg6rlgbTjgasK44CM44Oi44OH44Or5LiA5byP44GM6YWN572u44GV44KM44Gm44GE44G+44Gb44KT44CN44Go44GE44GG44Ko44Op44O844GM5Ye644KL44CCCg==
+# モデル一式の置き場所
+
+ml 側で学習・書き出しした以下の3ファイルをここに置く。
+
+- icon_model.onnx
+- labels.json
+- preprocess.json
+
+置くだけで Web アプリ (CNN 判定) が動く。未配置の場合はアプリ側に
+「モデル一式が配置されていません」というエラーが出る。

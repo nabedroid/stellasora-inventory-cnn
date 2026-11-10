@@ -1,1 +1,187 @@
-Ly8gQ05OIChPTk5YKSDjgafjgqLjgqTjgrPjg7PjgpLliKTlrprjgZnjgovjgrXjg7zjg5PjgrnjgIIKLy8g44Oi44OH44Or5LiA5byP44GvIGNvbW1vbi9wdWJsaWMvbW9kZWxzLyDjgavnva7jgY86Ci8vICAgaWNvbl9tb2RlbC5vbm54IC8gbGFiZWxzLmpzb24gLyBwcmVwcm9jZXNzLmpzb24gKG1sIOWBtOOBriBleHBvcnRfb25ueC5weSDjgYzlh7rlipspCi8vIOWJjeWHpueQhiAo5pWw5a2X44Ko44Oq44Ki44Gu44Oe44K544Kv44O75YWl5Yqb44K144Kk44K644O75q2j6KaP5YyWKSDjga8gcHJlcHJvY2Vzcy5qc29uIOOBjOato+OBp+OAgQovLyDlrabnv5LlgbQgKFB5dGhvbikg44Go5pWw5YCk44KS5LiA6Ie044GV44Gb44KL44GT44Go44CCCgppbXBvcnQgKiBhcyBvcnQgZnJvbSAnb25ueHJ1bnRpbWUtd2ViJzsKaW1wb3J0IHR5cGUgeyBDbm5DYW5kaWRhdGUgfSBmcm9tICdAY29tbW9uL3R5cGVzJzsKCmRlY2xhcmUgY29uc3QgY3Y6IGFueTsKCmNvbnN0IE1PREVMX0JBU0VfVVJMID0gYCR7aW1wb3J0Lm1ldGEuZW52LkJBU0VfVVJMfW1vZGVscy9gOwoKLy8gb25ueHJ1bnRpbWUtd2ViIOOBriB3YXNtIOODleOCoeOCpOODq+OBruWPgueFp+WFiOOAggovLyBHaXRIdWIgUGFnZXMg5Y2Y5L2T44Gn5YuV44GL44GZ44Gf44KB44Gu57Ch5piT5oyH5a6aIChDRE4p44CCCi8vIOWujOWFqOOCquODleODqeOCpOODs+WMluOBmeOCi+WgtOWQiOOBr+OAgW5vZGVfbW9kdWxlcy9vbm54cnVudGltZS13ZWIvZGlzdCDjga4KLy8gKi53YXNtIOOCkiBwdWJsaWMg44Gr44Kz44OU44O844GX44CB44GT44GT44KS55u45a++44OR44K544Gr5aSJ44GI44KL44GT44Go44CCCm9ydC5lbnYud2FzbS53YXNtUGF0aHMgPSAnaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L25wbS9vbm54cnVudGltZS13ZWJAMS4yMi4wL2Rpc3QvJzsKCmludGVyZmFjZSBQcmVwcm9jZXNzQ29uZmlnIHsKICBpbnB1dF93aWR0aDogbnVtYmVyOwogIG51bWJlcl9hcmVhOiB7CiAgICBtb2RlOiAnbWFzaycgfCAnY3V0JyB8ICdrZWVwJzsKICAgIHN0cmlwX3JhdGlvOiBudW1iZXI7CiAgICBmaWxsX3JnYjogbnVtYmVyW107CiAgfTsKICBmcmFtZT86IHsKICAgIG1vZGU6ICdtYXNrJyB8ICdrZWVwJzsKICAgIHJpbmdfcmF0aW86IG51bWJlcjsKICAgIGZpbGxfcmdiOiBudW1iZXJbXTsKICB9OwogIG5vcm1hbGl6ZTogewogICAgbWVhbjogbnVtYmVyW107CiAgICBzdGQ6IG51bWJlcltdOwogIH07Cn0KCmludGVyZmFjZSBMYWJlbHNEYXRhIHsKICBjbGFzc2VzOiBzdHJpbmdbXTsKICBsYWJlbHM/OiBSZWNvcmQ8c3RyaW5nLCB7IGlkOiBudW1iZXI7IG5hbWU6IHN0cmluZyB9PjsKfQoKZXhwb3J0IGNsYXNzIEljb25Dbm5TZXJ2aWNlIHsKICBwcml2YXRlIHN0YXRpYyBfaW5zdGFuY2U6IEljb25Dbm5TZXJ2aWNlIHwgbnVsbCA9IG51bGw7CgogIHByaXZhdGUgcmVhZG9ubHkgc2Vzc2lvbjogb3J0LkluZmVyZW5jZVNlc3Npb247CiAgcHJpdmF0ZSByZWFkb25seSBjb25maWc6IFByZXByb2Nlc3NDb25maWc7CiAgcHJpdmF0ZSByZWFkb25seSBsYWJlbHM6IExhYmVsc0RhdGE7CgogIHByaXZhdGUgY29uc3RydWN0b3Ioc2Vzc2lvbjogb3J0LkluZmVyZW5jZVNlc3Npb24sIGNvbmZpZzogUHJlcHJvY2Vzc0NvbmZpZywgbGFiZWxzOiBMYWJlbHNEYXRhKSB7CiAgICB0aGlzLnNlc3Npb24gPSBzZXNzaW9uOwogICAgdGhpcy5jb25maWcgPSBjb25maWc7CiAgICB0aGlzLmxhYmVscyA9IGxhYmVsczsKICB9CgogIHB1YmxpYyBzdGF0aWMgYXN5bmMgZ2V0SW5zdGFuY2VBc3luYygpOiBQcm9taXNlPEljb25Dbm5TZXJ2aWNlPiB7CiAgICBpZiAodGhpcy5faW5zdGFuY2UpIHsKICAgICAgcmV0dXJuIHRoaXMuX2luc3RhbmNlOwogICAgfQoKICAgIC8vIOS7mOWxnuODleOCoeOCpOODqyAo5YmN5Yem55CG6Kit5a6a44Go44Op44OZ44Or5a++5b+c6KGoKSDjgpLlhYjjgavoqq3jgoAKICAgIGNvbnN0IFtjb25maWdSZXNwb25zZSwgbGFiZWxzUmVzcG9uc2VdID0gYXdhaXQgUHJvbWlzZS5hbGwoWwogICAgICBmZXRjaChgJHtNT0RFTF9CQVNFX1VSTH1wcmVwcm9jZXNzLmpzb25gKSwKICAgICAgZmV0Y2goYCR7TU9ERUxfQkFTRV9VUkx9bGFiZWxzLmpzb25gKSwKICAgIF0pOwogICAgaWYgKCFjb25maWdSZXNwb25zZS5vayB8fCAhbGFiZWxzUmVzcG9uc2Uub2spIHsKICAgICAgdGhyb3cgbmV3IEVycm9yKAogICAgICAgICfjg6Ljg4fjg6vkuIDlvI/jgYzphY3nva7jgZXjgozjgabjgYTjgb7jgZvjgpPjgIJtbCDlgbTjgaflrabnv5Ljgajmm7jjgY3lh7rjgZfjgpLooYzjgYTjgIEnICsKICAgICAgICAnaWNvbl9tb2RlbC5vbm54IC8gbGFiZWxzLmpzb24gLyBwcmVwcm9jZXNzLmpzb24g44KSIGNvbW1vbi9wdWJsaWMvbW9kZWxzLyDjgavnva7jgYTjgabjgY/jgaDjgZXjgYTjgIInKTsKICAgIH0KICAgIGNvbnN0IGNvbmZpZyA9IGF3YWl0IGNvbmZpZ1Jlc3BvbnNlLmpzb24oKSBhcyBQcmVwcm9jZXNzQ29uZmlnOwogICAgY29uc3QgbGFiZWxzID0gYXdhaXQgbGFiZWxzUmVzcG9uc2UuanNvbigpIGFzIExhYmVsc0RhdGE7CgogICAgLy8gV2ViR1BVIOOBjOS9v+OBiOOCjOOBsCBXZWJHUFXjgIHjg4Djg6HjgarjgokgV0FTTSDjgavokL3jgajjgZkKICAgIGxldCBzZXNzaW9uOiBvcnQuSW5mZXJlbmNlU2Vzc2lvbjsKICAgIHRyeSB7CiAgICAgIHNlc3Npb24gPSBhd2FpdCBvcnQuSW5mZXJlbmNlU2Vzc2lvbi5jcmVhdGUoCiAgICAgICAgYCR7TU9ERUxfQkFTRV9VUkx9aWNvbl9tb2RlbC5vbm54YCwgeyBleGVjdXRpb25Qcm92aWRlcnM6IFsnd2ViZ3B1J10gfSk7CiAgICB9IGNhdGNoIHsKICAgICAgc2Vzc2lvbiA9IGF3YWl0IG9ydC5JbmZlcmVuY2VTZXNzaW9uLmNyZWF0ZSgKICAgICAgICBgJHtNT0RFTF9CQVNFX1VSTH1pY29uX21vZGVsLm9ubnhgLCB7IGV4ZWN1dGlvblByb3ZpZGVyczogWyd3YXNtJ10gfSk7CiAgICB9CgogICAgdGhpcy5faW5zdGFuY2UgPSBuZXcgSWNvbkNublNlcnZpY2Uoc2Vzc2lvbiwgY29uZmlnLCBsYWJlbHMpOwogICAgcmV0dXJuIHRoaXMuX2luc3RhbmNlOwogIH0KCiAgLy8g5YWl5Yqb44OG44Oz44K944Or44GuICjluYUsIOmrmOOBlSnjgIJjdXQg44Oi44O844OJ44Gg44GR5biv44Gu5YiG44Gg44GR57im44GM55+t44GE44CCCiAgcHJpdmF0ZSBpbnB1dFNpemUoKTogeyB3aWR0aDogbnVtYmVyOyBoZWlnaHQ6IG51bWJlciB9IHsKICAgIGNvbnN0IHdpZHRoID0gdGhpcy5jb25maWcuaW5wdXRfd2lkdGg7CiAgICBpZiAodGhpcy5jb25maWcubnVtYmVyX2FyZWEubW9kZSA9PT0gJ2N1dCcpIHsKICAgICAgcmV0dXJuIHsgd2lkdGgsIGhlaWdodDogTWF0aC5yb3VuZCh3aWR0aCAqICgxIC0gdGhpcy5jb25maWcubnVtYmVyX2FyZWEuc3RyaXBfcmF0aW8pKSB9OwogICAgfQogICAgcmV0dXJuIHsgd2lkdGgsIGhlaWdodDogd2lkdGggfTsKICB9CgogIC8vIOOCouOCpOOCs+ODs+eUu+WDjyAoY3YuTWF0KSDjgpLjg6Ljg4fjg6vlhaXlipvjga7mlbDlgKTliJcgKENIVywg5q2j6KaP5YyW5riI44G/KSDjgavlpInmj5vjgZnjgovjgIIKICAvLyDlrabnv5LlgbQgcHJlcHJvY2Vzcy5weSDjga4gYnVpbGRfdHJhbnNmb3JtIOOBqOWQjOOBmOaJi+mghuOBq+OBmeOCi+OBk+OBqOOAggogIHByaXZhdGUgdG9JbnB1dERhdGEoaWNvbk1hdDogYW55LCBvdXQ6IEZsb2F0MzJBcnJheSwgb2Zmc2V0OiBudW1iZXIpOiB2b2lkIHsKICAgIGNvbnN0IHsgbW9kZSwgc3RyaXBfcmF0aW8sIGZpbGxfcmdiIH0gPSB0aGlzLmNvbmZpZy5udW1iZXJfYXJlYTsKICAgIGNvbnN0IHsgbWVhbiwgc3RkIH0gPSB0aGlzLmNvbmZpZy5ub3JtYWxpemU7CiAgICBjb25zdCB7IHdpZHRoLCBoZWlnaHQgfSA9IHRoaXMuaW5wdXRTaXplKCk7CgogICAgLy8gTWF0IOOCkuOBneOBruOBvuOBvuOBruWkp+OBjeOBleOBpyBjYW52YXMg5YyW44GZ44KLCiAgICBjb25zdCBzcmNDYW52YXMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdjYW52YXMnKTsKICAgIGN2Lmltc2hvdyhzcmNDYW52YXMsIGljb25NYXQpOwogICAgY29uc3Qgc3JjQ3R4ID0gc3JjQ2FudmFzLmdldENvbnRleHQoJzJkJykhOwoKICAgIC8vIOaVsOWtl+OCqOODquOCouOBuOOBruWvvuWHpiAobWFzayAvIGN1dCAvIGtlZXApCiAgICBsZXQgc291cmNlSGVpZ2h0ID0gc3JjQ2FudmFzLmhlaWdodDsKICAgIGlmIChtb2RlID09PSAnbWFzaycpIHsKICAgICAgc3JjQ3R4LmZpbGxTdHlsZSA9IGByZ2IoJHtmaWxsX3JnYlswXX0sICR7ZmlsbF9yZ2JbMV19LCAke2ZpbGxfcmdiWzJdfSlgOwogICAgICBzcmNDdHguZmlsbFJlY3QoMCwgc3JjQ2FudmFzLmhlaWdodCAqICgxIC0gc3RyaXBfcmF0aW8pLCBzcmNDYW52YXMud2lkdGgsIHNyY0NhbnZhcy5oZWlnaHQgKiBzdHJpcF9yYXRpbyk7CiAgICB9IGVsc2UgaWYgKG1vZGUgPT09ICdjdXQnKSB7CiAgICAgIHNvdXJjZUhlaWdodCA9IE1hdGgucm91bmQoc3JjQ2FudmFzLmhlaWdodCAqICgxIC0gc3RyaXBfcmF0aW8pKTsKICAgIH0KCiAgICAvLyDmnqDjg6rjg7PjgrDjgbjjga7lr77lh6YgKOOCq+ODvOOCveODq+aeoOOBruOCouODi+ODoeODvOOCt+ODp+ODs+S9jeebuOW3ruOCkua2iOOBmSkKICAgIC8vIOWtpue/kuWBtCBwcmVwcm9jZXNzLnB5IOOBriBhcHBseV9mcmFtZSDjgajlkIzjgZjlh6bnkIbjgavjgZnjgovjgZPjgajjgIIKICAgIGlmICh0aGlzLmNvbmZpZy5mcmFtZT8ubW9kZSA9PT0gJ21hc2snKSB7CiAgICAgIGNvbnN0IGZyYW1lID0gdGhpcy5jb25maWcuZnJhbWU7CiAgICAgIGNvbnN0IHJpbmdYID0gTWF0aC5yb3VuZChzcmNDYW52YXMud2lkdGggKiBmcmFtZS5yaW5nX3JhdGlvKTsKICAgICAgY29uc3QgcmluZ1kgPSBNYXRoLnJvdW5kKHNyY0NhbnZhcy5oZWlnaHQgKiBmcmFtZS5yaW5nX3JhdGlvKTsKICAgICAgc3JjQ3R4LmZpbGxTdHlsZSA9IGByZ2IoJHtmcmFtZS5maWxsX3JnYlswXX0sICR7ZnJhbWUuZmlsbF9yZ2JbMV19LCAke2ZyYW1lLmZpbGxfcmdiWzJdfSlgOwogICAgICBzcmNDdHguZmlsbFJlY3QoMCwgMCwgc3JjQ2FudmFzLndpZHRoLCByaW5nWSk7CiAgICAgIHNyY0N0eC5maWxsUmVjdCgwLCBzcmNDYW52YXMuaGVpZ2h0IC0gcmluZ1ksIHNyY0NhbnZhcy53aWR0aCwgcmluZ1kpOwogICAgICBzcmNDdHguZmlsbFJlY3QoMCwgMCwgcmluZ1gsIHNyY0NhbnZhcy5oZWlnaHQpOwogICAgICBzcmNDdHguZmlsbFJlY3Qoc3JjQ2FudmFzLndpZHRoIC0gcmluZ1gsIDAsIHJpbmdYLCBzcmNDYW52YXMuaGVpZ2h0KTsKICAgIH0KCiAgICAvLyDlhaXlipvjgrXjgqTjgrrjgbjnuK7lsI/jgZfjgabnlLvntKDjgpLlj5bjgorlh7rjgZkKICAgIGNvbnN0IGlucHV0Q2FudmFzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnY2FudmFzJyk7CiAgICBpbnB1dENhbnZhcy53aWR0aCA9IHdpZHRoOwogICAgaW5wdXRDYW52YXMuaGVpZ2h0ID0gaGVpZ2h0OwogICAgY29uc3QgaW5wdXRDdHggPSBpbnB1dENhbnZhcy5nZXRDb250ZXh0KCcyZCcpITsKICAgIGlucHV0Q3R4LmRyYXdJbWFnZShzcmNDYW52YXMsIDAsIDAsIHNyY0NhbnZhcy53aWR0aCwgc291cmNlSGVpZ2h0LCAwLCAwLCB3aWR0aCwgaGVpZ2h0KTsKICAgIGNvbnN0IHBpeGVscyA9IGlucHV0Q3R4LmdldEltYWdlRGF0YSgwLCAwLCB3aWR0aCwgaGVpZ2h0KS5kYXRhOwoKICAgIC8vIFJHQiDjga4gQ0hXIOS4puOBs+OBp+ato+imj+WMluOBl+OBquOBjOOCieipsOOCgeOCiyAoYWxwaGEg44Gv5L2/44KP44Gq44GEKQogICAgY29uc3QgcGxhbmVTaXplID0gd2lkdGggKiBoZWlnaHQ7CiAgICBmb3IgKGxldCBpID0gMDsgaSA8IHBsYW5lU2l6ZTsgaSsrKSB7CiAgICAgIGZvciAobGV0IGNoYW5uZWwgPSAwOyBjaGFubmVsIDwgMzsgY2hhbm5lbCsrKSB7CiAgICAgICAgY29uc3QgdmFsdWUgPSBwaXhlbHNbaSAqIDQgKyBjaGFubmVsXSAvIDI1NTsKICAgICAgICBvdXRbb2Zmc2V0ICsgY2hhbm5lbCAqIHBsYW5lU2l6ZSArIGldID0gKHZhbHVlIC0gbWVhbltjaGFubmVsXSkgLyBzdGRbY2hhbm5lbF07CiAgICAgIH0KICAgIH0KICB9CgogIC8vIOOCouOCpOOCs+ODs+e+pOOCkuODkOODg+ODgeOBp+WIpOWumuOBl+OAgeOCouOCpOOCs+ODs+OBlOOBqOOBq+WAmeijnOS4iuS9jTPku7bjgpLov5TjgZnjgIIKICAvLyAx5YCL44Ga44Gk5o6o6KuW44KS5Zue44GV44Ga44CB5b+F44Ga44OQ44OD44OB44GnMeWbnuOBq+OBvuOBqOOCgeOCi+OBk+OBqOOAggogIHB1YmxpYyBhc3luYyBjbGFzc2lmeUFzeW5jKGljb25NYXRzOiBhbnlbXSk6IFByb21pc2U8Q25uQ2FuZGlkYXRlW11bXT4gewogICAgaWYgKGljb25NYXRzLmxlbmd0aCA9PT0gMCkgewogICAgICByZXR1cm4gW107CiAgICB9CiAgICBjb25zdCB7IHdpZHRoLCBoZWlnaHQgfSA9IHRoaXMuaW5wdXRTaXplKCk7CiAgICBjb25zdCBwbGFuZVNpemUgPSB3aWR0aCAqIGhlaWdodDsKICAgIGNvbnN0IGRhdGEgPSBuZXcgRmxvYXQzMkFycmF5KGljb25NYXRzLmxlbmd0aCAqIDMgKiBwbGFuZVNpemUpOwogICAgaWNvbk1hdHMuZm9yRWFjaCgoaWNvbk1hdCwgaW5kZXgpID0+IHsKICAgICAgdGhpcy50b0lucHV0RGF0YShpY29uTWF0LCBkYXRhLCBpbmRleCAqIDMgKiBwbGFuZVNpemUpOwogICAgfSk7CgogICAgY29uc3QgaW5wdXROYW1lID0gdGhpcy5zZXNzaW9uLmlucHV0TmFtZXNbMF07CiAgICBjb25zdCB0ZW5zb3IgPSBuZXcgb3J0LlRlbnNvcignZmxvYXQzMicsIGRhdGEsIFtpY29uTWF0cy5sZW5ndGgsIDMsIGhlaWdodCwgd2lkdGhdKTsKICAgIGNvbnN0IG91dHB1dCA9IGF3YWl0IHRoaXMuc2Vzc2lvbi5ydW4oeyBbaW5wdXROYW1lXTogdGVuc29yIH0pOwogICAgY29uc3QgbG9naXRzID0gb3V0cHV0W3RoaXMuc2Vzc2lvbi5vdXRwdXROYW1lc1swXV0uZGF0YSBhcyBGbG9hdDMyQXJyYXk7CiAgICBjb25zdCBjbGFzc0NvdW50ID0gdGhpcy5sYWJlbHMuY2xhc3Nlcy5sZW5ndGg7CgogICAgcmV0dXJuIGljb25NYXRzLm1hcCgoXywgaW5kZXgpID0+IHsKICAgICAgY29uc3Qgcm93ID0gbG9naXRzLnN1YmFycmF5KGluZGV4ICogY2xhc3NDb3VudCwgKGluZGV4ICsgMSkgKiBjbGFzc0NvdW50KTsKICAgICAgLy8gc29mdG1heCDjgafnorrnjofjgavnm7TjgZkKICAgICAgY29uc3QgbWF4ID0gTWF0aC5tYXgoLi4ucm93KTsKICAgICAgY29uc3QgZXhwcyA9IEFycmF5LmZyb20ocm93LCB2YWx1ZSA9PiBNYXRoLmV4cCh2YWx1ZSAtIG1heCkpOwogICAgICBjb25zdCBzdW0gPSBleHBzLnJlZHVjZSgoYSwgYikgPT4gYSArIGIsIDApOwogICAgICBjb25zdCBwcm9icyA9IGV4cHMubWFwKHZhbHVlID0+IHZhbHVlIC8gc3VtKTsKICAgICAgLy8g56K6546H44Gu6auY44GE6aCG44Gr5LiK5L2NM+S7tgogICAgICBjb25zdCBvcmRlciA9IHByb2JzCiAgICAgICAgLm1hcCgocHJvYiwgY2xhc3NJbmRleCkgPT4gKHsgcHJvYiwgY2xhc3NJbmRleCB9KSkKICAgICAgICAuc29ydCgoYSwgYikgPT4gYi5wcm9iIC0gYS5wcm9iKQogICAgICAgIC5zbGljZSgwLCAzKTsKICAgICAgcmV0dXJuIG9yZGVyLm1hcCgoeyBwcm9iLCBjbGFzc0luZGV4IH0pID0+IHsKICAgICAgICBjb25zdCBjbGFzc05hbWUgPSB0aGlzLmxhYmVscy5jbGFzc2VzW2NsYXNzSW5kZXhdOwogICAgICAgIGNvbnN0IGluZm8gPSB0aGlzLmxhYmVscy5sYWJlbHM/LltjbGFzc05hbWVdOwogICAgICAgIHJldHVybiB7IGlkOiBpbmZvPy5pZCwgbmFtZTogaW5mbz8ubmFtZSA/PyBjbGFzc05hbWUsIHByb2IgfTsKICAgICAgfSk7CiAgICB9KTsKICB9Cn0K
+// CNN (ONNX) でアイコンを判定するサービス。
+// モデル一式は common/public/models/ に置く:
+//   icon_model.onnx / labels.json / preprocess.json (ml 側の export_onnx.py が出力)
+// 前処理 (数字エリアのマスク・入力サイズ・正規化) は preprocess.json が正で、
+// 学習側 (Python) と数値を一致させること。
+
+import * as ort from 'onnxruntime-web';
+import type { CnnCandidate } from '@common/types';
+
+declare const cv: any;
+
+const MODEL_BASE_URL = `${import.meta.env.BASE_URL}models/`;
+
+// onnxruntime-web の wasm ファイルの参照先。
+// GitHub Pages 単体で動かすための簡易指定 (CDN)。
+// 完全オフライン化する場合は、node_modules/onnxruntime-web/dist の
+// *.wasm を public にコピーし、ここを相対パスに変えること。
+ort.env.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/';
+
+interface PreprocessConfig {
+  input_width: number;
+  number_area: {
+    mode: 'mask' | 'cut' | 'keep';
+    strip_ratio: number;
+    fill_rgb: number[];
+  };
+  frame?: {
+    mode: 'mask' | 'keep';
+    ring_ratio: number;
+    fill_rgb: number[];
+  };
+  normalize: {
+    mean: number[];
+    std: number[];
+  };
+}
+
+interface LabelsData {
+  classes: string[];
+  labels?: Record<string, { id: number; name: string }>;
+}
+
+export class IconCnnService {
+  private static _instance: IconCnnService | null = null;
+
+  private readonly session: ort.InferenceSession;
+  private readonly config: PreprocessConfig;
+  private readonly labels: LabelsData;
+
+  private constructor(session: ort.InferenceSession, config: PreprocessConfig, labels: LabelsData) {
+    this.session = session;
+    this.config = config;
+    this.labels = labels;
+  }
+
+  public static async getInstanceAsync(): Promise<IconCnnService> {
+    if (this._instance) {
+      return this._instance;
+    }
+
+    // 付属ファイル (前処理設定とラベル対応表) を先に読む
+    const [configResponse, labelsResponse] = await Promise.all([
+      fetch(`${MODEL_BASE_URL}preprocess.json`),
+      fetch(`${MODEL_BASE_URL}labels.json`),
+    ]);
+    if (!configResponse.ok || !labelsResponse.ok) {
+      throw new Error(
+        'モデル一式が配置されていません。ml 側で学習と書き出しを行い、' +
+        'icon_model.onnx / labels.json / preprocess.json を common/public/models/ に置いてください。');
+    }
+    const config = await configResponse.json() as PreprocessConfig;
+    const labels = await labelsResponse.json() as LabelsData;
+
+    // WebGPU が使えれば WebGPU、ダメなら WASM に落とす
+    let session: ort.InferenceSession;
+    try {
+      session = await ort.InferenceSession.create(
+        `${MODEL_BASE_URL}icon_model.onnx`, { executionProviders: ['webgpu'] });
+    } catch {
+      session = await ort.InferenceSession.create(
+        `${MODEL_BASE_URL}icon_model.onnx`, { executionProviders: ['wasm'] });
+    }
+
+    this._instance = new IconCnnService(session, config, labels);
+    return this._instance;
+  }
+
+  // 入力テンソルの (幅, 高さ)。cut モードだけ帯の分だけ縦が短い。
+  private inputSize(): { width: number; height: number } {
+    const width = this.config.input_width;
+    if (this.config.number_area.mode === 'cut') {
+      return { width, height: Math.round(width * (1 - this.config.number_area.strip_ratio)) };
+    }
+    return { width, height: width };
+  }
+
+  // アイコン画像 (cv.Mat) をモデル入力の数値列 (CHW, 正規化済み) に変換する。
+  // 学習側 preprocess.py の build_transform と同じ手順にすること。
+  private toInputData(iconMat: any, out: Float32Array, offset: number): void {
+    const { mode, strip_ratio, fill_rgb } = this.config.number_area;
+    const { mean, std } = this.config.normalize;
+    const { width, height } = this.inputSize();
+
+    // Mat をそのままの大きさで canvas 化する
+    const srcCanvas = document.createElement('canvas');
+    cv.imshow(srcCanvas, iconMat);
+    const srcCtx = srcCanvas.getContext('2d')!;
+
+    // 数字エリアへの対処 (mask / cut / keep)
+    let sourceHeight = srcCanvas.height;
+    if (mode === 'mask') {
+      srcCtx.fillStyle = `rgb(${fill_rgb[0]}, ${fill_rgb[1]}, ${fill_rgb[2]})`;
+      srcCtx.fillRect(0, srcCanvas.height * (1 - strip_ratio), srcCanvas.width, srcCanvas.height * strip_ratio);
+    } else if (mode === 'cut') {
+      sourceHeight = Math.round(srcCanvas.height * (1 - strip_ratio));
+    }
+
+    // 枠リングへの対処 (カーソル枠のアニメーション位相差を消す)
+    // 学習側 preprocess.py の apply_frame と同じ処理にすること。
+    if (this.config.frame?.mode === 'mask') {
+      const frame = this.config.frame;
+      const ringX = Math.round(srcCanvas.width * frame.ring_ratio);
+      const ringY = Math.round(srcCanvas.height * frame.ring_ratio);
+      srcCtx.fillStyle = `rgb(${frame.fill_rgb[0]}, ${frame.fill_rgb[1]}, ${frame.fill_rgb[2]})`;
+      srcCtx.fillRect(0, 0, srcCanvas.width, ringY);
+      srcCtx.fillRect(0, srcCanvas.height - ringY, srcCanvas.width, ringY);
+      srcCtx.fillRect(0, 0, ringX, srcCanvas.height);
+      srcCtx.fillRect(srcCanvas.width - ringX, 0, ringX, srcCanvas.height);
+    }
+
+    // 入力サイズへ縮小して画素を取り出す
+    const inputCanvas = document.createElement('canvas');
+    inputCanvas.width = width;
+    inputCanvas.height = height;
+    const inputCtx = inputCanvas.getContext('2d')!;
+    inputCtx.drawImage(srcCanvas, 0, 0, srcCanvas.width, sourceHeight, 0, 0, width, height);
+    const pixels = inputCtx.getImageData(0, 0, width, height).data;
+
+    // RGB の CHW 並びで正規化しながら詰める (alpha は使わない)
+    const planeSize = width * height;
+    for (let i = 0; i < planeSize; i++) {
+      for (let channel = 0; channel < 3; channel++) {
+        const value = pixels[i * 4 + channel] / 255;
+        out[offset + channel * planeSize + i] = (value - mean[channel]) / std[channel];
+      }
+    }
+  }
+
+  // アイコン群をバッチで判定し、アイコンごとに候補上位3件を返す。
+  // 1個ずつ推論を回さず、必ずバッチで1回にまとめること。
+  public async classifyAsync(iconMats: any[]): Promise<CnnCandidate[][]> {
+    if (iconMats.length === 0) {
+      return [];
+    }
+    const { width, height } = this.inputSize();
+    const planeSize = width * height;
+    const data = new Float32Array(iconMats.length * 3 * planeSize);
+    iconMats.forEach((iconMat, index) => {
+      this.toInputData(iconMat, data, index * 3 * planeSize);
+    });
+
+    const inputName = this.session.inputNames[0];
+    const tensor = new ort.Tensor('float32', data, [iconMats.length, 3, height, width]);
+    const output = await this.session.run({ [inputName]: tensor });
+    const logits = output[this.session.outputNames[0]].data as Float32Array;
+    const classCount = this.labels.classes.length;
+
+    return iconMats.map((_, index) => {
+      const row = logits.subarray(index * classCount, (index + 1) * classCount);
+      // softmax で確率に直す
+      const max = Math.max(...row);
+      const exps = Array.from(row, value => Math.exp(value - max));
+      const sum = exps.reduce((a, b) => a + b, 0);
+      const probs = exps.map(value => value / sum);
+      // 確率の高い順に上位3件
+      const order = probs
+        .map((prob, classIndex) => ({ prob, classIndex }))
+        .sort((a, b) => b.prob - a.prob)
+        .slice(0, 3);
+      return order.map(({ prob, classIndex }) => {
+        const className = this.labels.classes[classIndex];
+        const info = this.labels.labels?.[className];
+        return { id: info?.id, name: info?.name ?? className, prob };
+      });
+    });
+  }
+}

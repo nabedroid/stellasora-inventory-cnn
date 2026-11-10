@@ -1,1 +1,19 @@
-IyDmpoLopoEK44K544OG44Op44K944Op44Gu54mp6LOH55S76Z2i44Gu44K544Kv44Oq44O844Oz44K344On44OD44OI44GL44KJ57Sg5p2Q5pWw44KS6Kej5p6Q44GX44CB5LiA6Kan6KGo56S644GK44KI44GzQ1NW5Ye65Yqb44GZ44KL44CCCgojIOmWi+eZuueSsOWigwotIFdpbmRvd3MgMTEKLSBEb2NrZXIKCiMg44Ot44O844Kr44Or5a6f6KGMCgoxLiBEb2NrZXIg44GM44Kk44Oz44K544OI44O844Or44GV44KM44GfIFdpbmRvd3Mg44GuIOOCv+ODvOODn+ODiuODq++8iHBvd2Vyc2hlbGzvvInjgafku6XkuIvjga7jgrPjg57jg7Pjg4njgpLlrp/ooYwKCmBgYAojIOODk+ODq+ODieWPiuOBs+mWi+eZuuOCteODvOODkOODvOOBp+OCouODl+ODquOBjOi1t+WLleOBl+OBvuOBmQpkb2NrZXIgY29tcG9zZSB1cCBtYWluIC0tYnVpbGQKIyDjgb7jgZ/jga8gd2F0Y2gg44Oi44O844OJ44Gn6LW35YuV44GX44G+44GZCmRvY2tlciBjb21wb3NlIHVwIG1haW4gLS13YXRjaApgYGAKCjIuIOODluODqeOCpuOCtuOBpyBodHRwOi8vbG9jYWxob3N0OjMwMDAvIOOBq+OCouOCr+OCu+OCuQo=
+# 概要
+ステラソラの物資画面のスクリーンショットから素材数を解析し、一覧表示およびCSV出力する。
+
+# 開発環境
+- Windows 11
+- Docker
+
+# ローカル実行
+
+1. Docker がインストールされた Windows の ターミナル（powershell）で以下のコマンドを実行
+
+```
+# ビルド及び開発サーバーでアプリが起動します
+docker compose up main --build
+# または watch モードで起動します
+docker compose up main --watch
+```
+
+2. ブラウザで http://localhost:3000/ にアクセス

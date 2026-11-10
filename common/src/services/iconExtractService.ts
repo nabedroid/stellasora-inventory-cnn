@@ -1,1 +1,107 @@
-aW1wb3J0IHsgSWNvblJlZ2lvbiB9IGZyb20gJy4uL3R5cGVzJzsKaW1wb3J0IHsgTWF0TWFuYWdlciB9IGZyb20gJy4uL3V0aWxzL21hdCc7CgovKioKICogT3BlbkNWIChjdikg44Gu5Z6L5a6a576p77yI57Ch5piT54mI77yJCiAqLwpkZWNsYXJlIGNvbnN0IGN2OiBhbnk7CgovKioKICog44Ki44Kk44Kz44Oz6aCY5Z+f5qSc5Ye644Gu44Kq44OX44K344On44OzCiAqLwpleHBvcnQgaW50ZXJmYWNlIEljb25FeHRyYWN0T3B0aW9ucyB7CiAgLyoqIOS6jOWApOWMluOBrumWvuWApCAqLwogIHRocmVzaG9sZD86IG51bWJlcjsKICAvKiog44Ki44Kk44Kz44Oz5p6g44Gu5qiq57im5q+U44Gu5pyA5bCP5YCk44CBMS4wIOOBoOOBqOWujOWFqOOBquato+aWueW9oiAqLwogIG1pbkljb25Bc3BlY3RSYXRpbz86IG51bWJlcjsKICAvKiog44Ki44Kk44Kz44Oz5p6g44Gu5qiq57im5q+U44Gu5pyA5aSn5YCk44CBMS4wIOOBoOOBqOWujOWFqOOBquato+aWueW9oiAqLwogIG1heEljb25Bc3BlY3RSYXRpbz86IG51bWJlcjsKICAvKiog44Ki44Kk44Kz44Oz5p6g44Gu5qiq5bmF44Gu5pyA5bCP5YCkICovCiAgbWluSWNvbldpZHRoPzogbnVtYmVyOwogIC8qKiDjgqLjgqTjgrPjg7PmnqDjga7mqKrluYXjga7mnIDlpKflgKQgKi8KICBtYXhJY29uV2lkdGg/OiBudW1iZXI7Cn0KCi8qKgogKiDjgqLjgqTjgrPjg7PpoJjln5/jgpLmpJzlh7rjgZnjgovjgrXjg7zjg5PjgrkKICovCmV4cG9ydCBjbGFzcyBJY29uRXh0cmFjdFNlcnZpY2UgewoKICAvKioKICAgKiDnlLvlg4/jgYvjgonjgqLjgqTjgrPjg7PpoJjln5/jgpLmpJzlh7rjgZfjgIHlkITjgqLjgqTjgrPjg7Pjga7luqfmqJnjgpLnrpflh7rjgZnjgosKICAgKi8KICBzdGF0aWMgYXN5bmMgZXh0cmFjdEFzeW5jKHNyYzogYW55LCBvcHRpb25zOiBJY29uRXh0cmFjdE9wdGlvbnMgPSB7fSk6IFByb21pc2U8SWNvblJlZ2lvbltdPiB7CiAgICBjb25zdCB7CiAgICAgIHRocmVzaG9sZCA9IDIwMCwKICAgICAgbWluSWNvbkFzcGVjdFJhdGlvID0gMC45NSwKICAgICAgbWF4SWNvbkFzcGVjdFJhdGlvID0gMS4wNSwKICAgICAgbWluSWNvbldpZHRoID0gMCwKICAgICAgbWF4SWNvbldpZHRoID0gTnVtYmVyLk1BWF9TQUZFX0lOVEVHRVIsCiAgICB9ID0gb3B0aW9uczsKCiAgICBpZiAodHlwZW9mIGN2ID09PSAndW5kZWZpbmVkJyB8fCAhY3YuTWF0KSB7CiAgICAgIHRocm93IG5ldyBFcnJvcignT3BlbkNWLmpzIOOBjOODreODvOODieOBleOCjOOBpuOBhOOBvuOBm+OCk+OAgicpOwogICAgfQoKICAgIHVzaW5nIG1hdE1hbmFnZXIgPSBuZXcgTWF0TWFuYWdlcigpOwoKICAgIC8vIOi8qumDreaknOWHuuOBruOBn+OCgeOBruWJjeWHpueQhgogICAgLy8g44Kw44Os44O844K544Kx44O844OrCiAgICBjb25zdCBncmF5ID0gbWF0TWFuYWdlci5hZGQobmV3IGN2Lk1hdCgpKTsKICAgIGN2LmN2dENvbG9yKHNyYywgZ3JheSwgY3YuQ09MT1JfUkdCQTJHUkFZKTsKICAgIC8vIOS6jOWApOWMlgogICAgY29uc3QgYmluYXJ5ID0gbWF0TWFuYWdlci5hZGQobmV3IGN2Lk1hdCgpKTsKICAgIGN2LnRocmVzaG9sZChncmF5LCBiaW5hcnksIHRocmVzaG9sZCwgMjU1LCBjdi5USFJFU0hfQklOQVJZKTsKICAgIC8vIOi8qumDreaknOWHugogICAgY29uc3QgY29udG91cnMgPSBtYXRNYW5hZ2VyLmFkZChuZXcgY3YuTWF0VmVjdG9yKCkpOwogICAgY29uc3QgaGllcmFyY2h5ID0gbWF0TWFuYWdlci5hZGQobmV3IGN2Lk1hdCgpKTsKICAgIGN2LmZpbmRDb250b3VycyhiaW5hcnksIGNvbnRvdXJzLCBoaWVyYXJjaHksIGN2LlJFVFJfRVhURVJOQUwsIGN2LkNIQUlOX0FQUFJPWF9TSU1QTEUpOwoKICAgIC8vIOaknOWHuuOBl+OBn+i8qumDreOBi+OCieOCouOCpOOCs+ODs+mgmOWfn+OCkuaKveWHugogICAgY29uc3QgY2FuZGlkYXRlczogSWNvblJlZ2lvbltdID0gW107CiAgICBmb3IgKGxldCBpID0gMDsgaSA8IGNvbnRvdXJzLnNpemUoKTsgKytpKSB7CiAgICAgIGNvbnN0IGNudCA9IGNvbnRvdXJzLmdldChpKTsKICAgICAgY29uc3QgcmVjdCA9IGN2LmJvdW5kaW5nUmVjdChjbnQpOwogICAgICBjb25zdCBhc3BlY3RSYXRpbyA9IHJlY3Qud2lkdGggLyByZWN0LmhlaWdodDsKCiAgICAgIC8vIOaknOWHuuOBl+OBn+i8qumDreOBjOOCouOCpOOCs+ODs+OBruadoeS7tuOCkua6gOOBn+OBmeOBi+ODgeOCp+ODg+OCrwogICAgICAvLyDjgqLjgqTjgrPjg7Pjga7nuKbmqKrmr5QKICAgICAgaWYgKG1pbkljb25Bc3BlY3RSYXRpbyA8PSBhc3BlY3RSYXRpbyAmJiBhc3BlY3RSYXRpbyA8PSBtYXhJY29uQXNwZWN0UmF0aW8pIHsKICAgICAgICAvLyDjgqLjgqTjgrPjg7Pjga7jgrXjgqTjgroKICAgICAgICBpZiAobWluSWNvbldpZHRoIDw9IHJlY3Qud2lkdGggJiYgcmVjdC53aWR0aCA8PSBtYXhJY29uV2lkdGgpIHsKICAgICAgICAgIGNhbmRpZGF0ZXMucHVzaCh7CiAgICAgICAgICAgIHg6IHJlY3QueCwKICAgICAgICAgICAgeTogcmVjdC55LAogICAgICAgICAgICB3aWR0aDogcmVjdC53aWR0aCwKICAgICAgICAgICAgaGVpZ2h0OiByZWN0LmhlaWdodCwKICAgICAgICAgIH0pOwogICAgICAgIH0KICAgICAgfQogICAgICBjbnQuZGVsZXRlKCk7CiAgICB9CgogICAgLy8g5bqn5qiZ6aCG44Gr44K944O844OI77yI5LiK44GL44KJ5LiL44CB5bem44GL44KJ5Y+z77yJCiAgICBjYW5kaWRhdGVzLnNvcnQoKGEsIGIpID0+IHsKICAgICAgY29uc3Qgcm93VGhyZXNob2xkID0gYS5oZWlnaHQgLyAyOwogICAgICBpZiAoTWF0aC5hYnMoYS55IC0gYi55KSA8IHJvd1RocmVzaG9sZCkgewogICAgICAgIHJldHVybiBhLnggLSBiLng7CiAgICAgIH0KICAgICAgcmV0dXJuIGEueSAtIGIueTsKICAgIH0pOwoKICAgIC8vIOi/keaOpeOBmeOBjuOCi+efqeW9ou+8iOS6jOmHjeaknOWHuuOBquOBqe+8ieOCkumZpOWOuwogICAgY29uc3QgaWNvblJlZ2lvbnM6IEljb25SZWdpb25bXSA9IFtdOwogICAgZm9yIChjb25zdCBjYW5kIG9mIGNhbmRpZGF0ZXMpIHsKICAgICAgY29uc3QgbWluRGlzdGFuY2VYID0gY2FuZC53aWR0aCAqIDAuODsKICAgICAgY29uc3QgbWluRGlzdGFuY2VZID0gY2FuZC5oZWlnaHQgKiAwLjg7CiAgICAgIGNvbnN0IGlzVG9vQ2xvc2UgPSBpY29uUmVnaW9ucy5zb21lKGljb24gPT4KICAgICAgICBNYXRoLmFicyhpY29uLnggLSBjYW5kLngpIDwgbWluRGlzdGFuY2VYICYmIE1hdGguYWJzKGljb24ueSAtIGNhbmQueSkgPCBtaW5EaXN0YW5jZVkKICAgICAgKTsKICAgICAgaWYgKCFpc1Rvb0Nsb3NlKSB7CiAgICAgICAgaWNvblJlZ2lvbnMucHVzaChjYW5kKTsKICAgICAgfQogICAgfQoKICAgIHJldHVybiBpY29uUmVnaW9uczsKICB9Cn0K
+import { IconRegion } from '../types';
+import { MatManager } from '../utils/mat';
+
+/**
+ * OpenCV (cv) の型定義（簡易版）
+ */
+declare const cv: any;
+
+/**
+ * アイコン領域検出のオプション
+ */
+export interface IconExtractOptions {
+  /** 二値化の閾値 */
+  threshold?: number;
+  /** アイコン枠の横縦比の最小値、1.0 だと完全な正方形 */
+  minIconAspectRatio?: number;
+  /** アイコン枠の横縦比の最大値、1.0 だと完全な正方形 */
+  maxIconAspectRatio?: number;
+  /** アイコン枠の横幅の最小値 */
+  minIconWidth?: number;
+  /** アイコン枠の横幅の最大値 */
+  maxIconWidth?: number;
+}
+
+/**
+ * アイコン領域を検出するサービス
+ */
+export class IconExtractService {
+
+  /**
+   * 画像からアイコン領域を検出し、各アイコンの座標を算出する
+   */
+  static async extractAsync(src: any, options: IconExtractOptions = {}): Promise<IconRegion[]> {
+    const {
+      threshold = 200,
+      minIconAspectRatio = 0.95,
+      maxIconAspectRatio = 1.05,
+      minIconWidth = 0,
+      maxIconWidth = Number.MAX_SAFE_INTEGER,
+    } = options;
+
+    if (typeof cv === 'undefined' || !cv.Mat) {
+      throw new Error('OpenCV.js がロードされていません。');
+    }
+
+    using matManager = new MatManager();
+
+    // 輪郭検出のための前処理
+    // グレースケール
+    const gray = matManager.add(new cv.Mat());
+    cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY);
+    // 二値化
+    const binary = matManager.add(new cv.Mat());
+    cv.threshold(gray, binary, threshold, 255, cv.THRESH_BINARY);
+    // 輪郭検出
+    const contours = matManager.add(new cv.MatVector());
+    const hierarchy = matManager.add(new cv.Mat());
+    cv.findContours(binary, contours, hierarchy, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
+
+    // 検出した輪郭からアイコン領域を抽出
+    const candidates: IconRegion[] = [];
+    for (let i = 0; i < contours.size(); ++i) {
+      const cnt = contours.get(i);
+      const rect = cv.boundingRect(cnt);
+      const aspectRatio = rect.width / rect.height;
+
+      // 検出した輪郭がアイコンの条件を満たすかチェック
+      // アイコンの縦横比
+      if (minIconAspectRatio <= aspectRatio && aspectRatio <= maxIconAspectRatio) {
+        // アイコンのサイズ
+        if (minIconWidth <= rect.width && rect.width <= maxIconWidth) {
+          candidates.push({
+            x: rect.x,
+            y: rect.y,
+            width: rect.width,
+            height: rect.height,
+          });
+        }
+      }
+      cnt.delete();
+    }
+
+    // 座標順にソート（上から下、左から右）
+    candidates.sort((a, b) => {
+      const rowThreshold = a.height / 2;
+      if (Math.abs(a.y - b.y) < rowThreshold) {
+        return a.x - b.x;
+      }
+      return a.y - b.y;
+    });
+
+    // 近接すぎる矩形（二重検出など）を除去
+    const iconRegions: IconRegion[] = [];
+    for (const cand of candidates) {
+      const minDistanceX = cand.width * 0.8;
+      const minDistanceY = cand.height * 0.8;
+      const isTooClose = iconRegions.some(icon =>
+        Math.abs(icon.x - cand.x) < minDistanceX && Math.abs(icon.y - cand.y) < minDistanceY
+      );
+      if (!isTooClose) {
+        iconRegions.push(cand);
+      }
+    }
+
+    return iconRegions;
+  }
+}

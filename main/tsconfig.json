@@ -1,1 +1,38 @@
-ewogICJjb21waWxlck9wdGlvbnMiOiB7CiAgICAidGFyZ2V0IjogImVzMjAyMiIsCiAgICAidXNlRGVmaW5lRm9yQ2xhc3NGaWVsZHMiOiB0cnVlLAogICAgImxpYiI6IFsKICAgICAgImVzMjAyMiIsCiAgICAgICJkb20iLAogICAgICAiZG9tLml0ZXJhYmxlIiwKICAgICAgImVzbmV4dC5kaXNwb3NhYmxlIgogICAgXSwKICAgICJtb2R1bGUiOiAiZXNuZXh0IiwKICAgICJza2lwTGliQ2hlY2siOiB0cnVlLAogICAgIm1vZHVsZVJlc29sdXRpb24iOiAiYnVuZGxlciIsCiAgICAiYWxsb3dJbXBvcnRpbmdUc0V4dGVuc2lvbnMiOiB0cnVlLAogICAgImlzb2xhdGVkTW9kdWxlcyI6IHRydWUsCiAgICAibW9kdWxlRGV0ZWN0aW9uIjogImZvcmNlIiwKICAgICJub0VtaXQiOiB0cnVlLAogICAgImpzeCI6ICJyZWFjdC1qc3giLAogICAgInN0cmljdCI6IHRydWUsCiAgICAibm9VbnVzZWRMb2NhbHMiOiB0cnVlLAogICAgIm5vVW51c2VkUGFyYW1ldGVycyI6IHRydWUsCiAgICAibm9GYWxsdGhyb3VnaENhc2VzSW5Td2l0Y2giOiB0cnVlLAogICAgIm5vVW5jaGVja2VkU2lkZUVmZmVjdEltcG9ydHMiOiB0cnVlLAogICAgInR5cGVzIjogWwogICAgICAidml0ZS9jbGllbnQiCiAgICBdLAogICAgImJhc2VVcmwiOiAiLiIsCiAgICAicGF0aHMiOiB7CiAgICAgICJAY29tbW9uLyoiOiBbCiAgICAgICAgIi4uL2NvbW1vbi9zcmMvKiIKICAgICAgXQogICAgfQogIH0sCiAgImluY2x1ZGUiOiBbCiAgICAic3JjIiwKICAgICIuLi9jb21tb24vc3JjIgogIF0KfQ==
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "useDefineForClassFields": true,
+    "lib": [
+      "es2022",
+      "dom",
+      "dom.iterable",
+      "esnext.disposable"
+    ],
+    "module": "esnext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "types": [
+      "vite/client"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": [
+        "../common/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "../common/src"
+  ]
+}

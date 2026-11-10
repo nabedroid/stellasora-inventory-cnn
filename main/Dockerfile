@@ -1,1 +1,15 @@
-RlJPTSBub2RlOjIwLWFscGluZQoKRVhQT1NFIDMwMDAKCldPUktESVIgL2FwcC8KCkNPUFkgLi9tYWluL3BhY2thZ2UuanNvbiAuClJVTiBucG0gaW5zdGFsbAoKQ09QWSAuL21haW4gL2FwcC9tYWluCkNPUFkgLi9jb21tb24gL2FwcC9jb21tb24KCldPUktESVIgL2FwcC9tYWluCgpDTUQgWyJucG0iLCAicnVuIiwgImRldiIsICItLSIsICItLWhvc3QiLCAiMC4wLjAuMCJdCg==
+FROM node:20-alpine
+
+EXPOSE 3000
+
+WORKDIR /app/
+
+COPY ./main/package.json .
+RUN npm install
+
+COPY ./main /app/main
+COPY ./common /app/common
+
+WORKDIR /app/main
+
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]

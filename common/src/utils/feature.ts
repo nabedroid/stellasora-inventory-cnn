@@ -1,1 +1,81 @@
-ZGVjbGFyZSBjb25zdCBjdjogYW55OwoKbGV0IG9yYjogYW55ID0gbnVsbDsKbGV0IG1hdGNoZXI6IGFueSA9IG51bGw7Cgpjb25zdCBfaW5pdCA9ICgpID0+IHsKICBpZiAoIW9yYikgewogICAgLy8gbmZlYXR1cmVzOiAxMDAKICAgIG9yYiA9IG5ldyBjdi5PUkIoMTAwKTsKICB9CiAgaWYgKCFtYXRjaGVyKSB7CiAgICBtYXRjaGVyID0gbmV3IGN2LkJGTWF0Y2hlcihjdi5OT1JNX0hBTU1JTkcsIHRydWUpOwogIH0KfQoKZXhwb3J0IGNsYXNzIENvbXB1dGVSZXN1bHQgewoKICBwcml2YXRlIF9pc0Rpc3Bvc2VkOiBib29sZWFuID0gZmFsc2U7CgogIGNvbnN0cnVjdG9yKAogICAgcHVibGljIHJlYWRvbmx5IGRlc2NyaXB0b3JzOiBhbnksCiAgICBwdWJsaWMgcmVhZG9ubHkga2V5cG9pbnRzOiBhbnksCiAgKSB7IH0KCiAgcHVibGljIGRlbGV0ZSgpOiB2b2lkIHsKICAgIGlmICh0aGlzLl9pc0Rpc3Bvc2VkKSByZXR1cm47CiAgICB0aGlzLmRlc2NyaXB0b3JzPy5kZWxldGUoKTsKICAgIHRoaXMua2V5cG9pbnRzPy5kZWxldGUoKTsKICAgIHRoaXMuX2lzRGlzcG9zZWQgPSB0cnVlOwogIH0KCiAgW1N5bWJvbC5kaXNwb3NlXSgpOiB2b2lkIHsKICAgIHRoaXMuZGVsZXRlKCk7CiAgfQp9CgoKLyoqCiAqIOeUu+WDj+OBi+OCiSBPUkIg54m55b606YeP44KS6KiI566X44GZ44KLCiAqLwpleHBvcnQgY29uc3QgY29tcHV0ZSA9IChtYXQ6IGFueSwgbWFzazogYW55ID0gbnVsbCk6IENvbXB1dGVSZXN1bHQgfCBudWxsID0+IHsKICBfaW5pdCgpOwogIGNvbnN0IGtleXBvaW50cyA9IG5ldyBjdi5LZXlQb2ludFZlY3RvcigpOwogIGNvbnN0IGRlc2NyaXB0b3JzID0gbmV3IGN2Lk1hdCgpOwoKICBvcmIuZGV0ZWN0QW5kQ29tcHV0ZShtYXQsIG1hc2ssIGtleXBvaW50cywgZGVzY3JpcHRvcnMpOwogIGlmIChkZXNjcmlwdG9ycy5lbXB0eSgpKSByZXR1cm4gbnVsbDsKICAvLyBNYXQg44Gu44OH44O844K/44KSIEJhc2U2NCDmloflrZfliJfjgavlpInmj5sKICByZXR1cm4gbmV3IENvbXB1dGVSZXN1bHQoZGVzY3JpcHRvcnMsIGtleXBvaW50cyk7Cn0KCi8qKgogKiAy44Gk44Gu54m55b606YeP44KS5q+U6LyD44GZ44KLCiAqIEBwYXJhbSBkZXNjcmlwdG9yczEg54m55b606YePMQogKiBAcGFyYW0gZGVzY3JpcHRvcnMyIOeJueW+tOmHjzIKICogQHBhcmFtIG1pbkRpc3RhbmNlIOacgOWwj+i3nembogogKiBAcmV0dXJucyDpoZ7kvLzluqYKICovCmV4cG9ydCBjb25zdCBjb21wYXJlID0gKGRlc2NyaXB0b3JzMTogYW55LCBkZXNjcmlwdG9yczI6IGFueSwgbWluRGlzdGFuY2U6IG51bWJlciA9IDMwKTogbnVtYmVyID0+IHsKICBfaW5pdCgpOwogIGlmIChkZXNjcmlwdG9yczEuZW1wdHkoKSB8fCBkZXNjcmlwdG9yczIuZW1wdHkoKSkgcmV0dXJuIDA7CgogIGNvbnN0IG1hdGNoZXMgPSBuZXcgY3YuRE1hdGNoVmVjdG9yKCk7CiAgdHJ5IHsKICAgIG1hdGNoZXIubWF0Y2goZGVzY3JpcHRvcnMxLCBkZXNjcmlwdG9yczIsIG1hdGNoZXMpOwoKICAgIGxldCBnb29kTWF0Y2hlcyA9IDA7CgogICAgZm9yIChsZXQgaSA9IDA7IGkgPCBtYXRjaGVzLnNpemUoKTsgaSsrKSB7CiAgICAgIC8vIGRpc3RhbmNlIOOBr+ODj+ODn+ODs+OCsOi3nembouOAgeWwj+OBleOBhOOBu+OBqemhnuS8vOW6puOBjOmrmOOBhAogICAgICAvLyDnibnlvrTph4/plpPjga7ot53pm6LjgYzplr7lgKTku6XkuIvjgarjgonkuIDoh7Tjgajjgb/jgarjgZkKICAgICAgaWYgKG1hdGNoZXMuZ2V0KGkpLmRpc3RhbmNlIDwgbWluRGlzdGFuY2UpIHsKICAgICAgICBnb29kTWF0Y2hlcysrOwogICAgICB9CiAgICB9CgogICAgcmV0dXJuIGdvb2RNYXRjaGVzOwogIH0gZmluYWxseSB7CiAgICBtYXRjaGVzLmRlbGV0ZSgpOwogIH0KfQ==
+declare const cv: any;
+
+let orb: any = null;
+let matcher: any = null;
+
+const _init = () => {
+  if (!orb) {
+    // nfeatures: 100
+    orb = new cv.ORB(100);
+  }
+  if (!matcher) {
+    matcher = new cv.BFMatcher(cv.NORM_HAMMING, true);
+  }
+}
+
+export class ComputeResult {
+
+  private _isDisposed: boolean = false;
+
+  constructor(
+    public readonly descriptors: any,
+    public readonly keypoints: any,
+  ) { }
+
+  public delete(): void {
+    if (this._isDisposed) return;
+    this.descriptors?.delete();
+    this.keypoints?.delete();
+    this._isDisposed = true;
+  }
+
+  [Symbol.dispose](): void {
+    this.delete();
+  }
+}
+
+
+/**
+ * 画像から ORB 特徴量を計算する
+ */
+export const compute = (mat: any, mask: any = null): ComputeResult | null => {
+  _init();
+  const keypoints = new cv.KeyPointVector();
+  const descriptors = new cv.Mat();
+
+  orb.detectAndCompute(mat, mask, keypoints, descriptors);
+  if (descriptors.empty()) return null;
+  // Mat のデータを Base64 文字列に変換
+  return new ComputeResult(descriptors, keypoints);
+}
+
+/**
+ * 2つの特徴量を比較する
+ * @param descriptors1 特徴量1
+ * @param descriptors2 特徴量2
+ * @param minDistance 最小距離
+ * @returns 類似度
+ */
+export const compare = (descriptors1: any, descriptors2: any, minDistance: number = 30): number => {
+  _init();
+  if (descriptors1.empty() || descriptors2.empty()) return 0;
+
+  const matches = new cv.DMatchVector();
+  try {
+    matcher.match(descriptors1, descriptors2, matches);
+
+    let goodMatches = 0;
+
+    for (let i = 0; i < matches.size(); i++) {
+      // distance はハミング距離、小さいほど類似度が高い
+      // 特徴量間の距離が閾値以下なら一致とみなす
+      if (matches.get(i).distance < minDistance) {
+        goodMatches++;
+      }
+    }
+
+    return goodMatches;
+  } finally {
+    matches.delete();
+  }
+}

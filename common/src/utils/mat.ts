@@ -1,1 +1,144 @@
-ZGVjbGFyZSBjb25zdCBjdjogYW55OwoKZXhwb3J0IGNsYXNzIE1hdE1hbmFnZXIgewogIHByaXZhdGUgbWF0czogYW55W10gPSBbXTsKCiAgcHVibGljIGFkZChtYXQ6IGFueSk6IGFueSB7CiAgICB0aGlzLm1hdHMucHVzaChtYXQpOwogICAgcmV0dXJuIG1hdDsKICB9CgogIHB1YmxpYyBkZWxldGUoKTogdm9pZCB7CiAgICB0aGlzLm1hdHMuZm9yRWFjaChtYXQgPT4gbWF0LmRlbGV0ZSgpKTsKICAgIHRoaXMubWF0cyA9IFtdOwogIH0KCiAgW1N5bWJvbC5kaXNwb3NlXSgpIHsKICAgIHRoaXMuZGVsZXRlKCk7CiAgfQp9CgovKioKICog55S75YOP44KS5oyH5a6a44GV44KM44Gf55+p5b2i44Gn5YiH44KK5Ye644GZCiAqLwpleHBvcnQgY29uc3QgY3JvcCA9IChzcmM6IGFueSwgeDogbnVtYmVyLCB5OiBudW1iZXIsIHdpZHRoOiBudW1iZXIsIGhlaWdodDogbnVtYmVyKTogYW55ID0+IHsKCiAgY29uc3Qgcm91bmRYID0gTWF0aC5yb3VuZCh4KQogIGNvbnN0IHJvdW5kWSA9IE1hdGgucm91bmQoeSkKICBjb25zdCByb3VuZFcgPSBNYXRoLnJvdW5kKHdpZHRoKQogIGNvbnN0IHJvdW5kSCA9IE1hdGgucm91bmQoaGVpZ2h0KQoKICBpZiAocm91bmRYIDwgMCB8fCByb3VuZFkgPCAwIHx8IHJvdW5kVyA8PSAwIHx8IHJvdW5kSCA8PSAwIHx8CiAgICByb3VuZFggKyByb3VuZFcgPiBzcmMuY29scyB8fCByb3VuZFkgKyByb3VuZEggPiBzcmMucm93cykgewogICAgY29uc29sZS5lcnJvcihgSW52YWxpZCBjcm9wIHJlZ2lvbjogc3JjIHNpemUoJHtzcmMuY29sc30sICR7c3JjLnJvd3N9KSBjcm9wIHJlY3QoJHtyb3VuZFh9LCAke3JvdW5kWX0sICR7cm91bmRXfSwgJHtyb3VuZEh9KWApCiAgICB0aHJvdyBuZXcgRXJyb3IoJ0ludmFsaWQgY3JvcCByZWdpb24nKQogIH0KCiAgY29uc3QgcmVjdCA9IG5ldyBjdi5SZWN0KHJvdW5kWCwgcm91bmRZLCByb3VuZFcsIHJvdW5kSCk7CiAgcmV0dXJuIHNyYy5yb2kocmVjdCk7Cn0KCi8qKgogKiDjg57jgrnjgq/jgpLkvZzmiJDjgZnjgosKICovCmV4cG9ydCBjb25zdCBtYXNrID0gKHNyYzogYW55LCBsb3dlclJnYmE6IG51bWJlcltdLCB1cHBlclJnYmE6IG51bWJlcltdKTogYW55ID0+IHsKICBjb25zdCBsb3dlck1hdCA9IG5ldyBjdi5tYXRGcm9tQXJyYXkoMSwgbG93ZXJSZ2JhLmxlbmd0aCwgY3YuQ1ZfOFVDMSwgbG93ZXJSZ2JhKTsKICBjb25zdCB1cHBlck1hdCA9IG5ldyBjdi5tYXRGcm9tQXJyYXkoMSwgdXBwZXJSZ2JhLmxlbmd0aCwgY3YuQ1ZfOFVDMSwgdXBwZXJSZ2JhKTsKICBjb25zdCBtYXNrID0gbmV3IGN2Lk1hdCgpOwogIGN2LmluUmFuZ2Uoc3JjLCBsb3dlck1hdCwgdXBwZXJNYXQsIG1hc2spOwogIGxvd2VyTWF0LmRlbGV0ZSgpOwogIHVwcGVyTWF0LmRlbGV0ZSgpOwogIHJldHVybiBtYXNrOwp9CgovKioKICog6Imy44KS5Y+N6Lui44GZ44KLCiAqLwpleHBvcnQgY29uc3QgaW52ZXJ0ID0gKHNyYzogYW55KTogYW55ID0+IHsKICBjb25zdCBkc3QgPSBuZXcgY3YuTWF0KCk7CiAgY3YuYml0d2lzZV9ub3Qoc3JjLCBkc3QpOwogIHJldHVybiBkc3Q7Cn0KCi8qKgogKiBNYXQg44KSIEltYWdlRGF0YSDjgavlpInmj5vjgZnjgosKICovCmV4cG9ydCBjb25zdCB0b0ltYWdlRGF0YSA9IChtYXQ6IGFueSk6IEltYWdlRGF0YSA9PiB7CiAgY29uc3QgY2FudmFzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnY2FudmFzJyk7CiAgY2FudmFzLndpZHRoID0gbWF0LmNvbHM7CiAgY2FudmFzLmhlaWdodCA9IG1hdC5yb3dzOwogIGN2Lmltc2hvdyhjYW52YXMsIG1hdCk7CiAgcmV0dXJuIGNhbnZhcy5nZXRDb250ZXh0KCcyZCcpIS5nZXRJbWFnZURhdGEoMCwgMCwgY2FudmFzLndpZHRoLCBjYW52YXMuaGVpZ2h0KTsKfQoKLyoqCiAqIE1hdCDjgpIgRGF0YVVybCDjgavlpInmj5vjgZnjgosKICovCmV4cG9ydCBjb25zdCB0b0RhdGFVcmwgPSAobWF0OiBhbnkpOiBzdHJpbmcgPT4gewogIGNvbnN0IGNhbnZhcyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2NhbnZhcycpOwogIGN2Lmltc2hvdyhjYW52YXMsIG1hdCk7CiAgcmV0dXJuIGNhbnZhcy50b0RhdGFVUkwoJ2ltYWdlL3BuZycpOwp9CgovKioKICogTWF0IOOCkiBCYXNlNjQg44Gr5aSJ5o+b44GZ44KLCiAqLwpleHBvcnQgY29uc3QgdG9CYXNlNjQgPSAobWF0OiBhbnkpOiBzdHJpbmcgPT4gewogIGNvbnN0IHJvd3MgPSBtYXQucm93czsKICBjb25zdCBjb2xzID0gbWF0LmNvbHM7CiAgY29uc3QgdHlwZSA9IG1hdC50eXBlKCk7CiAgY29uc3QgZGF0YSA9IG1hdC5kYXRhOwogIGNvbnN0IHVpbnQ4QXJyYXkgPSBuZXcgVWludDhBcnJheShkYXRhKTsKCiAgLy8g5qeL6YCg5YyW44OH44O844K/44Go44GX44Gm5L+d5a2YIChyb3dzLCBjb2xzLCB0eXBlLCBkYXRhKQogIGNvbnN0IG1ldGEgPSB7IHJvd3MsIGNvbHMsIHR5cGUgfTsKICBjb25zdCBiaW5hcnkgPSBTdHJpbmcuZnJvbUNoYXJDb2RlKC4uLnVpbnQ4QXJyYXkpOwogIGNvbnN0IGJhc2U2NERhdGEgPSBidG9hKGJpbmFyeSk7CgogIHJldHVybiBKU09OLnN0cmluZ2lmeSh7IC4uLm1ldGEsIGRhdGE6IGJhc2U2NERhdGEgfSk7Cn0KCi8qKgogKiBCYXNlNjQg5paH5a2X5YiX44GL44KJIE1hdCDjgavlpInmj5vjgZnjgosKICogQHBhcmFtIGJhc2U2NCBCYXNlNjQg5paH5a2X5YiXCiAqIEByZXR1cm5zIE1hdCDjgqrjg5bjgrjjgqfjgq/jg4gKICovCmV4cG9ydCBjb25zdCBmcm9tQmFzZTY0ID0gKGJhc2U2NDogc3RyaW5nKTogYW55ID0+IHsKICBpZiAoIWJhc2U2NCkgcmV0dXJuIG5ldyBjdi5NYXQoKTsKICB0cnkgewogICAgY29uc3QgeyByb3dzLCBjb2xzLCB0eXBlLCBkYXRhIH0gPSBKU09OLnBhcnNlKGJhc2U2NCk7CiAgICBjb25zdCBiaW5hcnkgPSBhdG9iKGRhdGEpOwogICAgY29uc3QgYnl0ZXMgPSBuZXcgVWludDhBcnJheShiaW5hcnkubGVuZ3RoKTsKICAgIGZvciAobGV0IGkgPSAwOyBpIDwgYmluYXJ5Lmxlbmd0aDsgaSsrKSB7CiAgICAgIGJ5dGVzW2ldID0gYmluYXJ5LmNoYXJDb2RlQXQoaSk7CiAgICB9CiAgICByZXR1cm4gY3YubWF0RnJvbUFycmF5KHJvd3MsIGNvbHMsIHR5cGUsIEFycmF5LmZyb20oYnl0ZXMpKTsKICB9IGNhdGNoIChlKSB7CiAgICBjb25zb2xlLmVycm9yKCdGYWlsZWQgdG8gcmVzdG9yZSBNYXQgZnJvbSBiYXNlNjQnLCBlKTsKICAgIHJldHVybiBuZXcgY3YuTWF0KCk7CiAgfQp9CgovKioKICogRmlsZSDjgYvjgokgTWF0IOOCkuS9nOaIkOOBmeOCiwogKiBAcGFyYW0gZmlsZSBGaWxlIOOCquODluOCuOOCp+OCr+ODiAogKiBAcmV0dXJucyBNYXQg44Kq44OW44K444Kn44Kv44OICiAqLwpleHBvcnQgY29uc3QgZnJvbUZpbGUgPSAoZmlsZTogRmlsZSk6IFByb21pc2U8YW55PiA9PiB7CiAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHsKICAgIGNvbnN0IGltYWdlID0gbmV3IEltYWdlKCk7CiAgICBjb25zdCB1cmwgPSBVUkwuY3JlYXRlT2JqZWN0VVJMKGZpbGUpOwogICAgaW1hZ2Uub25sb2FkID0gKCkgPT4gewogICAgICB0cnkgewogICAgICAgIGNvbnN0IG1hdCA9IGN2LmltcmVhZChpbWFnZSk7CiAgICAgICAgcmVzb2x2ZShtYXQpOwogICAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgcmVqZWN0KGUpOwogICAgICB9IGZpbmFsbHkgewogICAgICAgIFVSTC5yZXZva2VPYmplY3RVUkwodXJsKTsKICAgICAgfQogICAgfTsKICAgIGltYWdlLm9uZXJyb3IgPSByZWplY3Q7CiAgICBpbWFnZS5zcmMgPSB1cmw7CiAgfSk7Cn0=
+declare const cv: any;
+
+export class MatManager {
+  private mats: any[] = [];
+
+  public add(mat: any): any {
+    this.mats.push(mat);
+    return mat;
+  }
+
+  public delete(): void {
+    this.mats.forEach(mat => mat.delete());
+    this.mats = [];
+  }
+
+  [Symbol.dispose]() {
+    this.delete();
+  }
+}
+
+/**
+ * 画像を指定された矩形で切り出す
+ */
+export const crop = (src: any, x: number, y: number, width: number, height: number): any => {
+
+  const roundX = Math.round(x)
+  const roundY = Math.round(y)
+  const roundW = Math.round(width)
+  const roundH = Math.round(height)
+
+  if (roundX < 0 || roundY < 0 || roundW <= 0 || roundH <= 0 ||
+    roundX + roundW > src.cols || roundY + roundH > src.rows) {
+    console.error(`Invalid crop region: src size(${src.cols}, ${src.rows}) crop rect(${roundX}, ${roundY}, ${roundW}, ${roundH})`)
+    throw new Error('Invalid crop region')
+  }
+
+  const rect = new cv.Rect(roundX, roundY, roundW, roundH);
+  return src.roi(rect);
+}
+
+/**
+ * マスクを作成する
+ */
+export const mask = (src: any, lowerRgba: number[], upperRgba: number[]): any => {
+  const lowerMat = new cv.matFromArray(1, lowerRgba.length, cv.CV_8UC1, lowerRgba);
+  const upperMat = new cv.matFromArray(1, upperRgba.length, cv.CV_8UC1, upperRgba);
+  const mask = new cv.Mat();
+  cv.inRange(src, lowerMat, upperMat, mask);
+  lowerMat.delete();
+  upperMat.delete();
+  return mask;
+}
+
+/**
+ * 色を反転する
+ */
+export const invert = (src: any): any => {
+  const dst = new cv.Mat();
+  cv.bitwise_not(src, dst);
+  return dst;
+}
+
+/**
+ * Mat を ImageData に変換する
+ */
+export const toImageData = (mat: any): ImageData => {
+  const canvas = document.createElement('canvas');
+  canvas.width = mat.cols;
+  canvas.height = mat.rows;
+  cv.imshow(canvas, mat);
+  return canvas.getContext('2d')!.getImageData(0, 0, canvas.width, canvas.height);
+}
+
+/**
+ * Mat を DataUrl に変換する
+ */
+export const toDataUrl = (mat: any): string => {
+  const canvas = document.createElement('canvas');
+  cv.imshow(canvas, mat);
+  return canvas.toDataURL('image/png');
+}
+
+/**
+ * Mat を Base64 に変換する
+ */
+export const toBase64 = (mat: any): string => {
+  const rows = mat.rows;
+  const cols = mat.cols;
+  const type = mat.type();
+  const data = mat.data;
+  const uint8Array = new Uint8Array(data);
+
+  // 構造化データとして保存 (rows, cols, type, data)
+  const meta = { rows, cols, type };
+  const binary = String.fromCharCode(...uint8Array);
+  const base64Data = btoa(binary);
+
+  return JSON.stringify({ ...meta, data: base64Data });
+}
+
+/**
+ * Base64 文字列から Mat に変換する
+ * @param base64 Base64 文字列
+ * @returns Mat オブジェクト
+ */
+export const fromBase64 = (base64: string): any => {
+  if (!base64) return new cv.Mat();
+  try {
+    const { rows, cols, type, data } = JSON.parse(base64);
+    const binary = atob(data);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+      bytes[i] = binary.charCodeAt(i);
+    }
+    return cv.matFromArray(rows, cols, type, Array.from(bytes));
+  } catch (e) {
+    console.error('Failed to restore Mat from base64', e);
+    return new cv.Mat();
+  }
+}
+
+/**
+ * File から Mat を作成する
+ * @param file File オブジェクト
+ * @returns Mat オブジェクト
+ */
+export const fromFile = (file: File): Promise<any> => {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    const url = URL.createObjectURL(file);
+    image.onload = () => {
+      try {
+        const mat = cv.imread(image);
+        resolve(mat);
+      } catch (e) {
+        reject(e);
+      } finally {
+        URL.revokeObjectURL(url);
+      }
+    };
+    image.onerror = reject;
+    image.src = url;
+  });
+}

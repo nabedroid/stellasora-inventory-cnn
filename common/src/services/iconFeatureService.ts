@@ -1,1 +1,157 @@
-CmltcG9ydCB7CiAgY29tcHV0ZSBhcyBjb21wdXRlRmVhdHVyZXMsCiAgY29tcGFyZSBhcyBjb21wYXJlRGVzY3JpcHRvcnMsCn0gZnJvbSAiLi4vdXRpbHMvZmVhdHVyZSI7CmltcG9ydCB7IE1hdE1hbmFnZXIsIHRvQmFzZTY0LCBjcm9wIH0gZnJvbSAiLi4vdXRpbHMvbWF0IjsKCmRlY2xhcmUgY29uc3QgY3Y6IGFueTsKCi8qKgogKiDjgqLjgqTjgrPjg7Pjga7nibnlvrTph4/jgpLoqIjnrpfjgZfjgIHmr5TovIPjgZnjgovjgrXjg7zjg5PjgrkKICogRmVhdHVyZU1hdGNoZXIg44KS44Op44OD44OX44GX44Gm44CB44Ki44Kk44Kz44Oz44Gr54m55YyW44GX44Gf5qmf6IO944KS5o+Q5L6b44GZ44KLCiAqLwpleHBvcnQgY2xhc3MgSWNvbkZlYXR1cmVTZXJ2aWNlIHsKCiAgcHJpdmF0ZSBzdGF0aWMgX2luc3RhbmNlOiBJY29uRmVhdHVyZVNlcnZpY2UgfCBudWxsID0gbnVsbDsKCiAgcHJpdmF0ZSBjb25zdHJ1Y3RvcigpIHsgfQoKICBwdWJsaWMgc3RhdGljIGdldEluc3RhbmNlKCk6IEljb25GZWF0dXJlU2VydmljZSB7CiAgICBpZiAoIXRoaXMuX2luc3RhbmNlKSB7CiAgICAgIHRoaXMuX2luc3RhbmNlID0gbmV3IEljb25GZWF0dXJlU2VydmljZSgpOwogICAgfQogICAgcmV0dXJuIHRoaXMuX2luc3RhbmNlOwogIH0KCiAgcHJpdmF0ZSBzdGF0aWMgcHJlcHJvY2Vzc0NvbXB1dGUobWF0OiBhbnkpOiBhbnkgewogICAgdXNpbmcgbWF0TWFuYWdlciA9IG5ldyBNYXRNYW5hZ2VyKCk7CgogICAgLy8g55+t44GE6L6644Gr5ZCI44KP44Gb44Gm44CB5Lit5aSu44KS5q2j5pa55b2i44Gr5YiH44KK5Y+W44KLCiAgICBjb25zdCBzaXplID0gTWF0aC5taW4obWF0LmNvbHMsIG1hdC5yb3dzKTsKICAgIGNvbnN0IHggPSBNYXRoLmZsb29yKChtYXQuY29scyAtIHNpemUpIC8gMik7CiAgICBjb25zdCB5ID0gTWF0aC5mbG9vcigobWF0LnJvd3MgLSBzaXplKSAvIDIpOwogICAgY29uc3QgY3JvcHBlZE1hdCA9IG1hdE1hbmFnZXIuYWRkKGNyb3AobWF0LCB4LCB5LCBzaXplLCBzaXplKSk7CiAgICAvLyAxMDB4MTAw44Gr44Oq44K144Kk44K6CiAgICBjb25zdCByZXNpemVkTWF0ID0gbmV3IGN2Lk1hdCgpOwogICAgY3YucmVzaXplKGNyb3BwZWRNYXQsIHJlc2l6ZWRNYXQsIG5ldyBjdi5TaXplKDEwMCwgMTAwKSwgMCwgMCwgc2l6ZSA+IDEwMCA/IGN2LklOVEVSX0FSRUEgOiBjdi5JTlRFUl9MSU5FQVIpOwoKICAgIHJldHVybiByZXNpemVkTWF0OwogIH0KCiAgLyoqCiAgICog44Ki44Kk44Kz44Oz44Gu54m55b606YeP44KS6KiI566X44GZ44KLCiAgICovCiAgcHVibGljIGNvbXB1dGVGZWF0dXJlcyhtYXQ6IGFueSk6IHN0cmluZyB8IG51bGwgewogICAgLy8g44Ki44Kk44Kz44Oz44Gu5Lit5b+D6YOo5YiG44Gu44G/44KS54m55b606YeP6KiI566X44Gr5L2/44GGCiAgICB1c2luZyBtYXRNYW5hZ2VyID0gbmV3IE1hdE1hbmFnZXIoKTsKICAgIGNvbnN0IGdyYXlNYXQgPSBtYXRNYW5hZ2VyLmFkZChuZXcgY3YuTWF0KCkpOwogICAgaWYgKG1hdC5jaGFubmVscygpID09PSA0KSB7CiAgICAgIGN2LmN2dENvbG9yKG1hdCwgZ3JheU1hdCwgY3YuQ09MT1JfUkdCQTJHUkFZKTsKICAgIH0gZWxzZSBpZiAobWF0LmNoYW5uZWxzKCkgPT09IDMpIHsKICAgICAgY3YuY3Z0Q29sb3IobWF0LCBncmF5TWF0LCBjdi5DT0xPUl9SR0IyR1JBWSk7CiAgICB9IGVsc2UgewogICAgICBtYXQuY29weVRvKGdyYXlNYXQpOwogICAgfQogICAgLy8g5YmN5Yem55CGCiAgICBjb25zdCBwcmVwcm9jZXNzZWRNYXQgPSBtYXRNYW5hZ2VyLmFkZChJY29uRmVhdHVyZVNlcnZpY2UucHJlcHJvY2Vzc0NvbXB1dGUoZ3JheU1hdCkpOwogICAgLy8g44Oe44K544Kv5L2c5oiQCiAgICBjb25zdCBtYXNrID0gbWF0TWFuYWdlci5hZGQobmV3IGN2Lk1hdC56ZXJvcygxMDAsIDEwMCwgY3YuQ1ZfOFVDMSkpOwogICAgLy8g5p6g57ea44CB5omA5oyB5pWw6YOo5YiG5Lul5aSW44KS5pyJ5Yq544Gr44GZ44KLCiAgICBtYXNrLnJvaShuZXcgY3YuUmVjdCgxMCwgMTAsIDgwLCA3MCkpLnNldFRvKG5ldyBjdi5TY2FsYXIoMjU1KSk7CgogICAgdHJ5IHsKICAgICAgdXNpbmcgcmVzdWx0ID0gY29tcHV0ZUZlYXR1cmVzKHByZXByb2Nlc3NlZE1hdCwgbWFzayk7CiAgICAgIHJldHVybiByZXN1bHQgPyB0b0Jhc2U2NChyZXN1bHQuZGVzY3JpcHRvcnMpIDogbnVsbDsKICAgIH0gY2F0Y2ggKGUpIHsKICAgICAgY29uc29sZS5lcnJvcihlKTsKICAgICAgcmV0dXJuIG51bGw7CiAgICB9CiAgfQoKICAvKioKICAgKiDjgqLjgqTjgrPjg7PjgYvjgonoibLmg4XloLHjgpLoqIjnrpfjgZnjgoso5Lit5aSu6YOo5YiG44GuM3gzIEhTVumFjeWIlykKICAgKi8KICBwdWJsaWMgY29tcHV0ZUNvbG9ySGFzaChtYXQ6IGFueSk6IG51bWJlcltdIHsKICAgIHVzaW5nIG1hdE1hbmFnZXIgPSBuZXcgTWF0TWFuYWdlcigpOwogICAgY29uc3QgcHJlcHJvY2Vzc01hdCA9IG1hdE1hbmFnZXIuYWRkKEljb25GZWF0dXJlU2VydmljZS5wcmVwcm9jZXNzQ29tcHV0ZShtYXQpKTsKICAgIC8vIOaeoOe3muOAgeaJgOaMgeaVsOmDqOWIhuOCkumZpOWkluOBmeOCiwogICAgY29uc3QgY3JvcE1hdCA9IG1hdE1hbmFnZXIuYWRkKGNyb3AocHJlcHJvY2Vzc01hdCwgMjAsIDIwLCA2MCwgNjApKTsKICAgIGNvbnN0IHJlc2l6ZWRNYXQgPSBtYXRNYW5hZ2VyLmFkZChuZXcgY3YuTWF0KCkpOwogICAgY3YucmVzaXplKGNyb3BNYXQsIHJlc2l6ZWRNYXQsIG5ldyBjdi5TaXplKDMsIDMpKTsKCiAgICBjb25zdCBoc3ZNYXQgPSBtYXRNYW5hZ2VyLmFkZChuZXcgY3YuTWF0KCkpOwogICAgaWYgKHJlc2l6ZWRNYXQuY2hhbm5lbHMoKSA9PT0gNCkgewogICAgICBjb25zdCByZ2JNYXQgPSBtYXRNYW5hZ2VyLmFkZChuZXcgY3YuTWF0KCkpOwogICAgICBjdi5jdnRDb2xvcihyZXNpemVkTWF0LCByZ2JNYXQsIGN2LkNPTE9SX1JHQkEyUkdCKTsKICAgICAgY3YuY3Z0Q29sb3IocmdiTWF0LCBoc3ZNYXQsIGN2LkNPTE9SX1JHQjJIU1YpOwogICAgfSBlbHNlIGlmIChyZXNpemVkTWF0LmNoYW5uZWxzKCkgPT09IDMpIHsKICAgICAgY3YuY3Z0Q29sb3IocmVzaXplZE1hdCwgaHN2TWF0LCBjdi5DT0xPUl9SR0IySFNWKTsKICAgIH0gZWxzZSB7CiAgICAgIC8vIOS4h+OBjOS4gOODgeODo+ODs+ODjeODq+aVsOOBjOWQiOOCj+OBquOBhOWgtOWQiOOBr+OBneOBruOBvuOBvuOCs+ODlOODvAogICAgICByZXNpemVkTWF0LmNvcHlUbyhoc3ZNYXQpOwogICAgfQoKICAgIGNvbnN0IGRhdGEgPSBBcnJheS5mcm9tKG5ldyBVaW50OEFycmF5KGhzdk1hdC5kYXRhKSk7CiAgICByZXR1cm4gZGF0YTsKICB9CgogIC8qKgogICAqIDLjgaTjga7jgqLjgqTjgrPjg7Pjga7nibnlvrTph4/jgpLmr5TovIPjgZfjgIHkuIDoh7TjgZnjgovjgYvjganjgYbjgYvjgpLov5TjgZkKICAgKi8KICBwdWJsaWMgY29tcGFyZUZlYXR1cmVzKGRlc2NyaXB0b3JzMTogYW55LCBkZXNjcmlwdG9yczI6IGFueSk6IGJvb2xlYW4gewogICAgY29uc3Qgc2NvcmUgPSBjb21wYXJlRGVzY3JpcHRvcnMoZGVzY3JpcHRvcnMxLCBkZXNjcmlwdG9yczIpOwogICAgcmV0dXJuIHNjb3JlID49IDIwOwogIH0KCiAgLyoqCiAgICog6Imy5oOF5aCx44Gu44OP44OD44K344Ol44KS5q+U6LyD44GX44CB44GC44KL56iL5bqm44Gu6Kqk5beuKOmBiuOBsynjgpLmjIHjgZ/jgZvjgabkuIDoh7TliKTlrprjgpLooYzjgYYKICAgKiDkupLmj5vmgKfjg4Hjgqfjg4Pjgq/jga/ooYzjgo/jgZrjgIHnorrlrp/jgavjg4fjg7zjgr/jgYzlrZjlnKjjgZnjgovliY3mj5AKICAgKi8KICBwdWJsaWMgY29tcGFyZUNvbG9yKGhhc2gxOiBudW1iZXJbXSwgaGFzaDI6IG51bWJlcltdLCB0aHJlc2hvbGQ6IG51bWJlciA9IDMwKTogYm9vbGVhbiB7CiAgICBpZiAoaGFzaDEubGVuZ3RoICE9PSBoYXNoMi5sZW5ndGgpIHJldHVybiBmYWxzZTsKCiAgICBjb25zdCBjaGFubmVscyA9IGhhc2gxLmxlbmd0aCAvIDk7IC8vIDN4MyA9IDnjg5Tjgq/jgrvjg6sKCiAgICBpZiAoY2hhbm5lbHMgPT09IDMpIHsKICAgICAgLy8gSFNW56m66ZaT44Gn44Gu5q+U6LyD44Go44G/44Gq44GZCiAgICAgIGxldCBkaWZmSCA9IDA7CiAgICAgIGxldCBkaWZmUyA9IDA7CiAgICAgIGxldCBkaWZmViA9IDA7CgogICAgICBmb3IgKGxldCBpID0gMDsgaSA8IGhhc2gxLmxlbmd0aDsgaSArPSAzKSB7CiAgICAgICAgY29uc3QgaDEgPSBoYXNoMVtpXTsKICAgICAgICBjb25zdCBzMSA9IGhhc2gxW2kgKyAxXTsKICAgICAgICBjb25zdCB2MSA9IGhhc2gxW2kgKyAyXTsKICAgICAgICBjb25zdCBoMiA9IGhhc2gyW2ldOwogICAgICAgIGNvbnN0IHMyID0gaGFzaDJbaSArIDFdOwogICAgICAgIGNvbnN0IHYyID0gaGFzaDJbaSArIDJdOwoKICAgICAgICAvLyBIdWXjga8wLTE3OeOBruWGhueSsOOBquOBruOBp+acgOefrei3nembouOCkuaxguOCgeOCiwogICAgICAgIGNvbnN0IGRIID0gTWF0aC5hYnMoaDEgLSBoMik7CiAgICAgICAgZGlmZkggKz0gTWF0aC5taW4oZEgsIDE4MCAtIGRIKTsKICAgICAgICBkaWZmUyArPSBNYXRoLmFicyhzMSAtIHMyKTsKICAgICAgICBkaWZmViArPSBNYXRoLmFicyh2MSAtIHYyKTsKICAgICAgfQoKICAgICAgY29uc3QgYXZnRGlmZkggPSBkaWZmSCAvIDk7CiAgICAgIGNvbnN0IGF2Z0RpZmZTID0gZGlmZlMgLyA5OwogICAgICBjb25zdCBhdmdEaWZmViA9IGRpZmZWIC8gOTsKCiAgICAgIC8vIEgo6Imy55u4KeOBruW3ruOBr+OCiOOCiuOCr+ODquODhuOCo+OCq+ODq+OBquOBn+OCgemHjeOBv+OCkuOBpOOBkeOAgVYo5piO5bqmKeOBrumBleOBhOOBq+OBr+OBguOCi+eoi+W6puWvm+WuueOBq+OBmeOCiwogICAgICAvLyBIOjEuNSwgUzoxLjAsIFY6MC41IOOBquOBqemHjeOBv+S7mOOBkeOBl+OBn+W5s+Wdh+W3ruWIhuOCkuioiOeulwogICAgICBjb25zdCBhdmdEaWZmID0gKGF2Z0RpZmZIICogMS41ICsgYXZnRGlmZlMgKiAxLjAgKyBhdmdEaWZmViAqIDAuNSkgLyAzOwogICAgICByZXR1cm4gYXZnRGlmZiA8PSB0aHJlc2hvbGQ7CiAgICB9IGVsc2UgewogICAgICAvLyDkuojmnJ/jgZvjgazjg4Hjg6Pjg7Pjg43jg6vmlbDjga7loLTlkIjjga/ljZjntJTjgarlt67liIboqIjnrpfjg5Xjgqnjg7zjg6vjg5Djg4Pjgq8KICAgICAgbGV0IGRpZmYgPSAwOwogICAgICBmb3IgKGxldCBpID0gMDsgaSA8IGhhc2gxLmxlbmd0aDsgaSArPSBjaGFubmVscykgewogICAgICAgIGZvciAobGV0IGogPSAwOyBqIDwgY2hhbm5lbHM7IGorKykgewogICAgICAgICAgZGlmZiArPSBNYXRoLmFicyhoYXNoMVtpICsgal0gLSBoYXNoMltpICsgal0pOwogICAgICAgIH0KICAgICAgfQogICAgICBjb25zdCBhdmdEaWZmID0gZGlmZiAvICg5ICogY2hhbm5lbHMpOwogICAgICByZXR1cm4gYXZnRGlmZiA8PSB0aHJlc2hvbGQ7CiAgICB9CiAgfQp9
+
+import {
+  compute as computeFeatures,
+  compare as compareDescriptors,
+} from "../utils/feature";
+import { MatManager, toBase64, crop } from "../utils/mat";
+
+declare const cv: any;
+
+/**
+ * アイコンの特徴量を計算し、比較するサービス
+ * FeatureMatcher をラップして、アイコンに特化した機能を提供する
+ */
+export class IconFeatureService {
+
+  private static _instance: IconFeatureService | null = null;
+
+  private constructor() { }
+
+  public static getInstance(): IconFeatureService {
+    if (!this._instance) {
+      this._instance = new IconFeatureService();
+    }
+    return this._instance;
+  }
+
+  private static preprocessCompute(mat: any): any {
+    using matManager = new MatManager();
+
+    // 短い辺に合わせて、中央を正方形に切り取る
+    const size = Math.min(mat.cols, mat.rows);
+    const x = Math.floor((mat.cols - size) / 2);
+    const y = Math.floor((mat.rows - size) / 2);
+    const croppedMat = matManager.add(crop(mat, x, y, size, size));
+    // 100x100にリサイズ
+    const resizedMat = new cv.Mat();
+    cv.resize(croppedMat, resizedMat, new cv.Size(100, 100), 0, 0, size > 100 ? cv.INTER_AREA : cv.INTER_LINEAR);
+
+    return resizedMat;
+  }
+
+  /**
+   * アイコンの特徴量を計算する
+   */
+  public computeFeatures(mat: any): string | null {
+    // アイコンの中心部分のみを特徴量計算に使う
+    using matManager = new MatManager();
+    const grayMat = matManager.add(new cv.Mat());
+    if (mat.channels() === 4) {
+      cv.cvtColor(mat, grayMat, cv.COLOR_RGBA2GRAY);
+    } else if (mat.channels() === 3) {
+      cv.cvtColor(mat, grayMat, cv.COLOR_RGB2GRAY);
+    } else {
+      mat.copyTo(grayMat);
+    }
+    // 前処理
+    const preprocessedMat = matManager.add(IconFeatureService.preprocessCompute(grayMat));
+    // マスク作成
+    const mask = matManager.add(new cv.Mat.zeros(100, 100, cv.CV_8UC1));
+    // 枠線、所持数部分以外を有効にする
+    mask.roi(new cv.Rect(10, 10, 80, 70)).setTo(new cv.Scalar(255));
+
+    try {
+      using result = computeFeatures(preprocessedMat, mask);
+      return result ? toBase64(result.descriptors) : null;
+    } catch (e) {
+      console.error(e);
+      return null;
+    }
+  }
+
+  /**
+   * アイコンから色情報を計算する(中央部分の3x3 HSV配列)
+   */
+  public computeColorHash(mat: any): number[] {
+    using matManager = new MatManager();
+    const preprocessMat = matManager.add(IconFeatureService.preprocessCompute(mat));
+    // 枠線、所持数部分を除外する
+    const cropMat = matManager.add(crop(preprocessMat, 20, 20, 60, 60));
+    const resizedMat = matManager.add(new cv.Mat());
+    cv.resize(cropMat, resizedMat, new cv.Size(3, 3));
+
+    const hsvMat = matManager.add(new cv.Mat());
+    if (resizedMat.channels() === 4) {
+      const rgbMat = matManager.add(new cv.Mat());
+      cv.cvtColor(resizedMat, rgbMat, cv.COLOR_RGBA2RGB);
+      cv.cvtColor(rgbMat, hsvMat, cv.COLOR_RGB2HSV);
+    } else if (resizedMat.channels() === 3) {
+      cv.cvtColor(resizedMat, hsvMat, cv.COLOR_RGB2HSV);
+    } else {
+      // 万が一チャンネル数が合わない場合はそのままコピー
+      resizedMat.copyTo(hsvMat);
+    }
+
+    const data = Array.from(new Uint8Array(hsvMat.data));
+    return data;
+  }
+
+  /**
+   * 2つのアイコンの特徴量を比較し、一致するかどうかを返す
+   */
+  public compareFeatures(descriptors1: any, descriptors2: any): boolean {
+    const score = compareDescriptors(descriptors1, descriptors2);
+    return score >= 20;
+  }
+
+  /**
+   * 色情報のハッシュを比較し、ある程度の誤差(遊び)を持たせて一致判定を行う
+   * 互換性チェックは行わず、確実にデータが存在する前提
+   */
+  public compareColor(hash1: number[], hash2: number[], threshold: number = 30): boolean {
+    if (hash1.length !== hash2.length) return false;
+
+    const channels = hash1.length / 9; // 3x3 = 9ピクセル
+
+    if (channels === 3) {
+      // HSV空間での比較とみなす
+      let diffH = 0;
+      let diffS = 0;
+      let diffV = 0;
+
+      for (let i = 0; i < hash1.length; i += 3) {
+        const h1 = hash1[i];
+        const s1 = hash1[i + 1];
+        const v1 = hash1[i + 2];
+        const h2 = hash2[i];
+        const s2 = hash2[i + 1];
+        const v2 = hash2[i + 2];
+
+        // Hueは0-179の円環なので最短距離を求める
+        const dH = Math.abs(h1 - h2);
+        diffH += Math.min(dH, 180 - dH);
+        diffS += Math.abs(s1 - s2);
+        diffV += Math.abs(v1 - v2);
+      }
+
+      const avgDiffH = diffH / 9;
+      const avgDiffS = diffS / 9;
+      const avgDiffV = diffV / 9;
+
+      // H(色相)の差はよりクリティカルなため重みをつけ、V(明度)の違いにはある程度寛容にする
+      // H:1.5, S:1.0, V:0.5 など重み付けした平均差分を計算
+      const avgDiff = (avgDiffH * 1.5 + avgDiffS * 1.0 + avgDiffV * 0.5) / 3;
+      return avgDiff <= threshold;
+    } else {
+      // 予期せぬチャンネル数の場合は単純な差分計算フォールバック
+      let diff = 0;
+      for (let i = 0; i < hash1.length; i += channels) {
+        for (let j = 0; j < channels; j++) {
+          diff += Math.abs(hash1[i + j] - hash2[i + j]);
+        }
+      }
+      const avgDiff = diff / (9 * channels);
+      return avgDiff <= threshold;
+    }
+  }
+}

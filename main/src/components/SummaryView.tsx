@@ -1,1 +1,284 @@
-aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHR5cGUgeyBBbmFseXplZEl0ZW0gfSBmcm9tICdAY29tbW9uL3R5cGVzJzsKaW1wb3J0IHsgSXRlbU1hc3RlckRhdGEgfSBmcm9tICdAY29tbW9uL3NlcnZpY2VzL2l0ZW1NYXN0ZXJTZXJ2aWNlJzsKCmludGVyZmFjZSBTdW1tYXJ5Vmlld1Byb3BzIHsKICByZXN1bHRzOiBBbmFseXplZEl0ZW1bXTsKICBtYXN0ZXJEYXRhOiBJdGVtTWFzdGVyRGF0YVtdOwp9CgpleHBvcnQgY29uc3QgU3VtbWFyeVZpZXc6IFJlYWN0LkZDPFN1bW1hcnlWaWV3UHJvcHM+ID0gKHsgcmVzdWx0cywgbWFzdGVyRGF0YSB9KSA9PiB7CgogIGNvbnN0IGdldFF0eSA9IChuYW1lOiBzdHJpbmcpID0+IHsKICAgIGNvbnN0IGZvdW5kID0gcmVzdWx0cy5maW5kKHIgPT4gci5uYW1lID09PSBuYW1lKTsKICAgIHJldHVybiBmb3VuZD8ucXVhbnRpdHkgPyBOdW1iZXIoZm91bmQucXVhbnRpdHkpIDogMDsKICB9OwoKICBjb25zdCBnZXRJY29uID0gKG5hbWU6IHN0cmluZykgPT4gewogICAgY29uc3QgZm91bmQgPSBtYXN0ZXJEYXRhLmZpbmQoZCA9PiBkLm5hbWUgPT09IG5hbWUpOwogICAgcmV0dXJuIGZvdW5kPy5pY29uRGF0YVVybCB8fCAnJzsKICB9OwoKICBjb25zdCByZW5kZXJDZWxsID0gKG5hbWU6IHN0cmluZykgPT4gewogICAgY29uc3QgcXR5ID0gZ2V0UXR5KG5hbWUpOwogICAgY29uc3QgaWNvblVybCA9IGdldEljb24obmFtZSk7CiAgICByZXR1cm4gKAogICAgICA8dGQga2V5PXtuYW1lfSB0aXRsZT17bmFtZX0gc3R5bGU9e3sgdGV4dEFsaWduOiAnY2VudGVyJywgcGFkZGluZzogJzZweCcsIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJyB9fT4KICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICdmbGV4JywgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsIGFsaWduSXRlbXM6ICdjZW50ZXInLCBnYXA6ICc0cHgnIH19PgogICAgICAgICAge2ljb25VcmwgPyAoCiAgICAgICAgICAgIDxpbWcgc3JjPXtpY29uVXJsfSBhbHQ9e25hbWV9IHN0eWxlPXt7IHdpZHRoOiAnNDBweCcsIGhlaWdodDogJzQwcHgnLCBib3JkZXJSYWRpdXM6ICc0cHgnIH19IC8+CiAgICAgICAgICApIDogKAogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHdpZHRoOiAnNDBweCcsIGhlaWdodDogJzQwcHgnLCBiYWNrZ3JvdW5kQ29sb3I6ICcjZTFlMmU2JywgYm9yZGVyUmFkaXVzOiAnNHB4JyB9fSAvPgogICAgICAgICAgKX0KICAgICAgICAgIDxzcGFuIHN0eWxlPXt7IGZvbnRXZWlnaHQ6ICdib2xkJywgY29sb3I6ICd2YXIoLS1wcmltYXJ5KScsIGZvbnRTaXplOiAnMXJlbScsIGxpbmVIZWlnaHQ6ICcxJyB9fT57cXR5fTwvc3Bhbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC90ZD4KICAgICk7CiAgfTsKCiAgY29uc3QgdGhTdHlsZTogUmVhY3QuQ1NTUHJvcGVydGllcyA9IHsgZm9udFNpemU6ICcwLjhyZW0nLCBwYWRkaW5nOiAnNHB4IDEycHgnLCBjb2xvcjogJyM1NzYwNmYnLCBib3JkZXI6ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScsIGZvbnRXZWlnaHQ6ICdub3JtYWwnLCBiYWNrZ3JvdW5kQ29sb3I6ICcjZjhmOWZhJywgd2hpdGVTcGFjZTogJ25vd3JhcCcgfTsKICBjb25zdCByb3dUaFN0eWxlOiBSZWFjdC5DU1NQcm9wZXJ0aWVzID0geyBmb250U2l6ZTogJzAuOXJlbScsIHBhZGRpbmc6ICcwIDEycHgnLCBmb250V2VpZ2h0OiAnYm9sZCcsIGNvbG9yOiAnIzJmMzU0MicsIGJvcmRlcjogJzFweCBzb2xpZCB2YXIoLS1ib3JkZXIpJywgYmFja2dyb3VuZENvbG9yOiAnI2Y4ZjlmYScsIHdoaXRlU3BhY2U6ICdub3dyYXAnIH07CiAgY29uc3QgdmFsVGRTdHlsZTogUmVhY3QuQ1NTUHJvcGVydGllcyA9IHsgcGFkZGluZzogJzAgMTVweCcsIGNvbG9yOiAnI2U1NTAzOScsIGZvbnRXZWlnaHQ6ICdib2xkJywgZm9udFNpemU6ICcxLjJyZW0nLCBib3JkZXI6ICcxcHggc29saWQgdmFyKC0tYm9yZGVyKScsIHdoaXRlU3BhY2U6ICdub3dyYXAnIH07CgogIGNvbnN0IGNhcmRTdHlsZTogUmVhY3QuQ1NTUHJvcGVydGllcyA9IHsKICAgIGJhY2tncm91bmRDb2xvcjogJyNmZmZmZmYnLAogICAgYm9yZGVyOiAnMXB4IHNvbGlkICNlMWUyZTYnLAogICAgYm9yZGVyUmFkaXVzOiAnMTBweCcsCiAgICBwYWRkaW5nOiAnMjBweCcsCiAgICBib3hTaGFkb3c6ICcwIDJweCA4cHggcmdiYSgwLDAsMCwwLjA0KScsCiAgICBkaXNwbGF5OiAnZmxleCcsCiAgICBmbGV4RGlyZWN0aW9uOiAnY29sdW1uJwogIH07CgogIGNvbnN0IGgzU3R5bGU6IFJlYWN0LkNTU1Byb3BlcnRpZXMgPSB7CiAgICBmb250U2l6ZTogJzFyZW0nLAogICAgY29sb3I6ICcjMmYzNTQyJywKICAgIG1hcmdpbjogJzAgMCAxNXB4IDAnLAogICAgYm9yZGVyTGVmdDogJzRweCBzb2xpZCAjNGE2OWJkJywKICAgIHBhZGRpbmdMZWZ0OiAnOHB4JwogIH07CgogIHJldHVybiAoCiAgICA8ZGl2IHN0eWxlPXt7IHBhZGRpbmc6ICc1cHgnLCBkaXNwbGF5OiAnZmxleCcsIGZsZXhXcmFwOiAnd3JhcCcsIGdhcDogJzI1cHgnLCBhbGlnbkl0ZW1zOiAnZmxleC1zdGFydCcgfX0+CgogICAgICA8ZGl2IHN0eWxlPXtjYXJkU3R5bGV9PgogICAgICAgIDxoMyBzdHlsZT17aDNTdHlsZX0+44Ks44Kk44OJ77yI5beh6YGK6ICF57WM6aiT5YCk77yJPC9oMz4KICAgICAgICA8dGFibGUgc3R5bGU9e3sgYm9yZGVyQ29sbGFwc2U6ICdjb2xsYXBzZScsIHRleHRBbGlnbjogJ2NlbnRlcicsIGJhY2tncm91bmRDb2xvcjogJyNmZmYnIH19PgogICAgICAgICAgPHRoZWFkPgogICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT48L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5YWl6ZaAPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuWInee0mjwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7kuK3ntJo8L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5LiK57SaPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuWAi+WIhjwvdGg+CiAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICA8L3RoZWFkPgogICAgICAgICAgPHRib2R5PgogICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgPHRkIHN0eWxlPXtyb3dUaFN0eWxlfT7jgqzjgqTjg4k8L3RkPgogICAgICAgICAgICAgIHtyZW5kZXJDZWxsKCflt6HpgYrogIXlhaXploDjgqzjgqTjg4knKX0KICAgICAgICAgICAgICB7cmVuZGVyQ2VsbCgn5beh6YGK6ICF5Yid57Sa44Ks44Kk44OJJyl9CiAgICAgICAgICAgICAge3JlbmRlckNlbGwoJ+W3oemBiuiAheS4ree0muOCrOOCpOODiScpfQogICAgICAgICAgICAgIHtyZW5kZXJDZWxsKCflt6HpgYrogIXkuIrntJrjgqzjgqTjg4knKX0KICAgICAgICAgICAgICA8dGQgc3R5bGU9e3ZhbFRkU3R5bGV9PgogICAgICAgICAgICAgICAgeygoZ2V0UXR5KCflt6HpgYrogIXlhaXploDjgqzjgqTjg4knKSAqIDEwMDAgKyBnZXRRdHkoJ+W3oemBiuiAheWInee0muOCrOOCpOODiScpICogNTAwMCArIGdldFF0eSgn5beh6YGK6ICF5Lit57Sa44Ks44Kk44OJJykgKiAxMDAwMCArIGdldFF0eSgn5beh6YGK6ICF5LiK57Sa44Ks44Kk44OJJykgKiAyMDAwMCkgLyA0ODYwMDYwKS50b0ZpeGVkKDEpfQogICAgICAgICAgICAgIDwvdGQ+CiAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICA8L3Rib2R5PgogICAgICAgIDwvdGFibGU+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBzdHlsZT17Y2FyZFN0eWxlfT4KICAgICAgICA8aDMgc3R5bGU9e2gzU3R5bGV9PuODrOOCs+ODvOODie+8iOODreOCueODrOOCs+e1jOmok+WApO+8iTwvaDM+CiAgICAgICAgPHRhYmxlIHN0eWxlPXt7IGJvcmRlckNvbGxhcHNlOiAnY29sbGFwc2UnLCB0ZXh0QWxpZ246ICdjZW50ZXInLCBiYWNrZ3JvdW5kQ29sb3I6ICcjZmZmJyB9fT4KICAgICAgICAgIDx0aGVhZD4KICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+PC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuOBsuOBszwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7ph4/nlKM8L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5YSq6ZuFPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuaYn+epujwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7lgIvliIY8L3RoPgogICAgICAgICAgICA8L3RyPgogICAgICAgICAgPC90aGVhZD4KICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgIDx0ZCBzdHlsZT17cm93VGhTdHlsZX0+44Os44Kz44O844OJPC90ZD4KICAgICAgICAgICAgICB7cmVuZGVyQ2VsbCgn44Gy44Gz5Ymy44KM44Gf44Os44Kz44O844OJJyl9CiAgICAgICAgICAgICAge3JlbmRlckNlbGwoJ+mHj+eUo+WTgeOBruODrOOCs+ODvOODiScpfQogICAgICAgICAgICAgIHtyZW5kZXJDZWxsKCflhKrpm4Xjgarjg6zjgrPjg7zjg4knKX0KICAgICAgICAgICAgICB7cmVuZGVyQ2VsbCgn5pif56m644Gu44Os44Kz44O844OJJyl9CiAgICAgICAgICAgICAgPHRkIHN0eWxlPXt2YWxUZFN0eWxlfT4KICAgICAgICAgICAgICAgIHsoKGdldFF0eSgn44Gy44Gz5Ymy44KM44Gf44Os44Kz44O844OJJykgKiAxMDAwICsgZ2V0UXR5KCfph4/nlKPlk4Hjga7jg6zjgrPjg7zjg4knKSAqIDUwMDAgKyBnZXRRdHkoJ+WEqumbheOBquODrOOCs+ODvOODiScpICogMTAwMDAgKyBnZXRRdHkoJ+aYn+epuuOBruODrOOCs+ODvOODiScpICogMjAwMDApIC8gNTE4MDAwMCkudG9GaXhlZCgxKX0KICAgICAgICAgICAgICA8L3RkPgogICAgICAgICAgICA8L3RyPgogICAgICAgICAgPC90Ym9keT4KICAgICAgICA8L3RhYmxlPgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgc3R5bGU9e2NhcmRTdHlsZX0+CiAgICAgICAgPGgzIHN0eWxlPXtoM1N0eWxlfT7jgqvjgrvjg4Pjg4jvvIjjgrnjgq3jg6vlvLfljJbvvIk8L2gzPgogICAgICAgIDx0YWJsZSBzdHlsZT17eyBib3JkZXJDb2xsYXBzZTogJ2NvbGxhcHNlJywgdGV4dEFsaWduOiAnY2VudGVyJywgYmFja2dyb3VuZENvbG9yOiAnI2ZmZicgfX0+CiAgICAgICAgICA8dGhlYWQ+CiAgICAgICAgICAgIDx0cj4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PjwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7liJ3ntJo8L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5Lit57SaPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuS4iue0mjwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7jgrnjgq3jg6vliIY8L3RoPgogICAgICAgICAgICA8L3RyPgogICAgICAgICAgPC90aGVhZD4KICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAge1sn6Z+z5qW9JywgJ+W8vuW5lScsICfmoLzpl5gnXS5tYXAodHlwZSA9PiB7CiAgICAgICAgICAgICAgY29uc3QgZXF1aXZhbGVudCA9IGdldFF0eShgJHt0eXBlfeOCq+OCu+ODg+ODiOODu+WInee0mmApICsgZ2V0UXR5KGAke3R5cGV944Kr44K744OD44OI44O75Lit57SaYCkgKiAzICsgZ2V0UXR5KGAke3R5cGV944Kr44K744OD44OI44O75LiK57SaYCkgKiA5OwogICAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgICA8dHIga2V5PXt0eXBlfT4KICAgICAgICAgICAgICAgICAgPHRkIHN0eWxlPXtyb3dUaFN0eWxlfT57dHlwZX08L3RkPgogICAgICAgICAgICAgICAgICB7cmVuZGVyQ2VsbChgJHt0eXBlfeOCq+OCu+ODg+ODiOODu+WInee0mmApfQogICAgICAgICAgICAgICAgICB7cmVuZGVyQ2VsbChgJHt0eXBlfeOCq+OCu+ODg+ODiOODu+S4ree0mmApfQogICAgICAgICAgICAgICAgICB7cmVuZGVyQ2VsbChgJHt0eXBlfeOCq+OCu+ODg+ODiOODu+S4iue0mmApfQogICAgICAgICAgICAgICAgICA8dGQgc3R5bGU9e3ZhbFRkU3R5bGV9PnsoZXF1aXZhbGVudCAvIDMyNjcpLnRvRml4ZWQoMSl9PC90ZD4KICAgICAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICAgICAgKTsKICAgICAgICAgICAgfSl9CiAgICAgICAgICA8L3Rib2R5PgogICAgICAgIDwvdGFibGU+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBzdHlsZT17Y2FyZFN0eWxlfT4KICAgICAgICA8aDMgc3R5bGU9e2gzU3R5bGV9PummlumgmOe0oOadkO+8iOOCueOCreODq+W8t+WMlu+8iTwvaDM+CiAgICAgICAgPHRhYmxlIHN0eWxlPXt7IGJvcmRlckNvbGxhcHNlOiAnY29sbGFwc2UnLCB0ZXh0QWxpZ246ICdjZW50ZXInLCBiYWNrZ3JvdW5kQ29sb3I6ICcjZmZmJyB9fT4KICAgICAgICAgIDx0aGVhZD4KICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+PC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PumXhzwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7lnLA8L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+54GrPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PumiqDwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7lhYk8L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5rC0PC90aD4KICAgICAgICAgICAgPC90cj4KICAgICAgICAgIDwvdGhlYWQ+CiAgICAgICAgICA8dGJvZHk+CiAgICAgICAgICAgIDx0cj4KICAgICAgICAgICAgICA8dGQgc3R5bGU9e3Jvd1RoU3R5bGV9PumDqOS9jTwvdGQ+CiAgICAgICAgICAgICAge1sn572q44Gq44KL57SF6IqxJywgJ+ajruOBrueyvumciuOBrueJmScsICflt6jnpZ7lhbXjga7jgrPjgqInLCAn5r+A5oCS576O5Lq6JywgJ+e/oOeFjOe+veOBrumrqumjvuOCiicsICfokrzmtbfjga7lrp3mnKgnXS5tYXAobmFtZSA9PiByZW5kZXJDZWxsKG5hbWUpKX0KICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgIDx0ZCBzdHlsZT17cm93VGhTdHlsZX0+6YG66a2CPC90ZD4KICAgICAgICAgICAgICB7WyfnvaroirHjga7nsr7prYInLCAn5qOu6ZyK44Gu57K+6a2CJywgJ+W3qOelnuWFteOBrueyvumtgicsICfpoqjmtYHjga7nsr7prYInLCAn57+g5YiD44Gu57K+6a2CJywgJ+iSvOa1t+OBrueyvumtgiddLm1hcChuYW1lID0+IHJlbmRlckNlbGwobmFtZSkpfQogICAgICAgICAgICA8L3RyPgogICAgICAgICAgPC90Ym9keT4KICAgICAgICA8L3RhYmxlPgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgc3R5bGU9e2NhcmRTdHlsZX0+CiAgICAgICAgPGgzIHN0eWxlPXtoM1N0eWxlfT7jg6Ljg7Pjgrnjgr/jg7zntKDmnZDvvIjlt6HpgYrogIXmmIfmoLzvvIk8L2gzPgogICAgICAgIDx0YWJsZSBzdHlsZT17eyBib3JkZXJDb2xsYXBzZTogJ2NvbGxhcHNlJywgdGV4dEFsaWduOiAnY2VudGVyJywgYmFja2dyb3VuZENvbG9yOiAnI2ZmZicgfX0+CiAgICAgICAgICA8dGhlYWQ+CiAgICAgICAgICAgIDx0cj4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PjwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7liJ3ntJo8L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5Lit57SaPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuS4iue0mjwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7kurrliIY8L3RoPgogICAgICAgICAgICA8L3RyPgogICAgICAgICAgPC90aGVhZD4KICAgICAgICAgIDx0Ym9keT4KICAgICAgICAgICAge1sKICAgICAgICAgICAgICB7IHR5cGU6ICfmgKrlpYfjg47pnIonLCBsb3c6ICfmpb3lsYvjga7lj6TjgYTluL3lrZAnLCBtaWQ6ICfpgZPljJbjga7jg5Xjgqfjg6vjg4jjg4/jg4Pjg4gnLCBoaWdoOiAn44Kr44O844OG44Oz44Kz44O844Or44Gu56S85bi9JyB9LAogICAgICAgICAgICAgIHsgdHlwZTogJ+eZkuaCpuODjuWFiScsIGxvdzogJ+mZsOmsseOBquOCi+eBr+W/gycsIG1pZDogJ+WHnee4ruOBleOCjOOBn+eBr+aWmScsIGhpZ2g6ICfmsLjmmI/jga7nga/moLgnIH0sCiAgICAgICAgICAgICAgeyB0eXBlOiAn56m65aO644OO546LJywgbG93OiAn55S354i144Gu5aCx6YWsJywgbWlkOiAn55S354i144Gu44Go44Gj44Gm44GK44GNJywgaGlnaDogJ+eUt+eIteOBruaBteOBvycgfSwKICAgICAgICAgICAgXS5tYXAocm93ID0+IHsKICAgICAgICAgICAgICBjb25zdCBlcXVpdmFsZW50ID0gZ2V0UXR5KHJvdy5sb3cpICsgZ2V0UXR5KHJvdy5taWQpICogMyArIGdldFF0eShyb3cuaGlnaCkgKiA5OwogICAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgICA8dHIga2V5PXtyb3cubG93fT4KICAgICAgICAgICAgICAgICAgPHRkIHN0eWxlPXtyb3dUaFN0eWxlfT57cm93LnR5cGV9PC90ZD4KICAgICAgICAgICAgICAgICAge3JlbmRlckNlbGwocm93Lmxvdyl9CiAgICAgICAgICAgICAgICAgIHtyZW5kZXJDZWxsKHJvdy5taWQpfQogICAgICAgICAgICAgICAgICB7cmVuZGVyQ2VsbChyb3cuaGlnaCl9CiAgICAgICAgICAgICAgICAgIDx0ZCBzdHlsZT17dmFsVGRTdHlsZX0+eyhlcXVpdmFsZW50IC8gMTkzMCkudG9GaXhlZCgxKX08L3RkPgogICAgICAgICAgICAgICAgPC90cj4KICAgICAgICAgICAgICApOwogICAgICAgICAgICB9KX0KICAgICAgICAgIDwvdGJvZHk+CiAgICAgICAgPC90YWJsZT4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IHN0eWxlPXtjYXJkU3R5bGV9PgogICAgICAgIDxoMyBzdHlsZT17aDNTdHlsZX0+44Oi44Oz44K544K/44O857Sg5p2Q77yI44Ot44K544Os44Kz5piH5qC877yJPC9oMz4KICAgICAgICA8dGFibGUgc3R5bGU9e3sgYm9yZGVyQ29sbGFwc2U6ICdjb2xsYXBzZScsIHRleHRBbGlnbjogJ2NlbnRlcicsIGJhY2tncm91bmRDb2xvcjogJyNmZmYnIH19PgogICAgICAgICAgPHRoZWFkPgogICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT48L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5Yid57SaPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuS4ree0mjwvdGg+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT7kuIrntJo8L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5YCL5YiGPC90aD4KICAgICAgICAgICAgPC90cj4KICAgICAgICAgIDwvdGhlYWQ+CiAgICAgICAgICA8dGJvZHk+CiAgICAgICAgICAgIHtbCiAgICAgICAgICAgICAgeyB0eXBlOiAn5oCq5aWH44OO6ZyKJywgbG93OiAn44Op44OT44OD44K344Ol44Gu5q6L5ruTJywgbWlkOiAn5bm75q2p44Gu6YG66a2CJywgaGlnaDogJ+eLguS5seOBrueyvumtgicgfSwKICAgICAgICAgICAgICB7IHR5cGU6ICfnmZLmgqbjg47lhYknLCBsb3c6ICfoloTlhYnjga7mrovmu5MnLCBtaWQ6ICfom43ngavjga7pgbrprYInLCBoaWdoOiAn5bi45aSc44Gu57K+6a2CJyB9LAogICAgICAgICAgICAgIHsgdHlwZTogJ+epuuWjuuODjueOiycsIGxvdzogJ+ODieODnOOBruaui+a7kycsIG1pZDogJ+ODq+ODnOOBrumBuumtgicsIGhpZ2g6ICfjg4njg5zjga7nsr7prYInIH0sCiAgICAgICAgICAgIF0ubWFwKHJvdyA9PiB7CiAgICAgICAgICAgICAgY29uc3QgZXF1aXZhbGVudCA9IGdldFF0eShyb3cubG93KSArIGdldFF0eShyb3cubWlkKSAqIDMgKyBnZXRRdHkocm93LmhpZ2gpICogOTsKICAgICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgICAgPHRyIGtleT17cm93Lmxvd30+CiAgICAgICAgICAgICAgICAgIDx0ZCBzdHlsZT17cm93VGhTdHlsZX0+e3Jvdy50eXBlfTwvdGQ+CiAgICAgICAgICAgICAgICAgIHtyZW5kZXJDZWxsKHJvdy5sb3cpfQogICAgICAgICAgICAgICAgICB7cmVuZGVyQ2VsbChyb3cubWlkKX0KICAgICAgICAgICAgICAgICAge3JlbmRlckNlbGwocm93LmhpZ2gpfQogICAgICAgICAgICAgICAgICA8dGQgc3R5bGU9e3ZhbFRkU3R5bGV9PnsoZXF1aXZhbGVudCAvIDI1NTMpLnRvRml4ZWQoMSl9PC90ZD4KICAgICAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICAgICAgKTsKICAgICAgICAgICAgfSl9CiAgICAgICAgICA8L3Rib2R5PgogICAgICAgIDwvdGFibGU+CiAgICAgIDwvZGl2PgoKICAgICAgPGRpdiBzdHlsZT17Y2FyZFN0eWxlfT4KICAgICAgICA8aDMgc3R5bGU9e2gzU3R5bGV9PuW+veeroDwvaDM+CiAgICAgICAgPHRhYmxlIHN0eWxlPXt7IGJvcmRlckNvbGxhcHNlOiAnY29sbGFwc2UnLCB0ZXh0QWxpZ246ICdjZW50ZXInLCBiYWNrZ3JvdW5kQ29sb3I6ICcjZmZmJyB9fT4KICAgICAgICAgIDx0aGVhZD4KICAgICAgICAgICAgPHRyPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+PC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PjcwPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PjgwPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PjkwPC90aD4KICAgICAgICAgICAgPC90cj4KICAgICAgICAgIDwvdGhlYWQ+CiAgICAgICAgICA8dGJvZHk+CiAgICAgICAgICAgIDx0cj4KICAgICAgICAgICAgICA8dGQgc3R5bGU9e3Jvd1RoU3R5bGV9PuW+veeroDwvdGQ+CiAgICAgICAgICAgICAge1sn6aiO5aOr6YGT57K+56We44Kz44Kk44OzJywgJ+S/oeS7sOOBruiovCcsICflhpLpmbrogIXjga7oqLwnXS5tYXAobmFtZSA9PiByZW5kZXJDZWxsKG5hbWUpKX0KICAgICAgICAgICAgPC90cj4KICAgICAgICAgIDwvdGJvZHk+CiAgICAgICAgPC90YWJsZT4KICAgICAgPC9kaXY+CgogICAgICA8ZGl2IHN0eWxlPXtjYXJkU3R5bGV9PgogICAgICAgIDxoMyBzdHlsZT17aDNTdHlsZX0+6aeS77yI44K544Kt44Or5by35YyW77yJPC9oMz4KICAgICAgICA8dGFibGUgc3R5bGU9e3sgYm9yZGVyQ29sbGFwc2U6ICdjb2xsYXBzZScsIHRleHRBbGlnbjogJ2NlbnRlcicsIGJhY2tncm91bmRDb2xvcjogJyNmZmYnIH19PgogICAgICAgICAgPHRoZWFkPgogICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgPHRoIHN0eWxlPXt0aFN0eWxlfT48L3RoPgogICAgICAgICAgICAgIDx0aCBzdHlsZT17dGhTdHlsZX0+5Yid57SaPC90aD4KICAgICAgICAgICAgICA8dGggc3R5bGU9e3RoU3R5bGV9PuOCueOCreODq+WIhjwvdGg+CiAgICAgICAgICAgIDwvdHI+CiAgICAgICAgICA8L3RoZWFkPgogICAgICAgICAgPHRib2R5PgogICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgPHRkIHN0eWxlPXtyb3dUaFN0eWxlfT7pp5I8L3RkPgogICAgICAgICAgICAgIHtyZW5kZXJDZWxsKCfjg4bjgq/jg4vjg4Pjgq/jga7pp5InKX0KICAgICAgICAgICAgICA8dGQgc3R5bGU9e3ZhbFRkU3R5bGV9PnsoZ2V0UXR5KCfjg4bjgq/jg4vjg4Pjgq/jga7pp5InKSAvIDIwNTcpLnRvRml4ZWQoMSl9PC90ZD4KICAgICAgICAgICAgPC90cj4KICAgICAgICAgIDwvdGJvZHk+CiAgICAgICAgPC90YWJsZT4KICAgICAgPC9kaXY+CgogICAgPC9kaXY+CiAgKTsKfTsK
+import React from 'react';
+import type { AnalyzedItem } from '@common/types';
+import { ItemMasterData } from '@common/services/itemMasterService';
+
+interface SummaryViewProps {
+  results: AnalyzedItem[];
+  masterData: ItemMasterData[];
+}
+
+export const SummaryView: React.FC<SummaryViewProps> = ({ results, masterData }) => {
+
+  const getQty = (name: string) => {
+    const found = results.find(r => r.name === name);
+    return found?.quantity ? Number(found.quantity) : 0;
+  };
+
+  const getIcon = (name: string) => {
+    const found = masterData.find(d => d.name === name);
+    return found?.iconDataUrl || '';
+  };
+
+  const renderCell = (name: string) => {
+    const qty = getQty(name);
+    const iconUrl = getIcon(name);
+    return (
+      <td key={name} title={name} style={{ textAlign: 'center', padding: '6px', border: '1px solid var(--border)' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+          {iconUrl ? (
+            <img src={iconUrl} alt={name} style={{ width: '40px', height: '40px', borderRadius: '4px' }} />
+          ) : (
+            <div style={{ width: '40px', height: '40px', backgroundColor: '#e1e2e6', borderRadius: '4px' }} />
+          )}
+          <span style={{ fontWeight: 'bold', color: 'var(--primary)', fontSize: '1rem', lineHeight: '1' }}>{qty}</span>
+        </div>
+      </td>
+    );
+  };
+
+  const thStyle: React.CSSProperties = { fontSize: '0.8rem', padding: '4px 12px', color: '#57606f', border: '1px solid var(--border)', fontWeight: 'normal', backgroundColor: '#f8f9fa', whiteSpace: 'nowrap' };
+  const rowThStyle: React.CSSProperties = { fontSize: '0.9rem', padding: '0 12px', fontWeight: 'bold', color: '#2f3542', border: '1px solid var(--border)', backgroundColor: '#f8f9fa', whiteSpace: 'nowrap' };
+  const valTdStyle: React.CSSProperties = { padding: '0 15px', color: '#e55039', fontWeight: 'bold', fontSize: '1.2rem', border: '1px solid var(--border)', whiteSpace: 'nowrap' };
+
+  const cardStyle: React.CSSProperties = {
+    backgroundColor: '#ffffff',
+    border: '1px solid #e1e2e6',
+    borderRadius: '10px',
+    padding: '20px',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+    display: 'flex',
+    flexDirection: 'column'
+  };
+
+  const h3Style: React.CSSProperties = {
+    fontSize: '1rem',
+    color: '#2f3542',
+    margin: '0 0 15px 0',
+    borderLeft: '4px solid #4a69bd',
+    paddingLeft: '8px'
+  };
+
+  return (
+    <div style={{ padding: '5px', display: 'flex', flexWrap: 'wrap', gap: '25px', alignItems: 'flex-start' }}>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>ガイド（巡遊者経験値）</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>入門</th>
+              <th style={thStyle}>初級</th>
+              <th style={thStyle}>中級</th>
+              <th style={thStyle}>上級</th>
+              <th style={thStyle}>個分</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={rowThStyle}>ガイド</td>
+              {renderCell('巡遊者入門ガイド')}
+              {renderCell('巡遊者初級ガイド')}
+              {renderCell('巡遊者中級ガイド')}
+              {renderCell('巡遊者上級ガイド')}
+              <td style={valTdStyle}>
+                {((getQty('巡遊者入門ガイド') * 1000 + getQty('巡遊者初級ガイド') * 5000 + getQty('巡遊者中級ガイド') * 10000 + getQty('巡遊者上級ガイド') * 20000) / 4860060).toFixed(1)}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>レコード（ロスレコ経験値）</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>ひび</th>
+              <th style={thStyle}>量産</th>
+              <th style={thStyle}>優雅</th>
+              <th style={thStyle}>星空</th>
+              <th style={thStyle}>個分</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={rowThStyle}>レコード</td>
+              {renderCell('ひび割れたレコード')}
+              {renderCell('量産品のレコード')}
+              {renderCell('優雅なレコード')}
+              {renderCell('星空のレコード')}
+              <td style={valTdStyle}>
+                {((getQty('ひび割れたレコード') * 1000 + getQty('量産品のレコード') * 5000 + getQty('優雅なレコード') * 10000 + getQty('星空のレコード') * 20000) / 5180000).toFixed(1)}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>カセット（スキル強化）</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>初級</th>
+              <th style={thStyle}>中級</th>
+              <th style={thStyle}>上級</th>
+              <th style={thStyle}>スキル分</th>
+            </tr>
+          </thead>
+          <tbody>
+            {['音楽', '弾幕', '格闘'].map(type => {
+              const equivalent = getQty(`${type}カセット・初級`) + getQty(`${type}カセット・中級`) * 3 + getQty(`${type}カセット・上級`) * 9;
+              return (
+                <tr key={type}>
+                  <td style={rowThStyle}>{type}</td>
+                  {renderCell(`${type}カセット・初級`)}
+                  {renderCell(`${type}カセット・中級`)}
+                  {renderCell(`${type}カセット・上級`)}
+                  <td style={valTdStyle}>{(equivalent / 3267).toFixed(1)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>首領素材（スキル強化）</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>闇</th>
+              <th style={thStyle}>地</th>
+              <th style={thStyle}>火</th>
+              <th style={thStyle}>風</th>
+              <th style={thStyle}>光</th>
+              <th style={thStyle}>水</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={rowThStyle}>部位</td>
+              {['罪なる紅花', '森の精霊の牙', '巨神兵のコア', '激怒美人', '翠煌羽の髪飾り', '蒼海の宝木'].map(name => renderCell(name))}
+            </tr>
+            <tr>
+              <td style={rowThStyle}>遺魂</td>
+              {['罪花の精魂', '森霊の精魂', '巨神兵の精魂', '風流の精魂', '翠刃の精魂', '蒼海の精魂'].map(name => renderCell(name))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>モンスター素材（巡遊者昇格）</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>初級</th>
+              <th style={thStyle}>中級</th>
+              <th style={thStyle}>上級</th>
+              <th style={thStyle}>人分</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { type: '怪奇ノ霊', low: '楽屋の古い帽子', mid: '道化のフェルトハット', high: 'カーテンコールの礼帽' },
+              { type: '癒悦ノ光', low: '陰鬱なる灯心', mid: '凝縮された灯料', high: '永昏の灯核' },
+              { type: '空壺ノ王', low: '男爵の報酬', mid: '男爵のとっておき', high: '男爵の恵み' },
+            ].map(row => {
+              const equivalent = getQty(row.low) + getQty(row.mid) * 3 + getQty(row.high) * 9;
+              return (
+                <tr key={row.low}>
+                  <td style={rowThStyle}>{row.type}</td>
+                  {renderCell(row.low)}
+                  {renderCell(row.mid)}
+                  {renderCell(row.high)}
+                  <td style={valTdStyle}>{(equivalent / 1930).toFixed(1)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>モンスター素材（ロスレコ昇格）</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>初級</th>
+              <th style={thStyle}>中級</th>
+              <th style={thStyle}>上級</th>
+              <th style={thStyle}>個分</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { type: '怪奇ノ霊', low: 'ラビッシュの残滓', mid: '幻歩の遺魂', high: '狂乱の精魂' },
+              { type: '癒悦ノ光', low: '薄光の残滓', mid: '蛍火の遺魂', high: '常夜の精魂' },
+              { type: '空壺ノ王', low: 'ドボの残滓', mid: 'ルボの遺魂', high: 'ドボの精魂' },
+            ].map(row => {
+              const equivalent = getQty(row.low) + getQty(row.mid) * 3 + getQty(row.high) * 9;
+              return (
+                <tr key={row.low}>
+                  <td style={rowThStyle}>{row.type}</td>
+                  {renderCell(row.low)}
+                  {renderCell(row.mid)}
+                  {renderCell(row.high)}
+                  <td style={valTdStyle}>{(equivalent / 2553).toFixed(1)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>徽章</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>70</th>
+              <th style={thStyle}>80</th>
+              <th style={thStyle}>90</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={rowThStyle}>徽章</td>
+              {['騎士道精神コイン', '信仰の証', '冒険者の証'].map(name => renderCell(name))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style={cardStyle}>
+        <h3 style={h3Style}>駒（スキル強化）</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>初級</th>
+              <th style={thStyle}>スキル分</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={rowThStyle}>駒</td>
+              {renderCell('テクニックの駒')}
+              <td style={valTdStyle}>{(getQty('テクニックの駒') / 2057).toFixed(1)}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  );
+};

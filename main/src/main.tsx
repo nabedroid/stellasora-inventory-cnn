@@ -1,1 +1,10 @@
-aW1wb3J0IHsgU3RyaWN0TW9kZSB9IGZyb20gJ3JlYWN0JwppbXBvcnQgeyBjcmVhdGVSb290IH0gZnJvbSAncmVhY3QtZG9tL2NsaWVudCcKaW1wb3J0IEFwcCBmcm9tICcuL0FwcCcKaW1wb3J0ICcuL0FwcC5jc3MnCgpjcmVhdGVSb290KGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykhKS5yZW5kZXIoCiAgPFN0cmljdE1vZGU+CiAgICA8QXBwIC8+CiAgPC9TdHJpY3RNb2RlPiwKKQo=
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
+import './App.css'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

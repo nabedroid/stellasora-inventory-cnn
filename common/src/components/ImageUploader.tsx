@@ -1,1 +1,74 @@
-aW1wb3J0IFJlYWN0LCB7IHVzZUNhbGxiYWNrLCB1c2VSZWYgfSBmcm9tICdyZWFjdCcKCmludGVyZmFjZSBJbWFnZVVwbG9hZGVyUHJvcHMgewogIGltYWdlczogRmlsZVtdCiAgb25JbWFnZXNTZWxlY3RlZDogKGZpbGVzOiBGaWxlW10pID0+IHZvaWQKICBvblJlbW92ZUltYWdlOiAoaW5kZXg6IG51bWJlcikgPT4gdm9pZAp9CgpleHBvcnQgZnVuY3Rpb24gSW1hZ2VVcGxvYWRlcih7IGltYWdlcywgb25JbWFnZXNTZWxlY3RlZCwgb25SZW1vdmVJbWFnZSB9OiBJbWFnZVVwbG9hZGVyUHJvcHMpIHsKICBjb25zdCBmaWxlSW5wdXRSZWYgPSB1c2VSZWY8SFRNTElucHV0RWxlbWVudD4obnVsbCkKCiAgY29uc3QgaGFuZGxlRHJhZ092ZXIgPSAoZTogUmVhY3QuRHJhZ0V2ZW50KSA9PiB7CiAgICBlLnByZXZlbnREZWZhdWx0KCkKICAgIGUuc3RvcFByb3BhZ2F0aW9uKCkKICB9CgogIGNvbnN0IGhhbmRsZURyb3AgPSB1c2VDYWxsYmFjaygoZTogUmVhY3QuRHJhZ0V2ZW50KSA9PiB7CiAgICBlLnByZXZlbnREZWZhdWx0KCkKICAgIGUuc3RvcFByb3BhZ2F0aW9uKCkKICAgIGNvbnN0IGZpbGVzID0gQXJyYXkuZnJvbShlLmRhdGFUcmFuc2Zlci5maWxlcykuZmlsdGVyKGYgPT4gZi50eXBlLnN0YXJ0c1dpdGgoJ2ltYWdlLycpKSBhcyBGaWxlW10KICAgIGlmIChmaWxlcy5sZW5ndGggPiAwKSB7CiAgICAgIG9uSW1hZ2VzU2VsZWN0ZWQoZmlsZXMpCiAgICB9CiAgfSwgW29uSW1hZ2VzU2VsZWN0ZWRdKQoKICBjb25zdCBoYW5kbGVGaWxlQ2hhbmdlID0gKGU6IFJlYWN0LkNoYW5nZUV2ZW50PEhUTUxJbnB1dEVsZW1lbnQ+KSA9PiB7CiAgICBpZiAoZS50YXJnZXQuZmlsZXMpIHsKICAgICAgY29uc3QgZmlsZXMgPSBBcnJheS5mcm9tKGUudGFyZ2V0LmZpbGVzKSBhcyBGaWxlW10KICAgICAgb25JbWFnZXNTZWxlY3RlZChmaWxlcykKICAgICAgZS50YXJnZXQudmFsdWUgPSAnJyAvLyBSZXNldAogICAgfQogIH0KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJpbWFnZS11cGxvYWRlciI+CiAgICAgIDxkaXYKICAgICAgICBjbGFzc05hbWU9ImRyb3Atem9uZSIKICAgICAgICBvbkRyYWdPdmVyPXtoYW5kbGVEcmFnT3Zlcn0KICAgICAgICBvbkRyb3A9e2hhbmRsZURyb3B9CiAgICAgICAgb25DbGljaz17KCkgPT4gZmlsZUlucHV0UmVmLmN1cnJlbnQ/LmNsaWNrKCl9CiAgICAgID4KICAgICAgICA8cD7nlLvlg4/jgpLjg4njg6njg4PjgrDvvIbjg4njg63jg4Pjg5fjgIHjgb7jgZ/jga/jgq/jg6rjg4Pjgq/jgZfjgabpgbjmip48L3A+CiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJoaW50Ij7opIfmlbDmnprjga7jgrnjgq/jg6rjg7zjg7Pjgrfjg6fjg4Pjg4jjgpLjgqLjg4Pjg5fjg63jg7zjg4njgZfjgabjgIHph43opIfjgpLoh6rli5XmjpLpmaTjgafjgY3jgb7jgZnjgII8L3NwYW4+CiAgICAgICAgPGlucHV0CiAgICAgICAgICB0eXBlPSJmaWxlIgogICAgICAgICAgcmVmPXtmaWxlSW5wdXRSZWZ9CiAgICAgICAgICBtdWx0aXBsZQogICAgICAgICAgYWNjZXB0PSJpbWFnZS8qIgogICAgICAgICAgb25DaGFuZ2U9e2hhbmRsZUZpbGVDaGFuZ2V9CiAgICAgICAgICBzdHlsZT17eyBkaXNwbGF5OiAnbm9uZScgfX0KICAgICAgICAvPgogICAgICA8L2Rpdj4KCiAgICAgIHtpbWFnZXMubGVuZ3RoID4gMCAmJiAoCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImltYWdlLXByZXZpZXctbGlzdCI+CiAgICAgICAgICB7aW1hZ2VzLm1hcCgoZmlsZSwgaW5kZXgpID0+ICgKICAgICAgICAgICAgPGRpdiBrZXk9e2Ake2ZpbGUubmFtZX0tJHtpbmRleH1gfSBjbGFzc05hbWU9InByZXZpZXctaXRlbSI+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJmaWxlLW5hbWUiPntmaWxlLm5hbWV9PC9zcGFuPgogICAgICAgICAgICAgIDxidXR0b24KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0icmVtb3ZlLWJ1dHRvbiIKICAgICAgICAgICAgICAgIG9uQ2xpY2s9eyhlKSA9PiB7CiAgICAgICAgICAgICAgICAgIGUuc3RvcFByb3BhZ2F0aW9uKCkKICAgICAgICAgICAgICAgICAgb25SZW1vdmVJbWFnZShpbmRleCkKICAgICAgICAgICAgICAgIH19CiAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAg4pyVCiAgICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CiAgICAgICl9CiAgICA8L2Rpdj4KICApCn0K
+import React, { useCallback, useRef } from 'react'
+
+interface ImageUploaderProps {
+  images: File[]
+  onImagesSelected: (files: File[]) => void
+  onRemoveImage: (index: number) => void
+}
+
+export function ImageUploader({ images, onImagesSelected, onRemoveImage }: ImageUploaderProps) {
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+  }
+
+  const handleDrop = useCallback((e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    const files = Array.from(e.dataTransfer.files).filter(f => f.type.startsWith('image/')) as File[]
+    if (files.length > 0) {
+      onImagesSelected(files)
+    }
+  }, [onImagesSelected])
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      const files = Array.from(e.target.files) as File[]
+      onImagesSelected(files)
+      e.target.value = '' // Reset
+    }
+  }
+
+  return (
+    <div className="image-uploader">
+      <div
+        className="drop-zone"
+        onDragOver={handleDragOver}
+        onDrop={handleDrop}
+        onClick={() => fileInputRef.current?.click()}
+      >
+        <p>画像をドラッグ＆ドロップ、またはクリックして選択</p>
+        <span className="hint">複数枚のスクリーンショットをアップロードして、重複を自動排除できます。</span>
+        <input
+          type="file"
+          ref={fileInputRef}
+          multiple
+          accept="image/*"
+          onChange={handleFileChange}
+          style={{ display: 'none' }}
+        />
+      </div>
+
+      {images.length > 0 && (
+        <div className="image-preview-list">
+          {images.map((file, index) => (
+            <div key={`${file.name}-${index}`} className="preview-item">
+              <span className="file-name">{file.name}</span>
+              <button
+                className="remove-button"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onRemoveImage(index)
+                }}
+              >
+                ✕
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}

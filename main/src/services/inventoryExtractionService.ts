@@ -1,1 +1,226 @@
-aW1wb3J0IHR5cGUgeyBBbmFseXplZEl0ZW0gfSBmcm9tICdAY29tbW9uL3R5cGVzJzsKaW1wb3J0IHsgSWNvbkV4dHJhY3RTZXJ2aWNlIH0gZnJvbSAnQGNvbW1vbi9zZXJ2aWNlcy9pY29uRXh0cmFjdFNlcnZpY2UnOwppbXBvcnQgeyBjcm9wLCBNYXRNYW5hZ2VyLCB0b0RhdGFVcmwsIGludmVydCwgZnJvbUZpbGUgfSBmcm9tICdAY29tbW9uL3V0aWxzL21hdCc7CmltcG9ydCB7IFRlc3NlcmFjdE9jclNlcnZpY2UgfSBmcm9tICdAY29tbW9uL3NlcnZpY2VzL3Rlc3NlcmFjdE9jclNlcnZpY2UnOwppbXBvcnQgeyBJY29uQ25uU2VydmljZSB9IGZyb20gJy4vaWNvbkNublNlcnZpY2UnOwoKZGVjbGFyZSBjb25zdCBjdjogYW55OwoKZXhwb3J0IGNsYXNzIEludmVudG9yeUV4dHJhY3Rpb25TZXJ2aWNlIHsKCiAgcHJpdmF0ZSByZWFkb25seSB0ZXNzZXJhY3RPY3JTZXJ2aWNlOiBUZXNzZXJhY3RPY3JTZXJ2aWNlOwogIHByaXZhdGUgcmVhZG9ubHkgaWNvbkNublNlcnZpY2U6IEljb25Dbm5TZXJ2aWNlOwoKICBwcml2YXRlIGNvbnN0cnVjdG9yKHRlc3NlcmFjdE9jclNlcnZpY2U6IFRlc3NlcmFjdE9jclNlcnZpY2UsIGljb25Dbm5TZXJ2aWNlOiBJY29uQ25uU2VydmljZSkgewogICAgdGhpcy50ZXNzZXJhY3RPY3JTZXJ2aWNlID0gdGVzc2VyYWN0T2NyU2VydmljZTsKICAgIHRoaXMuaWNvbkNublNlcnZpY2UgPSBpY29uQ25uU2VydmljZTsKICB9CgogIHB1YmxpYyBzdGF0aWMgYXN5bmMgZ2V0SW5zdGFuY2VBc3luYygpOiBQcm9taXNlPEludmVudG9yeUV4dHJhY3Rpb25TZXJ2aWNlPiB7CiAgICBjb25zdCB0ZXNzZXJhY3RPY3JTZXJ2aWNlID0gYXdhaXQgVGVzc2VyYWN0T2NyU2VydmljZS5nZXRJbnN0YW5jZUFzeW5jKHsgbGFuZzogJ2VuZycsIHdoaXRlbGlzdDogJzAxMjM0NTY3ODl4JyB9KTsKICAgIGNvbnN0IGljb25Dbm5TZXJ2aWNlID0gYXdhaXQgSWNvbkNublNlcnZpY2UuZ2V0SW5zdGFuY2VBc3luYygpOwogICAgY29uc3QgaW5zdGFuY2UgPSBuZXcgSW52ZW50b3J5RXh0cmFjdGlvblNlcnZpY2UodGVzc2VyYWN0T2NyU2VydmljZSwgaWNvbkNublNlcnZpY2UpOwogICAgcmV0dXJuIGluc3RhbmNlOwogIH0KCiAgcHVibGljIGRpc3Bvc2UoKTogdm9pZCB7CiAgICB0aGlzLnRlc3NlcmFjdE9jclNlcnZpY2U/LmRpc3Bvc2UoKTsKICB9CgogIHB1YmxpYyBbU3ltYm9sLmRpc3Bvc2VdKCk6IHZvaWQgewogICAgdGhpcy5kaXNwb3NlKCk7CiAgfQoKICAvKioKICAgKiDnlLvlg4/jg5XjgqHjgqTjg6vphY3liJfjgpLoqq3jgb/ovrzjgb/jgIHop6PmnpDjgYvjgonph43opIfmjpLpmaTjgIHjgr3jg7zjg4jjgb7jgafjgZnjgbnjgabooYzjgYYKICAgKi8KICBwdWJsaWMgYXN5bmMgZXh0cmFjdEFsbEFzeW5jKAogICAgaW1hZ2VzOiBGaWxlW10sCiAgICBvblByb2dyZXNzOiAocGVyY2VudDogbnVtYmVyLCBtZXNzYWdlOiBzdHJpbmcpID0+IHZvaWQKICApOiBQcm9taXNlPEFuYWx5emVkSXRlbVtdPiB7CiAgICBjb25zdCBhbGxFeHRyYWN0ZWRJdGVtczogQW5hbHl6ZWRJdGVtW10gPSBbXTsKCiAgICBmb3IgKGxldCBpID0gMDsgaSA8IGltYWdlcy5sZW5ndGg7IGkrKykgewogICAgICBjb25zdCBmaWxlID0gaW1hZ2VzW2ldOwogICAgICBjb25zdCBpbWdJbmRleCA9IGkgKyAxOwoKICAgICAgb25Qcm9ncmVzcygKICAgICAgICAoaSAvIGltYWdlcy5sZW5ndGgpICogMTAwLAogICAgICAgIGDnlLvlg4/oqq3jgb/ovrzjgb/kuK0gKCR7aW1nSW5kZXh9LyR7aW1hZ2VzLmxlbmd0aH0pOiAke2ZpbGUubmFtZX1gCiAgICAgICk7CgogICAgICBjb25zdCBzcmMgPSBhd2FpdCBmcm9tRmlsZShmaWxlKTsKCiAgICAgIGNvbnN0IGl0ZW1zID0gYXdhaXQgdGhpcy5hbmFseXplQXN5bmMoc3JjLCBpLCAocGVyY2VudCwgbWVzc2FnZSkgPT4gewogICAgICAgIG9uUHJvZ3Jlc3MoCiAgICAgICAgICAoaSAvIGltYWdlcy5sZW5ndGgpICogMTAwICsgKHBlcmNlbnQgKiAoMSAvIGltYWdlcy5sZW5ndGgpKSwKICAgICAgICAgIGDnlLvpnaIgJHtpbWdJbmRleH0vJHtpbWFnZXMubGVuZ3RofTogJHttZXNzYWdlfWAKICAgICAgICApOwogICAgICB9KTsKCiAgICAgIGFsbEV4dHJhY3RlZEl0ZW1zLnB1c2goLi4uaXRlbXMpOwogICAgICBzcmMuZGVsZXRlKCk7CiAgICB9CgogICAgb25Qcm9ncmVzcyg5NSwgJ+mHjeikh+OCouOCpOODhuODoOOCkue1seWQiOS4rS4uLicpOwogICAgY29uc3QgdW5pcXVlSXRlbXMgPSB0aGlzLmRlZHVwbGljYXRlKGFsbEV4dHJhY3RlZEl0ZW1zKTsKCiAgICAvLyDjg57jgrnjgr/jg7zjg4fjg7zjgr/jga5JROmghuOBq+OCveODvOODiCAoSUTjgYzkuI3mmI7jgarjgoLjga7jga/mnKvlsL4pCiAgICB1bmlxdWVJdGVtcy5zb3J0KChhLCBiKSA9PiB7CiAgICAgIGNvbnN0IGlkQSA9IGEuaWQgPz8gTnVtYmVyLk1BWF9TQUZFX0lOVEVHRVI7CiAgICAgIGNvbnN0IGlkQiA9IGIuaWQgPz8gTnVtYmVyLk1BWF9TQUZFX0lOVEVHRVI7CiAgICAgIHJldHVybiBpZEEgLSBpZEI7CiAgICB9KTsKCiAgICBvblByb2dyZXNzKDEwMCwgJ+ino+aekOWujOS6hu+8gScpOwogICAgcmV0dXJuIHVuaXF1ZUl0ZW1zOwogIH0KCiAgLyoqCiAgICog55S75YOP44GL44KJ44Ki44Kk44Kz44Oz44KS5qSc5Ye644GX44CB5omA5oyB5pWwT0NS44GoQ05O5Yik5a6a44GL44KJ44Ki44Kk44OG44Og5oOF5aCx44KS5oq95Ye644GZ44KLCiAgICogQHBhcmFtIHNyYyDop6PmnpDlr77osaHjga4gY3YuTWF0CiAgICogQHBhcmFtIHNvdXJjZUltYWdlSW5kZXgg55S75YOP44Gu44Kk44Oz44OH44OD44Kv44K555Wq5Y+3CiAgICogQHBhcmFtIG9uUHJvZ3Jlc3Mg44OX44Ot44Kw44Os44K56YCa55+l44Kz44O844Or44OQ44OD44KvCiAgICogQHJldHVybnMg6Kej5p6Q5oq95Ye644GV44KM44Gf44Ki44Kk44OG44Og57WQ5p6c44Gu44Oq44K544OICiAgICovCiAgcHVibGljIGFzeW5jIGFuYWx5emVBc3luYygKICAgIHNyYzogYW55LAogICAgc291cmNlSW1hZ2VJbmRleDogbnVtYmVyLAogICAgb25Qcm9ncmVzcz86IChwZXJjZW50OiBudW1iZXIsIG1lc3NhZ2U6IHN0cmluZykgPT4gdm9pZAogICk6IFByb21pc2U8QW5hbHl6ZWRJdGVtW10+IHsKICAgIHVzaW5nIG1hdE1hbmFnZXIgPSBuZXcgTWF0TWFuYWdlcigpOwogICAgLy8g44Ki44Kk44Kz44Oz6aCY5Z+f44KS5qSc5Ye6CiAgICBjb25zdCBpY29uUmVnaW9ucyA9IGF3YWl0IEljb25FeHRyYWN0U2VydmljZS5leHRyYWN0QXN5bmMoCiAgICAgIHNyYywKICAgICAgeyBtaW5JY29uV2lkdGg6IDUwLCBtYXhJY29uV2lkdGg6IDE1MCB9CiAgICApOwoKICAgIC8vIOOBvuOBmuWIh+OCiuWHuuOBl+OBqOaJgOaMgeaVsE9DUuOBvuOBp+OCkua4iOOBvuOBm+OAgeWIpOWumuWvvuixoeOCkumbhuOCgeOCiwogICAgY29uc3QgcGVuZGluZzogeyBpY29uTWF0OiBhbnk7IGljb25EYXRhVXJsOiBzdHJpbmc7IHF1YW50aXR5OiBudW1iZXIgfVtdID0gW107CiAgICBmb3IgKGxldCBqID0gMDsgaiA8IGljb25SZWdpb25zLmxlbmd0aDsgaisrKSB7CiAgICAgIGNvbnN0IHJlZ2lvbiA9IGljb25SZWdpb25zW2pdOwoKICAgICAgaWYgKG9uUHJvZ3Jlc3MpIHsKICAgICAgICBvblByb2dyZXNzKChqIC8gaWNvblJlZ2lvbnMubGVuZ3RoKSAqIDEwMCwgYOOCouOCpOODhuODoCAke2ogKyAxfS8ke2ljb25SZWdpb25zLmxlbmd0aH1gKTsKICAgICAgfQoKICAgICAgLy8g44Ki44Kk44Kz44Oz6aCY5Z+f44KS5YiH44KK5Ye644GXCiAgICAgIGNvbnN0IGljb25NYXQgPSBtYXRNYW5hZ2VyLmFkZChjcm9wKHNyYywgcmVnaW9uLngsIHJlZ2lvbi55LCByZWdpb24ud2lkdGgsIHJlZ2lvbi5oZWlnaHQpKTsKICAgICAgLy8gRGF0YVVybOOBq+WkieaPmwogICAgICBjb25zdCBpY29uRGF0YVVybCA9IHRvRGF0YVVybChpY29uTWF0KTsKICAgICAgLy8gT0NSIOOBl+OBpuaJgOaMgeaVsOOCkuaKveWHugogICAgICBjb25zdCBxdWFudGl0eSA9IGF3YWl0IHRoaXMub2NyTnVtYmVyQXN5bmMoaWNvbk1hdCk7CiAgICAgIGlmIChxdWFudGl0eSA9PT0gbnVsbCkgewogICAgICAgIC8vIOaJgOaMgeaVsOOBjOiqreOBv+WPluOCjOOBquOBhOWgtOWQiOOBr+OCueOCreODg+ODlyAo54++6KGM5LuV5qeY44KS6LiP6KWyKQogICAgICAgIGNvbnRpbnVlOwogICAgICB9CgogICAgICBwZW5kaW5nLnB1c2goeyBpY29uTWF0LCBpY29uRGF0YVVybCwgcXVhbnRpdHkgfSk7CiAgICB9CgogICAgLy8g44Ki44Kk44Kz44Oz44Gu5Yik5a6a44GvIENOTiDjgafjg5Djg4Pjg4HkuIDmi6zjgavooYzjgYYKICAgIGNvbnN0IGNhbmRpZGF0ZXNMaXN0ID0gYXdhaXQgdGhpcy5pY29uQ25uU2VydmljZS5jbGFzc2lmeUFzeW5jKAogICAgICBwZW5kaW5nLm1hcChpdGVtID0+IGl0ZW0uaWNvbk1hdCkpOwoKICAgIHJldHVybiBwZW5kaW5nLm1hcCgoaXRlbSwgaW5kZXgpID0+IHsKICAgICAgY29uc3QgY2FuZGlkYXRlcyA9IGNhbmRpZGF0ZXNMaXN0W2luZGV4XTsKICAgICAgY29uc3QgYmVzdCA9IGNhbmRpZGF0ZXNbMF07CiAgICAgIHJldHVybiB7CiAgICAgICAgaWQ6IGJlc3Q/LmlkLAogICAgICAgIGljb25EYXRhVXJsOiBpdGVtLmljb25EYXRhVXJsLAogICAgICAgIG5hbWU6IGJlc3Q/Lm5hbWUgPz8gJycsCiAgICAgICAgcXVhbnRpdHk6IGl0ZW0ucXVhbnRpdHksCiAgICAgICAgc291cmNlSW1hZ2VJbmRleCwKICAgICAgICBjb25maWRlbmNlOiBiZXN0Py5wcm9iLAogICAgICAgIGNhbmRpZGF0ZXMsCiAgICAgIH07CiAgICB9KTsKICB9CgogIC8qKgogICAqIOOCouOCpOOCs+ODs+eUu+WDj+OBi+OCieaJgOaMgeaVsOOCkuaKveWHuuOBmeOCiwogICAqIEBwYXJhbSBpY29uTWF0IOOCouOCpOOCs+ODs+eUu+WDjwogICAqIEByZXR1cm5zIOaJgOaMgeaVsAogICAqLwogIHByaXZhdGUgYXN5bmMgb2NyTnVtYmVyQXN5bmMoaWNvbk1hdDogYW55KTogUHJvbWlzZTxudW1iZXIgfCBudWxsPiB7CiAgICB1c2luZyBtYXRNYW5hZ2VyID0gbmV3IE1hdE1hbmFnZXIoKTsKICAgIC8vIOOCouOCpOOCs+ODs+S4i+mDqO+8iOaVsOWtl+OBjOaPj+OBi+OCjOOBpuOBhOOCi+mgmOWfn++8ieOCkuWIh+OCiuWHuuOBmQogICAgY29uc3QgaWNvbkxvd2VyTWF0ID0gbWF0TWFuYWdlci5hZGQoY3JvcChpY29uTWF0LCAwLCBpY29uTWF0LnJvd3MgKiAwLjgsIGljb25NYXQuY29scywgaWNvbk1hdC5yb3dzICogMC4yKSk7CiAgICAvLyDmlbDlrZfjga7poJjln5/jgpLkuozlgKTljJYKICAgIGNvbnN0IGdyYXlNYXQgPSBtYXRNYW5hZ2VyLmFkZChuZXcgY3YuTWF0KCkpOwogICAgY3YuY3Z0Q29sb3IoaWNvbkxvd2VyTWF0LCBncmF5TWF0LCBjdi5DT0xPUl9SR0JBMkdSQVkpOwogICAgY29uc3QgYmluYXJ5TWF0ID0gbWF0TWFuYWdlci5hZGQobmV3IGN2Lk1hdCgpKTsKICAgIGN2LnRocmVzaG9sZChncmF5TWF0LCBiaW5hcnlNYXQsIDAsIDI1NSwgY3YuVEhSRVNIX0JJTkFSWV9JTlYgfCBjdi5USFJFU0hfT1RTVSk7CiAgICAvLyDovKrpg63mpJzlh7oKICAgIGNvbnN0IGNvbnRvdXJzTWF0ID0gbWF0TWFuYWdlci5hZGQobmV3IGN2Lk1hdFZlY3RvcigpKTsKICAgIGNvbnN0IGhpZXJhcmNoeU1hdCA9IG1hdE1hbmFnZXIuYWRkKG5ldyBjdi5NYXQoKSk7CiAgICBjdi5maW5kQ29udG91cnMoYmluYXJ5TWF0LCBjb250b3Vyc01hdCwgaGllcmFyY2h5TWF0LCBjdi5SRVRSX0VYVEVSTkFMLCBjdi5DSEFJTl9BUFBST1hfU0lNUExFKTsKICAgIC8vIOaknOWHuuOBleOCjOOBn+i8qumDreOBi+OCieODjuOCpOOCuuOCkumZpOWOu+OBmeOCiwogICAgY29uc3QgcmVjdHM6IGFueVtdID0gW107CiAgICBmb3IgKGxldCBpID0gMDsgaSA8IGNvbnRvdXJzTWF0LnNpemUoKTsgaSsrKSB7CiAgICAgIGNvbnN0IGNudCA9IG1hdE1hbmFnZXIuYWRkKGNvbnRvdXJzTWF0LmdldChpKSk7CiAgICAgIGNvbnN0IHJlY3QgPSBjdi5ib3VuZGluZ1JlY3QoY250KTsKICAgICAgLy8g5piO44KJ44GL44Gr5bCP44GV44GE44CB57Sw44GE6Lyq6YOt44KS6Zmk5Y67CiAgICAgIGlmIChyZWN0LndpZHRoID4gMiAmJiBpY29uTG93ZXJNYXQucm93cyAqIDAuMyA8PSByZWN0LmhlaWdodCAmJiByZWN0LmhlaWdodCA8PSBpY29uTG93ZXJNYXQucm93cyAqIDAuOCkgewogICAgICAgIHJlY3RzLnB1c2gocmVjdCk7CiAgICAgIH0KICAgIH0KICAgIC8vIDHmoYHnm67jgIEy5qGB55uu44Gu5pWw5a2X44Gu5bqV6L6644GueeW6p+aomeOCkueul+WHugogICAgY29uc3QgcmlnaHRMaW1pdCA9IGljb25Mb3dlck1hdC5jb2xzICogMC44OwogICAgY29uc3QgbnVtYmVyQm90dG9tWSA9IHJlY3RzCiAgICAgIC5maWx0ZXIociA9PiByLnggPiByaWdodExpbWl0KQogICAgICAucmVkdWNlKChtYXgsIHIpID0+IE1hdGgubWF4KG1heCwgci55ICsgci5oZWlnaHQpLCAwKTsKICAgIC8vIOWFsemAmuOBruW6lei+uuOCkuaMgeOBpOi8qumDre+8iO+8neaVsOWtl+OBrui8qumDreOBruWPr+iDveaAp+OBjOmrmOOBhO+8ieOCkuaKveWHugogICAgY29uc3QgeVRocmVzaG9sZCA9IGljb25Mb3dlck1hdC5yb3dzICogMC4xOwogICAgY29uc3QgdGFyZ2V0UmVjdHMgPSByZWN0cwogICAgICAuZmlsdGVyKHIgPT4gTWF0aC5hYnMoci55ICsgci5oZWlnaHQgLSBudW1iZXJCb3R0b21ZKSA8PSB5VGhyZXNob2xkKTsKICAgIC8vIOaVsOWtl+OCieOBl+OBjei8qumDreOBjOOBquOBkeOCjOOBsCBudWxsIOOCkui/lOOBmQogICAgaWYgKHRhcmdldFJlY3RzLmxlbmd0aCA9PT0gMCkgewogICAgICByZXR1cm4gbnVsbDsKICAgIH0KICAgIC8vIOWFqOOBpuOBruaVsOWtl+OCkuWGheWMheOBmeOCi+efqeW9ouOCkueul+WHugogICAgY29uc3QgbWluWCA9IE1hdGgubWluKC4uLnRhcmdldFJlY3RzLm1hcChyID0+IHIueCkpOwogICAgY29uc3QgbWluWSA9IE1hdGgubWluKC4uLnRhcmdldFJlY3RzLm1hcChyID0+IHIueSkpOwogICAgY29uc3QgbWF4WCA9IE1hdGgubWF4KC4uLnRhcmdldFJlY3RzLm1hcChyID0+IHIueCArIHIud2lkdGgpKTsKICAgIGNvbnN0IG1heFkgPSBNYXRoLm1heCguLi50YXJnZXRSZWN0cy5tYXAociA9PiByLnkgKyByLmhlaWdodCkpOwogICAgLy8g5bCR44GX5L2Z6KOV44KS44KC44Gj44Gm5YiH44KK5Ye644GZCiAgICBjb25zdCBwYWRkaW5nID0gMjsKICAgIGNvbnN0IHggPSBtaW5YIC0gcGFkZGluZyA8IDAgPyAwIDogbWluWCAtIHBhZGRpbmc7CiAgICBjb25zdCB5ID0gbWluWSAtIHBhZGRpbmcgPCAwID8gMCA6IG1pblkgLSBwYWRkaW5nOwogICAgY29uc3Qgd2lkdGggPSB4ICsgbWF4WCAtIG1pblggKyBwYWRkaW5nICogMiA+IGJpbmFyeU1hdC5jb2xzID8gYmluYXJ5TWF0LmNvbHMgLSBtaW5YIDogbWF4WCAtIG1pblggKyBwYWRkaW5nICogMjsKICAgIGNvbnN0IGhlaWdodCA9IHkgKyBtYXhZIC0gbWluWSArIHBhZGRpbmcgKiAyID4gYmluYXJ5TWF0LnJvd3MgPyBiaW5hcnlNYXQucm93cyAtIG1pblkgOiBtYXhZIC0gbWluWSArIHBhZGRpbmcgKiAyOwogICAgY29uc3QgbnVtYmVyTWF0ID0gbWF0TWFuYWdlci5hZGQoY3JvcChiaW5hcnlNYXQsIHgsIHksIHdpZHRoLCBoZWlnaHQpKTsKICAgIC8vIOWPjei7ogogICAgY29uc3QgaW52ZXJ0ZWRNYXQgPSBtYXRNYW5hZ2VyLmFkZChpbnZlcnQobnVtYmVyTWF0KSk7CiAgICBjb25zdCByZWNvZ25pemVkVGV4dCA9IGF3YWl0IHRoaXMudGVzc2VyYWN0T2NyU2VydmljZS5yZWNvZ25pemVBc3luYyhpbnZlcnRlZE1hdCk7CiAgICAvLyDmlbDlrZfjga7jgb/jgpLmir3lh7oKICAgIGNvbnN0IGRpZ2l0cyA9IHJlY29nbml6ZWRUZXh0LnJlcGxhY2UoL1xEL2csICcnKTsKICAgIGlmIChkaWdpdHMgPT09IG51bGwgfHwgZGlnaXRzID09PSAnJykgewogICAgICByZXR1cm4gbnVsbDsKICAgIH0KCiAgICByZXR1cm4gcGFyc2VJbnQoZGlnaXRzKTsKICB9CgogIC8qKgogICAqIOikh+aVsOaemuOBruino+aekOe1kOaenOOCkue1kOWQiOOBl+OAgemHjeikh+OCkuaOkumZpOOBmeOCiwogICAqIENOTiDjga/lv4XjgZrlkI3liY3jgpLov5TjgZnjga7jgafjgIHlkI3liY3jgYzliIbjgYvjgovjgoLjga7jga/lkI3liY3jgafntbHlkIjjgZnjgovjgIIKICAgKiAo5pen5pa55byP44Gr44GC44Gj44Gf54m55b606YeP44OZ44O844K544Gu6YeN6KSH5Yik5a6a44GvIENOTiDljJbjgavkvLTjgYTlu4PmraIpCiAgICovCiAgcHJpdmF0ZSBkZWR1cGxpY2F0ZShpdGVtczogQW5hbHl6ZWRJdGVtW10pOiBBbmFseXplZEl0ZW1bXSB7CiAgICBjb25zdCB1bmlxdWVJdGVtczogQW5hbHl6ZWRJdGVtW10gPSBbXTsKICAgIGNvbnN0IHNlZW5OYW1lcyA9IG5ldyBTZXQ8c3RyaW5nPigpOwoKICAgIGZvciAoY29uc3QgaXRlbSBvZiBpdGVtcykgewogICAgICBpZiAoaXRlbS5uYW1lKSB7CiAgICAgICAgaWYgKHNlZW5OYW1lcy5oYXMoaXRlbS5uYW1lKSkgewogICAgICAgICAgY29udGludWU7CiAgICAgICAgfQogICAgICAgIHNlZW5OYW1lcy5hZGQoaXRlbS5uYW1lKTsKICAgICAgfQogICAgICB1bmlxdWVJdGVtcy5wdXNoKGl0ZW0pOwogICAgfQoKICAgIHJldHVybiB1bmlxdWVJdGVtczsKICB9Cn0K
+import type { AnalyzedItem } from '@common/types';
+import { IconExtractService } from '@common/services/iconExtractService';
+import { crop, MatManager, toDataUrl, invert, fromFile } from '@common/utils/mat';
+import { TesseractOcrService } from '@common/services/tesseractOcrService';
+import { IconCnnService } from './iconCnnService';
+
+declare const cv: any;
+
+export class InventoryExtractionService {
+
+  private readonly tesseractOcrService: TesseractOcrService;
+  private readonly iconCnnService: IconCnnService;
+
+  private constructor(tesseractOcrService: TesseractOcrService, iconCnnService: IconCnnService) {
+    this.tesseractOcrService = tesseractOcrService;
+    this.iconCnnService = iconCnnService;
+  }
+
+  public static async getInstanceAsync(): Promise<InventoryExtractionService> {
+    const tesseractOcrService = await TesseractOcrService.getInstanceAsync({ lang: 'eng', whitelist: '0123456789x' });
+    const iconCnnService = await IconCnnService.getInstanceAsync();
+    const instance = new InventoryExtractionService(tesseractOcrService, iconCnnService);
+    return instance;
+  }
+
+  public dispose(): void {
+    this.tesseractOcrService?.dispose();
+  }
+
+  public [Symbol.dispose](): void {
+    this.dispose();
+  }
+
+  /**
+   * 画像ファイル配列を読み込み、解析から重複排除、ソートまですべて行う
+   */
+  public async extractAllAsync(
+    images: File[],
+    onProgress: (percent: number, message: string) => void
+  ): Promise<AnalyzedItem[]> {
+    const allExtractedItems: AnalyzedItem[] = [];
+
+    for (let i = 0; i < images.length; i++) {
+      const file = images[i];
+      const imgIndex = i + 1;
+
+      onProgress(
+        (i / images.length) * 100,
+        `画像読み込み中 (${imgIndex}/${images.length}): ${file.name}`
+      );
+
+      const src = await fromFile(file);
+
+      const items = await this.analyzeAsync(src, i, (percent, message) => {
+        onProgress(
+          (i / images.length) * 100 + (percent * (1 / images.length)),
+          `画面 ${imgIndex}/${images.length}: ${message}`
+        );
+      });
+
+      allExtractedItems.push(...items);
+      src.delete();
+    }
+
+    onProgress(95, '重複アイテムを統合中...');
+    const uniqueItems = this.deduplicate(allExtractedItems);
+
+    // マスターデータのID順にソート (IDが不明なものは末尾)
+    uniqueItems.sort((a, b) => {
+      const idA = a.id ?? Number.MAX_SAFE_INTEGER;
+      const idB = b.id ?? Number.MAX_SAFE_INTEGER;
+      return idA - idB;
+    });
+
+    onProgress(100, '解析完了！');
+    return uniqueItems;
+  }
+
+  /**
+   * 画像からアイコンを検出し、所持数OCRとCNN判定からアイテム情報を抽出する
+   * @param src 解析対象の cv.Mat
+   * @param sourceImageIndex 画像のインデックス番号
+   * @param onProgress プログレス通知コールバック
+   * @returns 解析抽出されたアイテム結果のリスト
+   */
+  public async analyzeAsync(
+    src: any,
+    sourceImageIndex: number,
+    onProgress?: (percent: number, message: string) => void
+  ): Promise<AnalyzedItem[]> {
+    using matManager = new MatManager();
+    // アイコン領域を検出
+    const iconRegions = await IconExtractService.extractAsync(
+      src,
+      { minIconWidth: 50, maxIconWidth: 150 }
+    );
+
+    // まず切り出しと所持数OCRまでを済ませ、判定対象を集める
+    const pending: { iconMat: any; iconDataUrl: string; quantity: number }[] = [];
+    for (let j = 0; j < iconRegions.length; j++) {
+      const region = iconRegions[j];
+
+      if (onProgress) {
+        onProgress((j / iconRegions.length) * 100, `アイテム ${j + 1}/${iconRegions.length}`);
+      }
+
+      // アイコン領域を切り出し
+      const iconMat = matManager.add(crop(src, region.x, region.y, region.width, region.height));
+      // DataUrlに変換
+      const iconDataUrl = toDataUrl(iconMat);
+      // OCR して所持数を抽出
+      const quantity = await this.ocrNumberAsync(iconMat);
+      if (quantity === null) {
+        // 所持数が読み取れない場合はスキップ (現行仕様を踏襲)
+        continue;
+      }
+
+      pending.push({ iconMat, iconDataUrl, quantity });
+    }
+
+    // アイコンの判定は CNN でバッチ一括に行う
+    const candidatesList = await this.iconCnnService.classifyAsync(
+      pending.map(item => item.iconMat));
+
+    return pending.map((item, index) => {
+      const candidates = candidatesList[index];
+      const best = candidates[0];
+      return {
+        id: best?.id,
+        iconDataUrl: item.iconDataUrl,
+        name: best?.name ?? '',
+        quantity: item.quantity,
+        sourceImageIndex,
+        confidence: best?.prob,
+        candidates,
+      };
+    });
+  }
+
+  /**
+   * アイコン画像から所持数を抽出する
+   * @param iconMat アイコン画像
+   * @returns 所持数
+   */
+  private async ocrNumberAsync(iconMat: any): Promise<number | null> {
+    using matManager = new MatManager();
+    // アイコン下部（数字が描かれている領域）を切り出す
+    const iconLowerMat = matManager.add(crop(iconMat, 0, iconMat.rows * 0.8, iconMat.cols, iconMat.rows * 0.2));
+    // 数字の領域を二値化
+    const grayMat = matManager.add(new cv.Mat());
+    cv.cvtColor(iconLowerMat, grayMat, cv.COLOR_RGBA2GRAY);
+    const binaryMat = matManager.add(new cv.Mat());
+    cv.threshold(grayMat, binaryMat, 0, 255, cv.THRESH_BINARY_INV | cv.THRESH_OTSU);
+    // 輪郭検出
+    const contoursMat = matManager.add(new cv.MatVector());
+    const hierarchyMat = matManager.add(new cv.Mat());
+    cv.findContours(binaryMat, contoursMat, hierarchyMat, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
+    // 検出された輪郭からノイズを除去する
+    const rects: any[] = [];
+    for (let i = 0; i < contoursMat.size(); i++) {
+      const cnt = matManager.add(contoursMat.get(i));
+      const rect = cv.boundingRect(cnt);
+      // 明らかに小さい、細い輪郭を除去
+      if (rect.width > 2 && iconLowerMat.rows * 0.3 <= rect.height && rect.height <= iconLowerMat.rows * 0.8) {
+        rects.push(rect);
+      }
+    }
+    // 1桁目、2桁目の数字の底辺のy座標を算出
+    const rightLimit = iconLowerMat.cols * 0.8;
+    const numberBottomY = rects
+      .filter(r => r.x > rightLimit)
+      .reduce((max, r) => Math.max(max, r.y + r.height), 0);
+    // 共通の底辺を持つ輪郭（＝数字の輪郭の可能性が高い）を抽出
+    const yThreshold = iconLowerMat.rows * 0.1;
+    const targetRects = rects
+      .filter(r => Math.abs(r.y + r.height - numberBottomY) <= yThreshold);
+    // 数字らしき輪郭がなければ null を返す
+    if (targetRects.length === 0) {
+      return null;
+    }
+    // 全ての数字を内包する矩形を算出
+    const minX = Math.min(...targetRects.map(r => r.x));
+    const minY = Math.min(...targetRects.map(r => r.y));
+    const maxX = Math.max(...targetRects.map(r => r.x + r.width));
+    const maxY = Math.max(...targetRects.map(r => r.y + r.height));
+    // 少し余裕をもって切り出す
+    const padding = 2;
+    const x = minX - padding < 0 ? 0 : minX - padding;
+    const y = minY - padding < 0 ? 0 : minY - padding;
+    const width = x + maxX - minX + padding * 2 > binaryMat.cols ? binaryMat.cols - minX : maxX - minX + padding * 2;
+    const height = y + maxY - minY + padding * 2 > binaryMat.rows ? binaryMat.rows - minY : maxY - minY + padding * 2;
+    const numberMat = matManager.add(crop(binaryMat, x, y, width, height));
+    // 反転
+    const invertedMat = matManager.add(invert(numberMat));
+    const recognizedText = await this.tesseractOcrService.recognizeAsync(invertedMat);
+    // 数字のみを抽出
+    const digits = recognizedText.replace(/\D/g, '');
+    if (digits === null || digits === '') {
+      return null;
+    }
+
+    return parseInt(digits);
+  }
+
+  /**
+   * 複数枚の解析結果を結合し、重複を排除する
+   * CNN は必ず名前を返すので、名前が分かるものは名前で統合する。
+   * (旧方式にあった特徴量ベースの重複判定は CNN 化に伴い廃止)
+   */
+  private deduplicate(items: AnalyzedItem[]): AnalyzedItem[] {
+    const uniqueItems: AnalyzedItem[] = [];
+    const seenNames = new Set<string>();
+
+    for (const item of items) {
+      if (item.name) {
+        if (seenNames.has(item.name)) {
+          continue;
+        }
+        seenNames.add(item.name);
+      }
+      uniqueItems.push(item);
+    }
+
+    return uniqueItems;
+  }
+}
