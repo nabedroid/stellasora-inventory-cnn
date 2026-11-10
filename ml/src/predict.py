@@ -20,6 +20,7 @@ def load_font(size):
   # 日本語ラベル用のフォントを探す (同梱 -> システム -> 既定 の順)
   candidates = [
     Path(__file__).resolve().parent.parent / "fonts" / "MPLUS1p-Regular.ttf",
+    Path("/usr/local/share/fonts/MPLUS1p-Regular.ttf"),
     Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"),
     Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
   ]

@@ -1,9 +1,11 @@
 # プロット用フォントについて
 
 predict.py のプロット画像で日本語ラベルを描くには日本語フォントが要る。
-配置先は `ml/fonts/MPLUS1p-Regular.ttf` で、**Git には入れず**、
-ml コンテナのイメージビルド時に Dockerfile がダウンロードして配置する
-(手動で同名ファイルを置いても、そのまま使われる)。
+フォントファイルは **Git には入れず**、ml コンテナのイメージビルド時に
+Dockerfile が `/usr/local/share/fonts/MPLUS1p-Regular.ttf` へ取得する
+(`/app/ml` はホストの bind mount で隠れるため、マウント範囲外に置く)。
+
+手動で `ml/fonts/MPLUS1p-Regular.ttf` に置いた場合も、そちらが優先で使われる。
 
 - フォント: M PLUS 1p (Regular)
 - ライセンス: SIL Open Font License 1.1
