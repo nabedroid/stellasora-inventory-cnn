@@ -75,8 +75,10 @@ function App() {
         const result = await itemDataExtractService.extractAsync(src)
 
         // 抽出結果の追加
+        // ID は最大 ID + 1 から振る。件数ベースだと欠番がある場合に既存 ID と衝突する
+        const maxId = entries.reduce((max, e) => Math.max(max, e.id ?? 0), 0)
         newEntries.push(new ItemMasterData({
-          id: entries.length + newEntries.length + 1,
+          id: maxId + newEntries.length + 1,
           name: result.name,
           iconDataUrl: result.iconDataUrl,
           features: result.features,
