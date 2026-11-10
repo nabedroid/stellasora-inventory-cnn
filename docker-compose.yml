@@ -1,1 +1,73 @@
-c2VydmljZXM6CiAgbWFpbjoKICAgIGNvbnRhaW5lcl9uYW1lOiBtYWluCiAgICBidWlsZDoKICAgICAgY29udGV4dDogLgogICAgICBkb2NrZXJmaWxlOiAuL21haW4vRG9ja2VyZmlsZQogICAgZGV2ZWxvcDoKICAgICAgd2F0Y2g6CiAgICAgICAgLSBhY3Rpb246IHJlYnVpbGQKICAgICAgICAgIHBhdGg6IC4vbWFpbi9wYWNrYWdlLmpzb24KICAgICAgICAtIGFjdGlvbjogcmVidWlsZAogICAgICAgICAgcGF0aDogLi9tYWluL0RvY2tlcmZpbGUKICAgICAgICAtIGFjdGlvbjogc3luYwogICAgICAgICAgcGF0aDogLi9jb21tb24KICAgICAgICAgIHRhcmdldDogL2FwcC9jb21tb24KICAgICAgICAtIGFjdGlvbjogc3luYwogICAgICAgICAgcGF0aDogLi9tYWluCiAgICAgICAgICB0YXJnZXQ6IC9hcHAvbWFpbgogICAgICAgICAgaWdub3JlOgogICAgICAgICAgICAtIG5vZGVfbW9kdWxlcy8KICAgICAgICAgICAgLSBEb2NrZXJmaWxlCiAgICAgICAgICAgIC0gcGFja2FnZS5qc29uCiAgICAgICAgICAgIC0gUkVBRE1FLm1kCiAgICBwb3J0czoKICAgICAgLSAiMzAwMDozMDAwIgogICAgc3RkaW5fb3BlbjogdHJ1ZQogICAgdHR5OiB0cnVlCiAgbWFuYWdlcjoKICAgIGNvbnRhaW5lcl9uYW1lOiBtYW5hZ2VyCiAgICBidWlsZDoKICAgICAgY29udGV4dDogLgogICAgICBkb2NrZXJmaWxlOiAuL21hbmFnZXIvRG9ja2VyZmlsZQogICAgZGV2ZWxvcDoKICAgICAgd2F0Y2g6CiAgICAgICAgLSBhY3Rpb246IHJlYnVpbGQKICAgICAgICAgIHBhdGg6IC4vbWFuYWdlci9wYWNrYWdlLmpzb24KICAgICAgICAtIGFjdGlvbjogcmVidWlsZAogICAgICAgICAgcGF0aDogLi9tYW5hZ2VyL0RvY2tlcmZpbGUKICAgICAgICAtIGFjdGlvbjogc3luYwogICAgICAgICAgcGF0aDogLi9jb21tb24KICAgICAgICAgIHRhcmdldDogL2FwcC9jb21tb24KICAgICAgICAtIGFjdGlvbjogc3luYwogICAgICAgICAgcGF0aDogLi9tYW5hZ2VyCiAgICAgICAgICB0YXJnZXQ6IC9hcHAvbWFuYWdlcgogICAgICAgICAgaWdub3JlOgogICAgICAgICAgICAtIG5vZGVfbW9kdWxlcy8KICAgICAgICAgICAgLSBEb2NrZXJmaWxlCiAgICAgICAgICAgIC0gcGFja2FnZS5qc29uCiAgICAgICAgICAgIC0gUkVBRE1FLm1kCiAgICBwb3J0czoKICAgICAgLSAiMzAwMTozMDAxIgogICAgc3RkaW5fb3BlbjogdHJ1ZQogICAgdHR5OiB0cnVlCiAgbWw6CiAgICBjb250YWluZXJfbmFtZTogbWwKICAgIGJ1aWxkOgogICAgICBjb250ZXh0OiAuCiAgICAgIGRvY2tlcmZpbGU6IC4vbWwvRG9ja2VyZmlsZQogICAgdm9sdW1lczoKICAgICAgLSAuL21sOi9hcHAvbWwKICAgICAgIyBleHBvcnRfb25ueC5weSDjgYzjgqLjg5fjg6rjga7oqq3ovrzlhYjjgbjnm7TmjqXmm7jjgY3lh7rjgZvjgovjgojjgYbjgavjgZnjgosKICAgICAgLSAuL2NvbW1vbi9wdWJsaWMvbW9kZWxzOi9hcHAvY29tbW9uL3B1YmxpYy9tb2RlbHMKICAgIHdvcmtpbmdfZGlyOiAvYXBwL21sCiAgICBzdGRpbl9vcGVuOiB0cnVlCiAgICB0dHk6IHRydWUKICAgICMgR1BVIOOCkuS9v+OBhuWgtOWQiOOBr+S7peS4i+OCkuacieWKueWMluOBmeOCiyAoTlZJRElBICsgV1NMMiDliY3mj5ApCiAgICAjIGRlcGxveToKICAgICMgICByZXNvdXJjZXM6CiAgICAjICAgICByZXNlcnZhdGlvbnM6CiAgICAjICAgICAgIGRldmljZXM6CiAgICAjICAgICAgICAgLSBkcml2ZXI6IG52aWRpYQogICAgIyAgICAgICAgICAgY291bnQ6IDEKICAgICMgICAgICAgICAgIGNhcGFiaWxpdGllczogW2dwdV0K
+services:
+  main:
+    container_name: main
+    build:
+      context: .
+      dockerfile: ./main/Dockerfile
+    develop:
+      watch:
+        - action: rebuild
+          path: ./main/package.json
+        - action: rebuild
+          path: ./main/Dockerfile
+        - action: sync
+          path: ./common
+          target: /app/common
+        - action: sync
+          path: ./main
+          target: /app/main
+          ignore:
+            - node_modules/
+            - Dockerfile
+            - package.json
+            - README.md
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+  manager:
+    container_name: manager
+    build:
+      context: .
+      dockerfile: ./manager/Dockerfile
+    develop:
+      watch:
+        - action: rebuild
+          path: ./manager/package.json
+        - action: rebuild
+          path: ./manager/Dockerfile
+        - action: sync
+          path: ./common
+          target: /app/common
+        - action: sync
+          path: ./manager
+          target: /app/manager
+          ignore:
+            - node_modules/
+            - Dockerfile
+            - package.json
+            - README.md
+    ports:
+      - "3001:3001"
+    stdin_open: true
+    tty: true
+  ml:
+    container_name: ml
+    build:
+      context: .
+      dockerfile: ./ml/Dockerfile
+    volumes:
+      - ./ml:/app/ml
+      # export_onnx.py がアプリの読込先へ直接書き出せるようにする
+      - ./common/public/models:/app/common/public/models
+    working_dir: /app/ml
+    stdin_open: true
+    tty: true
+    # 学習は GPU 前提 (NVIDIA + Docker Desktop / WSL2)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
