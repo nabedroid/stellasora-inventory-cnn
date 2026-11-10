@@ -58,7 +58,9 @@ services:
       dockerfile: ./ml/Dockerfile
     volumes:
       - ./ml:/app/ml
-      # export_onnx.py がアプリの読込先へ直接書き出せるようにする
+      # build_dataset.py / label_assist.py が ../common/public/master-dictionary.json を読むため
+      - ./common/public:/app/common/public:ro
+      # export_onnx.py がアプリの読込先へ直接書き出せるようにする (上の ro より優先される)
       - ./common/public/models:/app/common/public/models
     working_dir: /app/ml
     stdin_open: true
