@@ -48,7 +48,7 @@ python src/train.py --dataset data/dataset --epochs 30 --out runs/icon_v1
 python src/evaluate.py --run runs/icon_v1 --dataset data/dataset
 
 # 7. スクショ1枚で確認実行
-#    既定で predict_plot.png に枠と Top1 ラベルを描いた画像も出る
+#    既定で data/predict_plot.png に枠と Top1 ラベルを描いた画像も出る
 #    (保存先を変える場合は --plot-out <path>、画像が不要なら --no-plot)
 python src/predict.py --run runs/icon_v1 --screenshot data/shots/shot1.png
 

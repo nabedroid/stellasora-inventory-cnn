@@ -86,8 +86,8 @@ def main():
   parser.add_argument("--run", required=True)
   parser.add_argument("--screenshot", required=True)
   parser.add_argument("--out-json", default=None)
-  parser.add_argument("--plot-out", default="predict_plot.png",
-                      help="プロット画像の保存先")
+  parser.add_argument("--plot-out", default="data/predict_plot.png",
+                      help="プロット画像の保存先 (data/ は Git 管理外)")
   parser.add_argument("--no-plot", action="store_true", help="プロット画像を出さない")
   args = parser.parse_args()
 
@@ -138,6 +138,7 @@ def main():
 
   if not args.no_plot:
     plot_path = Path(args.plot_out)
+    plot_path.parent.mkdir(parents=True, exist_ok=True)
     draw_predictions(image, cells, results, plot_path)
     print(f"プロット画像を書きました: {plot_path}")
 

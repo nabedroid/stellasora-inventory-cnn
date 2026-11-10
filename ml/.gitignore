@@ -3,3 +3,5 @@ runs/
 __pycache__/
 *.pt
 !runs/.gitkeep
+# プロット画像を ml 直下などに直接出した時の保険 (既定の出力先は data/ 配下)
+predict_*.png
