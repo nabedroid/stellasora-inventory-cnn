@@ -88,8 +88,9 @@ def crop_cells(image, config):
   return cells
 
 
-def detect_cells(image, config):
-  # アイコン枠を検出して切り出す (OCR 版 TS の IconExtractService と同じ方式)。
+def detect_cell_rects(image, config):
+  # アイコン枠を検出して切り出す。戻り値は (行, 列, x, y, w, h, 切り出し画像)。
+  # (OCR 版 TS の IconExtractService と同じ方式)。
   # グレースケール -> 二値化 -> 輪郭 -> 正方形に近い外接矩形だけを残す。
   # スクロールで縦位置がずれていても、枠が写っているアイコンだけを拾える。
   # 画面端で見切れたアイコンは矩形が正方形にならないため自動的に除外される。
@@ -141,8 +142,16 @@ def detect_cells(image, config):
     row_rects = sorted(rows[row_index], key=lambda r: r[0])
     for col_index in range(len(row_rects)):
       x, y, w, h = row_rects[col_index]
-      cells.append((row_index, col_index, image.crop((x, y, x + w, y + h))))
+      cells.append((row_index, col_index, x, y, w, h, image.crop((x, y, x + w, y + h))))
   return cells
+
+
+def detect_cells(image, config):
+  # 座標が不要な呼び出し用に、(行, 列, 切り出し画像) だけを返す
+  return [
+    (row, col, cell)
+    for row, col, _x, _y, _w, _h, cell in detect_cell_rects(image, config)
+  ]
 
 
 def build_transform(config, train=False):
