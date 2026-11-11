@@ -16,6 +16,9 @@
 # 数量の下書きも付けるとき (Tesseract 使用、要イメージ再ビルド):
 #   python src/label_assist.py --cells-dir data/cells --quantity-backend tesseract \
 #     --master ../common/public/master-dictionary.json
+# 数量の下書きを数字モデルで付けるとき (digit run が必要):
+#   python src/label_assist.py --cells-dir data/cells --quantity-backend model \
+#     --digit-run runs/digit_v1 --master ../common/public/master-dictionary.json
 
 import argparse
 import base64
@@ -254,6 +257,45 @@ def suggest_quantities(cells, config):
       "quantity": int(text) if text else None,
       "qconf": qconf,
       "qwarn": not consistent,
+      "qsrc": "OCR",
+    })
+  return results
+
+
+QMODEL_WARN = 0.9  # 数字モデルの下書きで review 強調する確信度の下限 (一番弱い桁の確率)
+
+
+def suggest_quantities_by_model(cells, digit_run_dir):
+  # 学習済み数字モデルで数量の下書きを読む。読み込み手順は predict.py と同じ。
+  # 確信度は一番弱い桁の確率で代表する (predict と同じ定義)。
+  # 桁の途中に空欄が混ざる不正な読みと、低確信度のセルを review で強調する。
+  import torch
+
+  from preprocess import build_digit_transform, digits_to_quantity
+  from train_digits import build_digit_model
+
+  config = load_config(digit_run_dir / "preprocess.json")
+  device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  checkpoint = torch.load(digit_run_dir / "best.pt", map_location=device)
+  model = build_digit_model(config).to(device)
+  model.load_state_dict(checkpoint["state_dict"])
+  model.eval()
+
+  transform = build_digit_transform(config, train=False)
+  batch = torch.stack([transform(extract_digit_strip(cell, config)) for cell in cells]).to(device)
+  with torch.no_grad():
+    probs = model(batch).softmax(dim=2).cpu()
+
+  results = []
+  for head_probs in probs:
+    digits = head_probs.argmax(dim=1).tolist()
+    quantity = digits_to_quantity(digits)
+    qconf = round(head_probs.max(dim=1).values.min().item(), 4)
+    results.append({
+      "quantity": quantity,
+      "qconf": qconf,
+      "qwarn": quantity is None or qconf < QMODEL_WARN,
+      "qsrc": "モデル",
     })
   return results
 
@@ -282,7 +324,7 @@ REVIEW_HTML = """<!DOCTYPE html>
 <h1>ラベル確認</h1>
 <p>確信度が低い順に並んでいます (背景が橙の行は要確認)。
 候補の画像と見比べて選び直し、「なし」は空きスロット用です。
-数量欄には OCR の下書きが入っています (欄の背景が橙なら構造チェックで引っかかった読みで要確認、空欄は読み取れなかったセル)。
+数量欄には下書き (OCR / 数字モデル) が入っています (欄の背景が橙なら要確認の読み、空欄は読み取れなかったセル)。
 最後に CSV をダウンロードして、data/cells/labels_template.csv に上書きしてください。</p>
 <p><button id="export">CSVをダウンロード</button></p>
 <div id="list"></div>
@@ -308,7 +350,7 @@ DATA.forEach((row, ri) => {
     <option value="train" ${row.split !== 'val' ? 'selected' : ''}>train</option>
     <option value="val" ${row.split === 'val' ? 'selected' : ''}>val</option></select></label>`;
   const qwarn = row.qwarn ? ' warn' : '';
-  const qnote = row.qconf !== null ? `<span class="qnote">OCR ${row.qconf}</span>` : '';
+  const qnote = row.qconf !== null ? `<span class="qnote">${row.qsrc} ${row.qconf}</span>` : '';
   html += `<label>数量 <input type="text" inputmode="numeric" class="qty${qwarn}" id="qty${ri}" value="${row.quantity}"> ${qnote}</label>`;
   div.innerHTML = html;
   list.appendChild(div);
@@ -343,13 +385,18 @@ def main():
   parser.add_argument("--master", required=True, help="master-dictionary.json のパス")
   parser.add_argument("--backend", choices=["template", "model"], default="template")
   parser.add_argument("--run", default=None, help="backend=model のときの学習 run ディレクトリ")
-  parser.add_argument("--quantity-backend", choices=["tesseract", "none"], default="none",
+  parser.add_argument("--quantity-backend", choices=["tesseract", "model", "none"],
+                      default="none",
                       help="数量の下書き生成 (tesseract は要イメージ再ビルド)")
+  parser.add_argument("--digit-run", default=None,
+                      help="--quantity-backend model のときの数字モデルの run ディレクトリ")
   parser.add_argument("--config", default="config/preprocess.json")
   args = parser.parse_args()
 
   if args.backend == "model" and not args.run:
     parser.error("--backend model には --run が必要です")
+  if args.quantity_backend == "model" and not args.digit_run:
+    parser.error("--quantity-backend model には --digit-run が必要です")
 
   cells_dir = Path(args.cells_dir)
   csv_path = cells_dir / "labels_template.csv"
@@ -382,6 +429,8 @@ def main():
   drafts = [None] * len(rows)
   if args.quantity_backend == "tesseract":
     drafts = suggest_quantities(images, config)
+  elif args.quantity_backend == "model":
+    drafts = suggest_quantities_by_model(images, Path(args.digit_run))
 
   # 候補つき CSV (第1候補の ID を item_id に先埋め。既存の記入は上書きしない)
   out_rows = []
@@ -389,16 +438,19 @@ def main():
     quantity = (row.get("quantity") or "").strip()
     quantity_conf = ""
     quantity_warn = ""
+    quantity_src = ""
     if quantity == "" and drafts[i] is not None:
       if drafts[i]["quantity"] is not None:
         quantity = str(drafts[i]["quantity"])
       quantity_conf = drafts[i]["qconf"]
       quantity_warn = 1 if drafts[i]["qwarn"] else 0
+      quantity_src = drafts[i].get("qsrc", "")
     merged = {
       "file": row["file"], "screenshot": row["screenshot"],
       "row": row["row"], "col": row["col"],
       "item_id": existing_id(row), "quantity": quantity,
       "quantity_conf": quantity_conf, "quantity_warn": quantity_warn,
+      "quantity_src": quantity_src,
       "split": row["split"],
     }
     if merged["item_id"] is None and sug["candidates"]:
@@ -429,6 +481,7 @@ def main():
       "candidates": sug["candidates"], "confidence": sug["confidence"],
       "quantity": merged["quantity"],
       "qconf": merged["quantity_conf"] if merged["quantity_conf"] != "" else None,
+      "qsrc": merged["quantity_src"],
       "qwarn": merged["quantity_warn"] == 1,
     })
   data.sort(key=lambda d: d["confidence"])
@@ -440,7 +493,7 @@ def main():
   low = sum(1 for s in suggestions if s["confidence"] < 0.15)
   print(f"仮ラベルを付けました: {suggested_path} / {html_path}")
   print(f"全 {len(rows)} 件、確信度 0.15 未満は {low} 件 (review.html で重点確認)")
-  if args.quantity_backend == "tesseract":
+  if args.quantity_backend != "none":
     filled = sum(1 for m in out_rows if m["quantity_conf"] != "" and m["quantity"] != "")
     missed = sum(1 for m in out_rows if m["quantity_conf"] != "" and m["quantity"] == "")
     print(f"数量の下書き: {filled} 件に値を入れ、{missed} 件は読み取れませんでした (review.html で記入)")

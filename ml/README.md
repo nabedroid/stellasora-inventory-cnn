@@ -41,11 +41,20 @@ python src/label_assist.py --cells-dir data/cells --backend model \
   --run runs/icon_v1 --master ../common/public/master-dictionary.json
 ```
 
-数量の下書き (Tesseract OCR) も同時に付けられる。quantity が空のセルだけが対象で、結果は review.html の数量欄に先埋めされる (要イメージ再ビルド: Dockerfile に tesseract-ocr を追加済み)。
+数量の下書きも同時に付けられる。quantity が空のセルだけが対象で、結果は review.html の数量欄に先埋めされる。生成器は2つある。
+
+Tesseract OCR で下書きする (要イメージ再ビルド: Dockerfile に tesseract-ocr を追加済み)。
 
 ```bash
 python src/label_assist.py --cells-dir data/cells --quantity-backend tesseract \
   --master ../common/public/master-dictionary.json
+```
+
+数字モデルで下書きする (digit run がある場合の本命。一番弱い桁の確信度が 0.9 未満のセルと、桁並びが不正なセルは review.html で強調される)。
+
+```bash
+python src/label_assist.py --cells-dir data/cells --quantity-backend model \
+  --digit-run runs/digit_v1 --master ../common/public/master-dictionary.json
 ```
 
 ### 3. ラベル確認 (目視)
