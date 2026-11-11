@@ -57,6 +57,14 @@ python src/label_assist.py --cells-dir data/cells --quantity-backend model \
   --digit-run runs/digit_v1 --master ../common/public/master-dictionary.json
 ```
 
+両方のモデルを併用する (2周目以降の標準。アイコンの候補と数量の下書きを1回で付ける)。
+
+```bash
+python src/label_assist.py --cells-dir data/cells --backend model \
+  --run runs/icon_v1 --quantity-backend model --digit-run runs/digit_v1 \
+  --master ../common/public/master-dictionary.json
+```
+
 ### 3. ラベル確認 (目視)
 
 - `data/cells/review.html` をブラウザで開き、候補と見比べて修正する
