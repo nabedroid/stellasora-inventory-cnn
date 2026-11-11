@@ -47,9 +47,9 @@ python src/label_assist.py --cells-dir data/cells --backend model \
   (確信度が低い順に並ぶ。空きスロットは「なし」を選ぶ)
 - 最後に CSV をダウンロードして `data/cells/labels_template.csv` に上書きする
 - CSV に記録されるラベルは item_id。具体物の確認と選択は名前と画像で行い、
-  名前 ⇔ ID の変換は `config/items.json` の対応表で引く
-  (build_dataset.py は item_name 列で書かれた CSV も対応表で変換して読める。
-  対応表に無い名前は警告して飛ばす)
+  名前 ⇔ ID の変換はマスター辞書から引く
+  (build_dataset.py は item_name 列で書かれた CSV も変換して読める。
+  辞書に無い名前は警告して飛ばす)
 - ラベルが空の行は build_dataset が無言で飛ばすので注意
 - quantity は今は使わない (数字モデルを作る段階で埋める)
 
@@ -103,9 +103,9 @@ python src/export_onnx.py --run runs/icon_v1
 - 水増しに左右反転は入れていない (文字・向きのあるアイコンが壊れるため)
 - 前処理の定数は config/preprocess.json が正。Web 側も同じファイルを
   モデルと一緒に読み込むので、片方だけ変えないこと
-- ID ⇔ 名前の対応表は config/items.json が正 (定義は利用者が管理する)。
-  同梱の初期値はマスター辞書から起こしたもの。名前はマスター辞書と
-  一致させること (種画像や候補表示は名前で結合しているため)
+- ID ⇔ 名前の対応はマスター辞書が唯一の正 (旧 config/items.json の
+  対応表は廃止して一本化した)。マスター辞書の読み込み時に ID・名前の
+  重複があればエラーで止まる
 - 数字エリアの扱い (mask / cut / keep) は config の number_area.mode で
   切り替えて evaluate で比較できる。デフォルトは mask
 - 数字エリアのマスクと枠リングのマスク (frame、カーソル枠対策) は、

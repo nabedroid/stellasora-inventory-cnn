@@ -3,7 +3,7 @@
 #   - labels_suggested.csv : item_id に第1候補を先埋めした CSV
 #   - review.html          : 目視確認・修正用の単体ページ (サーバー不要)
 # を出力する。CSV に記録するラベルは ID で、名前は確認ページの表示と選択のためだけに使う
-# (ID ⇔ 名前の対応は config/items.json の対応表で引く)。
+# (ID ⇔ 名前の対応はマスター辞書から引く)。
 # review.html で修正して「CSVをダウンロード」すると labels_template.csv が得られる。
 #
 # 仮ラベルの生成器 (backend) は2つあり、成果物の形式は共通:
@@ -219,8 +219,6 @@ def main():
   parser.add_argument("--master", required=True, help="master-dictionary.json のパス")
   parser.add_argument("--backend", choices=["template", "model"], default="template")
   parser.add_argument("--run", default=None, help="backend=model のときの学習 run ディレクトリ")
-  parser.add_argument("--items", default="config/items.json",
-                      help="ID ⇔ 名前の対応表 (名前で記入済みの行を ID に読み替えるのに使う)")
   parser.add_argument("--config", default="config/preprocess.json")
   args = parser.parse_args()
 
@@ -244,12 +242,8 @@ def main():
   else:
     suggestions = suggest_by_template(images, master, config)
 
-  # 既存の記入を ID にそろえる (数字ならそのまま、名前なら対応表で引く)
-  # 対応表が無い場合はマスター辞書の id / name で代用する
-  if Path(args.items).exists():
-    name_to_id, _ = load_item_map(args.items)
-  else:
-    name_to_id = {item["name"]: int(item["id"]) for item in master}
+  # 既存の記入を ID にそろえる (数字ならそのまま、名前ならマスター辞書で引く)
+  name_to_id, _ = load_item_map(args.master)
 
   def existing_id(row):
     raw = (row.get("item_id") or "").strip()

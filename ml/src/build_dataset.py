@@ -79,8 +79,6 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("--master", required=True, help="master-dictionary.json のパス")
   parser.add_argument("--cells-csv", default=None, help="ラベル付け済み labels_template.csv")
-  parser.add_argument("--items", default="config/items.json",
-                      help="ID ⇔ 名前の対応表 (item_name 列の変換に使う)")
   parser.add_argument("--cells-dir", default="data/cells", help="セル画像の置き場所")
   parser.add_argument("--out", default="data/dataset")
   parser.add_argument("--per-class", type=int, default=300, help="種画像から作る学習枚数/クラス")
@@ -118,10 +116,8 @@ def main():
 
   # 実セルの取り込み (あれば)
   if args.cells_csv:
-    # ラベルは ID (item_id) でも名前 (item_name) でもよい。名前は対応表で ID に変換する
-    name_to_id = {}
-    if Path(args.items).exists():
-      name_to_id, _ = load_item_map(args.items)
+    # ラベルは ID (item_id) でも名前 (item_name) でもよい。名前はマスター辞書で ID に変換する
+    name_to_id, _ = load_item_map(args.master)
     cells_dir = Path(args.cells_dir)
     with open(args.cells_csv, encoding="utf-8") as f:
       for row in csv.DictReader(f):
