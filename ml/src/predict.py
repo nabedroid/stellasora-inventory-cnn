@@ -79,16 +79,26 @@ def draw_predictions(image, cells, results, out_path):
     else:
       prefix, name = "", best["class"]
     suffix = f" {best['prob']:.2f}"
-    if result.get("quantity") is not None:
-      suffix += f" x{result['quantity']}"
     font, label, text_w, text_h = fit_label(
       draw, prefix, name, suffix, w + 16
     )
-    label_y = y - text_h - 6
+    # ラベルは2行に分ける: 1行目 = ID + 名前 + 確信度、2行目 = 数量。
+    # 1行にまとめると横に長くなり、隣のセルや画面端で見切れるため。
+    lines = [label]
+    line2_w = 0
+    if result.get("quantity") is not None:
+      lines.append(f"x{result['quantity']}")
+      left, _, right, _ = draw.textbbox((0, 0), lines[1], font=font)
+      line2_w = right - left
+    block_w = max(text_w, line2_w) + 8
+    block_h = text_h * len(lines) + 3 * (len(lines) + 1)  # 行間と上下の余白は 3px
+    label_y = y - block_h - 3
     if label_y < 0:
       label_y = y + 3  # 画面端で見切れる場合は枠の内側に描く
-    draw.rectangle([x, label_y, x + text_w + 8, label_y + text_h + 6], fill=color)
-    draw.text((x + 4, label_y + 3), label, fill=(0, 0, 0), font=font)
+    draw.rectangle([x, label_y, x + block_w, label_y + block_h], fill=color)
+    for i, line in enumerate(lines):
+      draw.text((x + 4, label_y + 3 + i * (text_h + 3)), line,
+                fill=(0, 0, 0), font=font)
   canvas.save(out_path)
 
 
