@@ -10,7 +10,7 @@ declare const cv: any;
  * アイコン領域検出のオプション
  */
 export interface IconExtractOptions {
-  /** 二値化の閾値 */
+  /** 二値化の閾値。既定は 180 (選択カーソルの緑がグレースケール約189のため、200 ではセルが検出漏れする) */
   threshold?: number;
   /** アイコン枠の横縦比の最小値、1.0 だと完全な正方形 */
   minIconAspectRatio?: number;
@@ -32,7 +32,7 @@ export class IconExtractService {
    */
   static async extractAsync(src: any, options: IconExtractOptions = {}): Promise<IconRegion[]> {
     const {
-      threshold = 200,
+      threshold = 180,
       minIconAspectRatio = 0.95,
       maxIconAspectRatio = 1.05,
       minIconWidth = 0,

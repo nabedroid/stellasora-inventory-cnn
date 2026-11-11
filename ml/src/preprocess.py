@@ -102,7 +102,10 @@ def detect_cell_rects(image, config):
   expected = grid["cell_size"] * scale
 
   gray = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2GRAY)
-  _, binary = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY)
+  # 閾値は 180。選択カーソルの緑はグレースケールで約189しかなく、200 では黒に落ちて
+  # セルの上端を食い、矩形が潰れて検出から漏れる (2026-11-11 に実測で確認。180 では
+  # スクショ16枚で喪失0・誤検出0のままカーソルセルだけが回収できた)
+  _, binary = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY)
   contours, _ = cv2.findContours(
     binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
   )
