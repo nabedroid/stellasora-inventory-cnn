@@ -77,7 +77,19 @@ python src/label_assist.py --cells-dir data/cells --backend model \
 - ラベルが空の行は build_dataset が無言で飛ばすので注意
 - quantity は今は使わない (数字モデルを作る段階で埋める)
 
-### 4. データセット生成
+### 4. train/val 分割
+
+ラベルが確定したら、split 列をアイテム単位で付け直す。
+crop_icons の出力は全行 train で、review.html でも行ごとにしか変えられないため、
+ここで一括して振り分ける (付け直さないと val が 0 件になり学習が落ちる)。
+方針はアイテムごとに「3セル以上は1セルを val、2セルは約半数 (偶数 ID)、
+1セルは train のみ」。どのセルを選ぶかは seed 42 で決定的に決まる。
+
+```bash
+python src/assign_splits.py --csv data/cells/labels_template.csv
+```
+
+### 5. データセット生成
 
 種画像の水増し + 実セル取り込み。
 
@@ -87,13 +99,13 @@ python src/build_dataset.py \
   --cells-csv data/cells/labels_template.csv
 ```
 
-### 5. 学習
+### 6. 学習
 
 ```bash
 python src/train.py --dataset data/dataset --epochs 30 --out runs/icon_v1
 ```
 
-### 6. 評価
+### 7. 評価
 
 取り違えペアまで出る。
 
@@ -101,7 +113,7 @@ python src/train.py --dataset data/dataset --epochs 30 --out runs/icon_v1
 python src/evaluate.py --run runs/icon_v1 --dataset data/dataset
 ```
 
-### 7. スクショ1枚で確認実行
+### 8. スクショ1枚で確認実行
 
 既定で `data/predict_plot.png` に枠と Top1 ラベルを描いた画像も出る
 (保存先を変える場合は `--plot-out <path>`、画像が不要なら `--no-plot`)。
@@ -110,14 +122,14 @@ python src/evaluate.py --run runs/icon_v1 --dataset data/dataset
 python src/predict.py --run runs/icon_v1 --screenshot data/shots/shot1.png
 ```
 
-数字モデル (手順 10 で学習) がある場合は `--digit-run` を付けると、
+数字モデル (手順 11 で学習) がある場合は `--digit-run` を付けると、
 所持数も推論して表示とプロットに含める。
 
 ```bash
 python src/predict.py --run runs/icon_v1 --digit-run runs/digit_v1 --screenshot data/shots/shot1.png
 ```
 
-### 8. ONNX 書き出し
+### 9. ONNX 書き出し
 
 デフォルトで `../common/public/models/` へ出力する。
 
@@ -128,7 +140,7 @@ python src/export_onnx.py --run runs/icon_v1
 動作確認だけなら `build_dataset.py` に `--limit-classes 5 --per-class 30`、
 `train.py` に `--epochs 2` を付けると全工程を数分で通せる。
 
-### 9. 数字データセット生成
+### 10. 数字データセット生成
 
 labels_template.csv の quantity 列が埋まっている行だけを使い、
 セル下部の帯を切り出したデータセット (data/digit_dataset) を作る。
@@ -147,7 +159,7 @@ split はアイコン側と同じ列を使う。train は生 + 水増し 9 枚�
 python src/build_digit_dataset.py --cells-csv data/cells/labels_template.csv
 ```
 
-### 10. 数字モデルの学習
+### 11. 数字モデルの学習
 
 帯を 6 桁のヘッド (空欄 + 0〜9) で読むモデルを学習する。
 
@@ -155,7 +167,7 @@ python src/build_digit_dataset.py --cells-csv data/cells/labels_template.csv
 python src/train_digits.py --dataset data/digit_dataset --epochs 40 --out runs/digit_v1
 ```
 
-### 11. 数字モデルの評価
+### 12. 数字モデルの評価
 
 数量の完全一致率と桁ごとの精度、不一致の一覧を出す。
 「x を数字と誤認して先頭に余分な桁が付く」型 (幽霊桁) の件数も数える。
@@ -164,7 +176,7 @@ python src/train_digits.py --dataset data/digit_dataset --epochs 40 --out runs/d
 python src/evaluate_digits.py --run runs/digit_v1 --dataset data/digit_dataset
 ```
 
-### 12. 数字モデルの ONNX 書き出し
+### 13. 数字モデルの ONNX 書き出し
 
 デフォルトで `../common/public/models/` へ digit_model.onnx、
 digit_preprocess.json、digit_meta.json を出力する。
