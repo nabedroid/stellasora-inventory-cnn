@@ -41,6 +41,13 @@ python src/label_assist.py --cells-dir data/cells --backend model \
   --run runs/icon_v1 --master ../common/public/master-dictionary.json
 ```
 
+数量の下書き (Tesseract OCR) も同時に付けられる。quantity が空のセルだけが対象で、結果は review.html の数量欄に先埋めされる (要イメージ再ビルド: Dockerfile に tesseract-ocr を追加済み)。
+
+```bash
+python src/label_assist.py --cells-dir data/cells --quantity-backend tesseract \
+  --master ../common/public/master-dictionary.json
+```
+
 ### 3. ラベル確認 (目視)
 
 - `data/cells/review.html` をブラウザで開き、候補と見比べて修正する

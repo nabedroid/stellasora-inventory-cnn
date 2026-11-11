@@ -4,3 +4,4 @@ numpy
 onnx
 onnxruntime
 opencv-python-headless
+pytesseract

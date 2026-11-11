@@ -5,6 +5,10 @@ FROM pytorch/pytorch:2.5.1-cuda12.4-cudnn9-runtime
 
 WORKDIR /app/ml
 
+# label_assist の数量下書き用 OCR (数字のみ読むので言語データは eng で足りる)
+RUN apt-get update && apt-get install -y --no-install-recommends tesseract-ocr \
+  && rm -rf /var/lib/apt/lists/*
+
 COPY ml/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
