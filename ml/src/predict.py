@@ -12,8 +12,16 @@ from pathlib import Path
 import torch
 from PIL import Image, ImageDraw, ImageFont
 
-from preprocess import build_transform, detect_cell_rects, load_config
+from preprocess import (
+  build_digit_transform,
+  build_transform,
+  detect_cell_rects,
+  digits_to_quantity,
+  extract_digit_strip,
+  load_config,
+)
 from train import build_model
+from train_digits import build_digit_model
 
 
 def load_font(size):
@@ -70,8 +78,11 @@ def draw_predictions(image, cells, results, out_path):
       prefix, name = f"{best['id']} ", best["name"]
     else:
       prefix, name = "", best["class"]
+    suffix = f" {best['prob']:.2f}"
+    if result.get("quantity") is not None:
+      suffix += f" x{result['quantity']}"
     font, label, text_w, text_h = fit_label(
-      draw, prefix, name, f" {best['prob']:.2f}", w + 16
+      draw, prefix, name, suffix, w + 16
     )
     label_y = y - text_h - 6
     if label_y < 0:
@@ -84,6 +95,8 @@ def draw_predictions(image, cells, results, out_path):
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("--run", required=True)
+  parser.add_argument("--digit-run", default=None,
+                      help="数字モデルの run フォルダ。指定すると所持数も推論する")
   parser.add_argument("--screenshot", required=True)
   parser.add_argument("--out-json", default=None)
   parser.add_argument("--plot-out", default="data/predict_plot.png",
@@ -113,8 +126,31 @@ def main():
   with torch.no_grad():
     probs = model(batch).softmax(dim=1).cpu()
 
+  # 数字モデルが指定されていれば、同じセルの帯から所持数も推論する
+  quantities = [None] * len(cells)
+  quantity_probs = [None] * len(cells)
+  if args.digit_run:
+    digit_dir = Path(args.digit_run)
+    digit_config = load_config(digit_dir / "preprocess.json")
+    digit_checkpoint = torch.load(digit_dir / "best.pt", map_location=device)
+    digit_model = build_digit_model(digit_config).to(device)
+    digit_model.load_state_dict(digit_checkpoint["state_dict"])
+    digit_model.eval()
+    digit_transform = build_digit_transform(digit_config, train=False)
+    strips = torch.stack([
+      digit_transform(extract_digit_strip(cell, digit_config))
+      for *_xywh, cell in cells
+    ]).to(device)
+    with torch.no_grad():
+      digit_probs = digit_model(strips).softmax(dim=2).cpu()
+    for i, head_probs in enumerate(digit_probs):
+      digits = head_probs.argmax(dim=1).tolist()
+      quantities[i] = digits_to_quantity(digits)
+      # 数量の確信度は一番弱い桁の確率で代表する (1桁でも怪しければ全体が怪しい)
+      quantity_probs[i] = round(head_probs.max(dim=1).values.min().item(), 4)
+
   results = []
-  for (row, col, *_rest), prob in zip(cells, probs):
+  for i, ((row, col, *_rest), prob) in enumerate(zip(cells, probs)):
     top = prob.topk(3)
     candidates = []
     for p, idx in zip(top.values.tolist(), top.indices.tolist()):
@@ -127,9 +163,18 @@ def main():
         "prob": round(p, 4),
       })
     best = candidates[0]
-    print(f"r{row}c{col}: {best['name'] or best['class']} ({best['prob']:.3f})"
-          f" / 2位: {candidates[1]['name'] or candidates[1]['class']} ({candidates[1]['prob']:.3f})")
-    results.append({"row": row, "col": col, "candidates": candidates})
+    line = (f"r{row}c{col}: {best['name'] or best['class']} ({best['prob']:.3f})"
+            f" / 2位: {candidates[1]['name'] or candidates[1]['class']} ({candidates[1]['prob']:.3f})")
+    if args.digit_run:
+      if quantities[i] is not None:
+        line += f" / 数量: {quantities[i]} ({quantity_probs[i]:.3f})"
+      else:
+        line += " / 数量: 不明"
+    print(line)
+    results.append({
+      "row": row, "col": col, "candidates": candidates,
+      "quantity": quantities[i], "quantity_prob": quantity_probs[i],
+    })
 
   if args.out_json:
     with open(args.out_json, "w", encoding="utf-8") as f:

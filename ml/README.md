@@ -86,6 +86,13 @@ python src/evaluate.py --run runs/icon_v1 --dataset data/dataset
 python src/predict.py --run runs/icon_v1 --screenshot data/shots/shot1.png
 ```
 
+数字モデル (手順 10 で学習) がある場合は `--digit-run` を付けると、
+所持数も推論して表示とプロットに含める。
+
+```bash
+python src/predict.py --run runs/icon_v1 --digit-run runs/digit_v1 --screenshot data/shots/shot1.png
+```
+
 ### 8. ONNX 書き出し
 
 デフォルトで `../common/public/models/` へ出力する。
@@ -96,6 +103,42 @@ python src/export_onnx.py --run runs/icon_v1
 
 動作確認だけなら `build_dataset.py` に `--limit-classes 5 --per-class 30`、
 `train.py` に `--epochs 2` を付けると全工程を数分で通せる。
+
+### 9. 数字データセット生成
+
+labels_template.csv の quantity 列が埋まっている行だけを使い、
+セル下部の帯を切り出したデータセット (data/digit_dataset) を作る。
+split はアイコン側と同じ列を使う。train は生 + 水増し 9 枚、val は生のみ。
+
+```bash
+python src/build_digit_dataset.py --cells-csv data/cells/labels_template.csv
+```
+
+### 10. 数字モデルの学習
+
+帯を 6 桁のヘッド (空欄 + 0〜9) で読むモデルを学習する。
+
+```bash
+python src/train_digits.py --dataset data/digit_dataset --epochs 40 --out runs/digit_v1
+```
+
+### 11. 数字モデルの評価
+
+数量の完全一致率と桁ごとの精度、不一致の一覧を出す。
+「x を数字と誤認して先頭に余分な桁が付く」型 (幽霊桁) の件数も数える。
+
+```bash
+python src/evaluate_digits.py --run runs/digit_v1 --dataset data/digit_dataset
+```
+
+### 12. 数字モデルの ONNX 書き出し
+
+デフォルトで `../common/public/models/` へ digit_model.onnx、
+digit_preprocess.json、digit_meta.json を出力する。
+
+```bash
+python src/export_digits_onnx.py --run runs/digit_v1
+```
 
 ## 注意
 

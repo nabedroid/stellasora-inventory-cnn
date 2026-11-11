@@ -157,6 +157,68 @@ def detect_cells(image, config):
   ]
 
 
+# 数字モデル (所持数) 用の定義。
+# 数量は「セル下部の帯を1枚として入力し、桁ごとのヘッドで読む」方式。
+# ヘッドのクラスは 0〜9 がそのまま数字、10 が空欄 (その桁に数字が無い)。
+BLANK_DIGIT = 10
+
+
+def digit_input_size(config):
+  # 数字モデルへの入力サイズ (幅, 高さ) を返す
+  digit = config["digit"]
+  return digit["input_width"], digit["input_height"]
+
+
+def extract_digit_strip(cell_image, config):
+  # セル画像から所持数の帯 (下部) を切り出す。
+  # 帯の上端は config の strip_top_ratio (セル高さに対する割合)。
+  # 数字マスク (number_area) とは別物なので、こちらは適用前の生セルを渡すこと。
+  width, height = cell_image.size
+  top = round(height * config["digit"]["strip_top_ratio"])
+  return cell_image.crop((0, top, width, height))
+
+
+def quantity_to_digits(quantity, config):
+  # 数量を桁ごとのクラス列に変換する (左が上位の桁、足りない上位は空欄)
+  digits = config["digit"]["digits"]
+  text = str(int(quantity))
+  if len(text) > digits:
+    raise ValueError(f"数量が {digits} 桁を超えています: {quantity}")
+  return [BLANK_DIGIT] * (digits - len(text)) + [int(ch) for ch in text]
+
+
+def digits_to_quantity(digits):
+  # 桁ごとのクラス列を数量に戻す。
+  # 全て空欄、または数字の途中に空欄が混ざる列は不正として None を返す。
+  chars = []
+  for d in digits:
+    if d == BLANK_DIGIT:
+      if chars:
+        return None
+      continue
+    chars.append(str(d))
+  if not chars:
+    return None
+  return int("".join(chars))
+
+
+def build_digit_transform(config, train=False):
+  # 帯画像 -> 数字モデル入力テンソルへの変換を返す (torchvision 使用)。
+  # 正規化の平均・分散はアイコン側と共通 (config の normalize) を使う。
+  from torchvision import transforms
+
+  width, height = digit_input_size(config)
+  mean = config["normalize"]["mean"]
+  std = config["normalize"]["std"]
+  steps = []
+  if train:
+    steps.append(transforms.ColorJitter(brightness=0.15, contrast=0.15, saturation=0.1))
+  steps.append(transforms.Resize((height, width)))
+  steps.append(transforms.ToTensor())
+  steps.append(transforms.Normalize(mean, std))
+  return transforms.Compose(steps)
+
+
 def build_transform(config, train=False):
   # PIL 画像 -> モデル入力テンソルへの変換を返す (torchvision 使用)。
   # 学習時と推論時で必ず同じ変換を通すこと。ここがズレると精度が静かに落ちる。
