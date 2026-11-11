@@ -22,15 +22,17 @@ from PIL import Image, ImageEnhance, ImageFilter
 from item_map import load_item_map
 
 
-def augment(image, rng):
+def augment(image, rng, geometry=True):
   # スクリーンショットの劣化を模した水増しを1回適用する。
   # ここでは前処理 (数字マスク等) は行わない。マスクはモデル入力時に一括適用する。
+  # geometry=False のときは拡縮・ずらしを省き、劣化 (明るさ・ぼかし等) だけをかける
+  # (数字モデルではセル側で幾何ジッターを済ませた帯に対して使う)。
   img = image.copy()
   width, height = img.size
 
   # 拡大縮小して中心に戻す (切り出し位置のズレを模す)
   factor = rng.uniform(0.94, 1.06)
-  if factor != 1.0:
+  if geometry and factor != 1.0:
     resized = img.resize((round(width * factor), round(height * factor)), Image.LANCZOS)
     canvas = Image.new("RGB", (width, height), (124, 116, 104))
     x = (width - resized.width) // 2 + rng.randint(-3, 3)

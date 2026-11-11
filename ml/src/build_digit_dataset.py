@@ -5,7 +5,10 @@
 #   train/<画像>.png, val/<画像>.png (帯画像)
 #   train.csv, val.csv (file,quantity の対応表)
 #   digit_meta.json (桁数や帯の切り出し条件)
-# train の実セルは生 + 水増し (build_dataset.augment を流用)、val は生のみ。
+# train の実セルは生 + 水増し、val は生のみ。
+# 数字の水増しは「セル全体をずらしてから帯を切り直す」方式にする: 検出枠のズレで
+# 帯の中の数字がどう動くかを再現しつつ、桁同士の位置関係は描画どおりに保つため。
+# 帯への劣化 (明るさ・ぼかし・JPEG) は build_dataset.augment を geometry=False で流用する。
 # split は CSV の split 列に従う (アイコン側と同じ振り分けを使う)。
 # 使い方:
 #   python src/build_digit_dataset.py --cells-csv data/cells/labels_template.csv
@@ -20,6 +23,20 @@ from PIL import Image
 
 from build_dataset import augment
 from preprocess import extract_digit_strip, load_config
+
+
+def jitter_cell(cell, rng):
+  # セル全体に拡縮とずらしをかける (数字用の幾何ジッター)。
+  # アイコン用 augment より範囲を広く取り、縦方向を厚めにする
+  # (検出枠の縦ズレが帯の切り出し位置にそのまま効くため)。
+  width, height = cell.size
+  factor = rng.uniform(0.93, 1.08)
+  resized = cell.resize((round(width * factor), round(height * factor)), Image.LANCZOS)
+  canvas = Image.new("RGB", (width, height), (124, 116, 104))
+  x = (width - resized.width) // 2 + rng.randint(-4, 4)
+  y = (height - resized.height) // 2 + rng.randint(-6, 6)
+  canvas.paste(resized, (x, y))
+  return canvas
 
 
 def main():
@@ -74,7 +91,9 @@ def main():
     if split == "train":
       for i in range(args.augment):
         name = f"{stem}_aug{i}.png"
-        augment(strip, rng).save(split_dir / name)
+        # セルごとずらして帯を切り直し、帯には劣化だけを追加でかける
+        shifted = extract_digit_strip(jitter_cell(cell, rng), config)
+        augment(shifted, rng, geometry=False).save(split_dir / name)
         manifests[split].append({"file": name, "quantity": row["quantity"]})
 
   for split, entries in manifests.items():

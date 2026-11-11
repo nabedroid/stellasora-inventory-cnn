@@ -125,6 +125,10 @@ python src/export_onnx.py --run runs/icon_v1
 labels_template.csv の quantity 列が埋まっている行だけを使い、
 セル下部の帯を切り出したデータセット (data/digit_dataset) を作る。
 split はアイコン側と同じ列を使う。train は生 + 水増し 9 枚、val は生のみ。
+水増しは「セル全体をずらして (縦方向厚め) から帯を切り直す」方式で、
+検出枠のズレによる数字の動きを再現する。桁の組み替え合成はしない
+(右寄せ描画では各桁の位置が文字列全体で決まるため、合成すると
+実際には現れない位置関係を覚えてしまう)。
 
 ```bash
 python src/build_digit_dataset.py --cells-csv data/cells/labels_template.csv
