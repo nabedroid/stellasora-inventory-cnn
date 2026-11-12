@@ -13,6 +13,7 @@ import torch
 from PIL import Image, ImageDraw, ImageFont
 
 from preprocess import (
+  BLANK_DIGIT,
   build_digit_transform,
   build_transform,
   detect_cell_rects,
@@ -140,6 +141,7 @@ def main():
   # 数字モデルが指定されていれば、同じセルの帯から所持数も推論する
   quantities = [None] * len(cells)
   quantity_probs = [None] * len(cells)
+  digit_debug = [None] * len(cells)
   if args.digit_run:
     digit_dir = Path(args.digit_run)
     digit_config = load_config(digit_dir / "preprocess.json")
@@ -159,6 +161,18 @@ def main():
       quantities[i] = digits_to_quantity(digits)
       # 数量の確信度は一番弱い桁の確率で代表する (1桁でも怪しければ全体が怪しい)
       quantity_probs[i] = round(head_probs.max(dim=1).values.min().item(), 4)
+      if quantities[i] is None:
+        # 数量が決められなかったセルは、原因切り分け用に各桁ヘッドの
+        # 上位2候補 (空欄か数字か、確率) を記録しておき、結果表示で出す
+        parts = []
+        for hp in head_probs:
+          top2 = hp.topk(2)
+          labels = []
+          for p, cls in zip(top2.values.tolist(), top2.indices.tolist()):
+            name = "空" if cls == BLANK_DIGIT else str(cls)
+            labels.append(f"{name} {p:.2f}")
+          parts.append(" / ".join(labels))
+        digit_debug[i] = "桁内訳 (左→右): " + " | ".join(parts)
 
   results = []
   for i, ((row, col, *_rest), prob) in enumerate(zip(cells, probs)):
@@ -182,6 +196,8 @@ def main():
       else:
         line += " / 数量: 不明"
     print(line)
+    if digit_debug[i]:
+      print(f"    {digit_debug[i]}")
     results.append({
       "row": row, "col": col, "candidates": candidates,
       "quantity": quantities[i], "quantity_prob": quantity_probs[i],
