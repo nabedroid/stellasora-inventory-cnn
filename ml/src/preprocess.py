@@ -116,7 +116,9 @@ def detect_cell_rects(image, config):
     # 幅の許容は 0.85〜1.15 倍。画面左上のボタン類 (105px 等) を拾わないため
     if w < expected * 0.85 or w > expected * 1.15:
       continue
-    if not 0.95 <= w / h <= 1.05:
+    # アスペクト比の許容は 0.92〜1.08。カーソルの緑ブラケットが白枠の角を切り、
+    # 高さが数 px 削れたセル (実測 130x123 = 1.057) を拾うため 1.05 から広げた
+    if not 0.92 <= w / h <= 1.08:
       continue
     rects.append((x, y, w, h))
 

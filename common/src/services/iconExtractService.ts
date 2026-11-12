@@ -33,8 +33,10 @@ export class IconExtractService {
   static async extractAsync(src: any, options: IconExtractOptions = {}): Promise<IconRegion[]> {
     const {
       threshold = 180,
-      minIconAspectRatio = 0.95,
-      maxIconAspectRatio = 1.05,
+      // カーソルの緑ブラケットが白枠の角を切り、高さが数 px 削れたセル
+      // (実測 130x123 = 1.057) を拾うため上限は 1.08 (旧 1.05)
+      minIconAspectRatio = 0.92,
+      maxIconAspectRatio = 1.08,
       minIconWidth = 0,
       maxIconWidth = Number.MAX_SAFE_INTEGER,
     } = options;
