@@ -108,7 +108,10 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument("--run", required=True)
   parser.add_argument("--digit-run", default=None,
-                      help="数字モデルの run フォルダ。指定すると所持数も推論する")
+                      help="旧方式の数字モデルの run フォルダ。指定すると所持数も推論する")
+  parser.add_argument("--glyph-run", default=None,
+                      help="新方式 (グリフ分類) の数字モデルの run フォルダ。"
+                           "--digit-run より優先する")
   parser.add_argument("--screenshot", required=True)
   parser.add_argument("--out-json", default=None)
   parser.add_argument("--plot-out", default="data/predict_plot.png",
@@ -174,6 +177,17 @@ def main():
           parts.append(" / ".join(labels))
         digit_debug[i] = "桁内訳 (左→右): " + " | ".join(parts)
 
+  # 新方式 (グリフ分類) の数字モデル。--digit-run より優先する
+  if args.glyph_run:
+    from digit_read import GlyphReader
+    reader = GlyphReader(Path(args.glyph_run), device=device)
+    for i, (*_xywh, cell) in enumerate(cells):
+      result = reader.read(cell)
+      quantities[i] = result["quantity"]
+      quantity_probs[i] = result["prob"]
+      if result["quantity"] is None:
+        digit_debug[i] = result["debug"]
+
   results = []
   for i, ((row, col, *_rest), prob) in enumerate(zip(cells, probs)):
     top = prob.topk(3)
@@ -190,7 +204,7 @@ def main():
     best = candidates[0]
     line = (f"r{row}c{col}: {best['name'] or best['class']} ({best['prob']:.3f})"
             f" / 2位: {candidates[1]['name'] or candidates[1]['class']} ({candidates[1]['prob']:.3f})")
-    if args.digit_run:
+    if args.digit_run or args.glyph_run:
       if quantities[i] is not None:
         line += f" / 数量: {quantities[i]} ({quantity_probs[i]:.3f})"
       else:

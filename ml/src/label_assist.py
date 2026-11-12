@@ -16,9 +16,12 @@
 # 数量の下書きも付けるとき (Tesseract 使用、要イメージ再ビルド):
 #   python src/label_assist.py --cells-dir data/cells --quantity-backend tesseract \
 #     --master ../common/public/master-dictionary.json
-# 数量の下書きを数字モデルで付けるとき (digit run が必要):
+# 数量の下書きを数字モデルで付けるとき (旧方式、digit run が必要):
 #   python src/label_assist.py --cells-dir data/cells --quantity-backend model \
 #     --digit-run runs/digit_v1 --master ../common/public/master-dictionary.json
+# 数量の下書きをグリフ分類器で付けるとき (新方式、glyph run が必要):
+#   python src/label_assist.py --cells-dir data/cells --quantity-backend glyph \
+#     --glyph-run runs/glyph_v1 --master ../common/public/master-dictionary.json
 
 import argparse
 import base64
@@ -266,7 +269,7 @@ QMODEL_WARN = 0.9  # 数字モデルの下書きで review 強調する確信度
 
 
 def suggest_quantities_by_model(cells, digit_run_dir):
-  # 学習済み数字モデルで数量の下書きを読む。読み込み手順は predict.py と同じ。
+  # 学習済み数字モデル (旧方式) で数量の下書きを読む。predict.py と同じ手順。
   # 確信度は一番弱い桁の確率で代表する (predict と同じ定義)。
   # 桁の途中に空欄が混ざる不正な読みと、低確信度のセルを review で強調する。
   import torch
@@ -296,6 +299,24 @@ def suggest_quantities_by_model(cells, digit_run_dir):
       "qconf": qconf,
       "qwarn": quantity is None or qconf < QMODEL_WARN,
       "qsrc": "モデル",
+    })
+  return results
+
+
+def suggest_quantities_by_glyph(cells, glyph_run_dir):
+  # 学習済みグリフ分類器 (新方式) で数量の下書きを読む。digit_read を共有する。
+  # 確信度は数字グリフの最小確率。読めなかったセルと低確信度を review で強調。
+  from digit_read import GlyphReader
+
+  reader = GlyphReader(glyph_run_dir)
+  results = []
+  for cell in cells:
+    read = reader.read(cell)
+    results.append({
+      "quantity": read["quantity"],
+      "qconf": read["prob"] if read["prob"] is not None else 0,
+      "qwarn": read["quantity"] is None or (read["prob"] or 0) < QMODEL_WARN,
+      "qsrc": "モデル(グリフ)",
     })
   return results
 
@@ -385,11 +406,13 @@ def main():
   parser.add_argument("--master", required=True, help="master-dictionary.json のパス")
   parser.add_argument("--backend", choices=["template", "model"], default="template")
   parser.add_argument("--run", default=None, help="backend=model のときの学習 run ディレクトリ")
-  parser.add_argument("--quantity-backend", choices=["tesseract", "model", "none"],
+  parser.add_argument("--quantity-backend", choices=["tesseract", "model", "glyph", "none"],
                       default="none",
                       help="数量の下書き生成 (tesseract は要イメージ再ビルド)")
   parser.add_argument("--digit-run", default=None,
                       help="--quantity-backend model のときの数字モデルの run ディレクトリ")
+  parser.add_argument("--glyph-run", default=None,
+                      help="--quantity-backend glyph のときのグリフ分類器の run ディレクトリ")
   parser.add_argument("--config", default="config/preprocess.json")
   args = parser.parse_args()
 
@@ -397,6 +420,8 @@ def main():
     parser.error("--backend model には --run が必要です")
   if args.quantity_backend == "model" and not args.digit_run:
     parser.error("--quantity-backend model には --digit-run が必要です")
+  if args.quantity_backend == "glyph" and not args.glyph_run:
+    parser.error("--quantity-backend glyph には --glyph-run が必要です")
 
   cells_dir = Path(args.cells_dir)
   csv_path = cells_dir / "labels_template.csv"
@@ -431,6 +456,8 @@ def main():
     drafts = suggest_quantities(images, config)
   elif args.quantity_backend == "model":
     drafts = suggest_quantities_by_model(images, Path(args.digit_run))
+  elif args.quantity_backend == "glyph":
+    drafts = suggest_quantities_by_glyph(images, Path(args.glyph_run))
 
   # 候補つき CSV (第1候補の ID を item_id に先埋め。既存の記入は上書きしない)
   out_rows = []
