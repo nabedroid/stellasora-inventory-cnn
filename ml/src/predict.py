@@ -92,9 +92,10 @@ def draw_predictions(image, cells, results, out_path):
       line2_w = right - left
     block_w = max(text_w, line2_w) + 8
     block_h = text_h * len(lines) + 3 * (len(lines) + 1)  # 行間と上下の余白は 3px
-    label_y = y - block_h - 3
-    if label_y < 0:
-      label_y = y + 3  # 画面端で見切れる場合は枠の内側に描く
+    # ラベルはセルの上端から内側へ下方向に伸ばす。セルの上に伸ばすと、
+    # 上の段のセルの数字部分 (下部) に被ってしまうため。
+    # 自分のセルの数字部分は下端にあるので、これで数字は隠れなくなる。
+    label_y = y + 3
     draw.rectangle([x, label_y, x + block_w, label_y + block_h], fill=color)
     for i, line in enumerate(lines):
       draw.text((x + 4, label_y + 3 + i * (text_h + 3)), line,
