@@ -16,7 +16,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from glyph_extract import extract_glyph_boxes, label_glyphs
+from glyph_extract import extract_glyph_boxes_cascade, label_glyphs
 from preprocess import extract_digit_strip, load_config
 
 
@@ -59,7 +59,7 @@ def main():
     cell_path = csv_path.parent / row["file"]
     cell = Image.open(cell_path).convert("RGB")
     strip = extract_digit_strip(cell, config)
-    boxes = extract_glyph_boxes(strip)
+    boxes = extract_glyph_boxes_cascade(strip, int(quantity))
     category = categorize(boxes, int(quantity))
     counts[category] += 1
     total += 1

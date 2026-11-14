@@ -17,7 +17,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from glyph_extract import GLYPH_CLASSES, crop_glyph, extract_glyph_boxes, label_glyphs
+from glyph_extract import GLYPH_CLASSES, crop_glyph, extract_glyph_boxes_cascade, label_glyphs
 from preprocess import extract_digit_strip, load_config
 
 
@@ -62,7 +62,7 @@ def main():
       continue
     cell = Image.open(csv_path.parent / row["file"]).convert("RGB")
     strip = extract_digit_strip(cell, config)
-    boxes = extract_glyph_boxes(strip)
+    boxes = extract_glyph_boxes_cascade(strip, int(quantity))
     labeled = label_glyphs(boxes, int(quantity))
     if labeled is None:
       skipped[skip_reason(boxes, int(quantity))] += 1

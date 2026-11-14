@@ -75,7 +75,8 @@ def main():
     if result["quantity"] == int(row["quantity"]):
       exact += 1
     else:
-      misses.append(f"{row['file']} 正解 {row['quantity']} / 推論 {result['quantity']}")
+      misses.append(f"{row['file']} 正解 {row['quantity']} / 推論 {result['quantity']}"
+                    f" / {result['debug']}")
   print(f"セル完全一致 (val): {exact}/{len(rows)} = {exact / len(rows):.4f}")
   for line in misses[:20]:
     print(f"  不一致: {line}")

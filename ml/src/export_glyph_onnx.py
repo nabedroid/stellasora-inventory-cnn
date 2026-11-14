@@ -61,8 +61,13 @@ def main():
     "strip_top_ratio": config["digit"]["strip_top_ratio"],
     # グリフ抽出の幾何ガード (glyph_extract.py の定数と一致させる)
     "width_cap_ratio": glyph_extract.WIDTH_CAP_RATIO,
+    "min_width_ratio": glyph_extract.MIN_WIDTH_RATIO,
     "tall_h_ratio": glyph_extract.TALL_H_RATIO,
     "baseline_tol_ratio": glyph_extract.BASELINE_TOL_RATIO,
+    "x_height_ratio": glyph_extract.X_HEIGHT_RATIO,
+    # カスケード再試行 (適応的しきい値) の条件
+    "adaptive_block": glyph_extract.ADAPTIVE_BLOCK,
+    "adaptive_c": glyph_extract.ADAPTIVE_C,
   }
   with open(out_dir / "glyph_meta.json", "w", encoding="utf-8") as f:
     json.dump(meta, f, ensure_ascii=False, indent=2)

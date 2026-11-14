@@ -10,7 +10,13 @@ from pathlib import Path
 import torch
 from torchvision import transforms
 
-from glyph_extract import GLYPH_CLASSES, REJECT_LABEL, crop_glyph, extract_glyph_boxes
+from glyph_extract import (
+  GLYPH_CLASSES,
+  REJECT_LABEL,
+  crop_glyph,
+  extract_glyph_boxes_cascade,
+  is_x_like,
+)
 from preprocess import extract_digit_strip, load_config
 from train_glyphs import build_glyph_model
 
@@ -45,7 +51,7 @@ class GlyphReader:
     # セル画像から数量を読む。戻り値は dict:
     # quantity (int|None), prob (float|None), debug (内訳文字列)
     strip = extract_digit_strip(cell, self.config)
-    boxes = extract_glyph_boxes(strip)
+    boxes = extract_glyph_boxes_cascade(strip)
     if not boxes:
       return {"quantity": None, "prob": None, "debug": "グリフ内訳: (検出なし)"}
     if len(boxes) > 7:
@@ -67,12 +73,25 @@ class GlyphReader:
       parts.append(" / ".join(labels_top2))
     debug = "グリフ内訳 (左→右): " + " | ".join(parts)
 
-    # 左端の棄却は × として消費する。それ以外の棄却が混ざれば不明に倒す
+    # 左端の棄却は、背丈が × らしい場合だけ × として消費する。
+    # 数字並みの背丈なのに棄却と判定された場合は、本物の数字が
+    # 棄却に誤判定された疑いが強いので、棄却以外の最上位候補を
+    # その桁として採用する (一番左の桁が黙って消えるのを防ぐ)。
+    # それ以外の位置の棄却が混ざれば不明に倒す
     digit_labels = labels
     digit_probs = [max(p) for p in probs_list]
     if labels[0] == REJECT_LABEL and len(labels) >= 2:
-      digit_labels = labels[1:]
-      digit_probs = digit_probs[1:]
+      if is_x_like(boxes[0], boxes[1:]):
+        digit_labels = labels[1:]
+        digit_probs = digit_probs[1:]
+      else:
+        probs0 = probs_list[0]
+        best = max(
+          (i for i in range(len(probs0)) if GLYPH_CLASSES[i] != REJECT_LABEL),
+          key=lambda i: probs0[i],
+        )
+        digit_labels = [GLYPH_CLASSES[best]] + labels[1:]
+        digit_probs = [probs0[best]] + digit_probs[1:]
     if REJECT_LABEL in digit_labels or not digit_labels:
       return {"quantity": None, "prob": None, "debug": debug}
     quantity = int("".join(digit_labels))
