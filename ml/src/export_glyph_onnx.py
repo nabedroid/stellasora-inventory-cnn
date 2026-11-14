@@ -16,6 +16,7 @@ from pathlib import Path
 import torch
 
 import glyph_extract
+from build_digit_dataset import BAND_TOP
 from preprocess import load_config
 from train_glyphs import build_glyph_model
 
@@ -59,6 +60,8 @@ def main():
     "input_size": size,
     "pad": glyph_meta["pad"],
     "strip_top_ratio": config["digit"]["strip_top_ratio"],
+    # 帯の中で数字が現れる下部領域の開始位置 (build_digit_dataset.BAND_TOP)
+    "band_top": BAND_TOP,
     # グリフ抽出の幾何ガード (glyph_extract.py の定数と一致させる)
     "width_cap_ratio": glyph_extract.WIDTH_CAP_RATIO,
     "min_width_ratio": glyph_extract.MIN_WIDTH_RATIO,

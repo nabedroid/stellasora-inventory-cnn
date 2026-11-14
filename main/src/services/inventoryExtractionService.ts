@@ -1,30 +1,28 @@
 import type { AnalyzedItem } from '@common/types';
 import { IconExtractService } from '@common/services/iconExtractService';
-import { crop, MatManager, toDataUrl, invert, fromFile } from '@common/utils/mat';
-import { TesseractOcrService } from '@common/services/tesseractOcrService';
+import { crop, MatManager, toDataUrl, fromFile } from '@common/utils/mat';
+import { GlyphCnnService } from './glyphCnnService';
 import { IconCnnService } from './iconCnnService';
-
-declare const cv: any;
 
 export class InventoryExtractionService {
 
-  private readonly tesseractOcrService: TesseractOcrService;
+  private readonly glyphCnnService: GlyphCnnService;
   private readonly iconCnnService: IconCnnService;
 
-  private constructor(tesseractOcrService: TesseractOcrService, iconCnnService: IconCnnService) {
-    this.tesseractOcrService = tesseractOcrService;
+  private constructor(glyphCnnService: GlyphCnnService, iconCnnService: IconCnnService) {
+    this.glyphCnnService = glyphCnnService;
     this.iconCnnService = iconCnnService;
   }
 
   public static async getInstanceAsync(): Promise<InventoryExtractionService> {
-    const tesseractOcrService = await TesseractOcrService.getInstanceAsync({ lang: 'eng', whitelist: '0123456789x' });
+    const glyphCnnService = await GlyphCnnService.getInstanceAsync();
     const iconCnnService = await IconCnnService.getInstanceAsync();
-    const instance = new InventoryExtractionService(tesseractOcrService, iconCnnService);
+    const instance = new InventoryExtractionService(glyphCnnService, iconCnnService);
     return instance;
   }
 
   public dispose(): void {
-    this.tesseractOcrService?.dispose();
+    // CNN セッションはシングルトンで保持するため、ここで破棄するものはない
   }
 
   public [Symbol.dispose](): void {
@@ -77,7 +75,8 @@ export class InventoryExtractionService {
   }
 
   /**
-   * 画像からアイコンを検出し、所持数OCRとCNN判定からアイテム情報を抽出する
+   * 画像からアイコンを検出し、所持数のグリフ判定とアイコンのCNN判定から
+   * アイテム情報を抽出する
    * @param src 解析対象の cv.Mat
    * @param sourceImageIndex 画像のインデックス番号
    * @param onProgress プログレス通知コールバック
@@ -95,34 +94,40 @@ export class InventoryExtractionService {
       { minIconWidth: 50, maxIconWidth: 150 }
     );
 
-    // まず切り出しと所持数OCRまでを済ませ、判定対象を集める
-    const pending: { iconMat: any; iconDataUrl: string; quantity: number }[] = [];
+    // アイコン領域を切り出す
+    const pending: { iconMat: any; iconDataUrl: string }[] = [];
     for (let j = 0; j < iconRegions.length; j++) {
       const region = iconRegions[j];
 
       if (onProgress) {
-        onProgress((j / iconRegions.length) * 100, `アイテム ${j + 1}/${iconRegions.length}`);
+        onProgress((j / iconRegions.length) * 50, `アイテム ${j + 1}/${iconRegions.length}`);
       }
 
-      // アイコン領域を切り出し
       const iconMat = matManager.add(crop(src, region.x, region.y, region.width, region.height));
-      // DataUrlに変換
       const iconDataUrl = toDataUrl(iconMat);
-      // OCR して所持数を抽出
-      const quantity = await this.ocrNumberAsync(iconMat);
-      if (quantity === null) {
-        // 所持数が読み取れない場合はスキップ (現行仕様を踏襲)
-        continue;
-      }
-
-      pending.push({ iconMat, iconDataUrl, quantity });
+      pending.push({ iconMat, iconDataUrl });
     }
 
-    // アイコンの判定は CNN でバッチ一括に行う
-    const candidatesList = await this.iconCnnService.classifyAsync(
+    // 所持数はグリフ分類でバッチ一括に読む
+    if (onProgress) {
+      onProgress(50, '所持数を読み取り中...');
+    }
+    const quantities = await this.glyphCnnService.readQuantitiesAsync(
       pending.map(item => item.iconMat));
 
-    return pending.map((item, index) => {
+    // 所持数が読み取れたものだけを判定対象にする (現行仕様を踏襲)
+    const readable = pending
+      .map((item, index) => ({ ...item, quantity: quantities[index] }))
+      .filter(item => item.quantity !== null);
+
+    // アイコンの判定は CNN でバッチ一括に行う
+    if (onProgress) {
+      onProgress(75, 'アイテムを判定中...');
+    }
+    const candidatesList = await this.iconCnnService.classifyAsync(
+      readable.map(item => item.iconMat));
+
+    return readable.map((item, index) => {
       const candidates = candidatesList[index];
       const best = candidates[0];
       return {
@@ -135,71 +140,6 @@ export class InventoryExtractionService {
         candidates,
       };
     });
-  }
-
-  /**
-   * アイコン画像から所持数を抽出する
-   * @param iconMat アイコン画像
-   * @returns 所持数
-   */
-  private async ocrNumberAsync(iconMat: any): Promise<number | null> {
-    using matManager = new MatManager();
-    // アイコン下部（数字が描かれている領域）を切り出す
-    const iconLowerMat = matManager.add(crop(iconMat, 0, iconMat.rows * 0.8, iconMat.cols, iconMat.rows * 0.2));
-    // 数字の領域を二値化
-    const grayMat = matManager.add(new cv.Mat());
-    cv.cvtColor(iconLowerMat, grayMat, cv.COLOR_RGBA2GRAY);
-    const binaryMat = matManager.add(new cv.Mat());
-    cv.threshold(grayMat, binaryMat, 0, 255, cv.THRESH_BINARY_INV | cv.THRESH_OTSU);
-    // 輪郭検出
-    const contoursMat = matManager.add(new cv.MatVector());
-    const hierarchyMat = matManager.add(new cv.Mat());
-    cv.findContours(binaryMat, contoursMat, hierarchyMat, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
-    // 検出された輪郭からノイズを除去する
-    const rects: any[] = [];
-    for (let i = 0; i < contoursMat.size(); i++) {
-      const cnt = matManager.add(contoursMat.get(i));
-      const rect = cv.boundingRect(cnt);
-      // 明らかに小さい、細い輪郭を除去
-      if (rect.width > 2 && iconLowerMat.rows * 0.3 <= rect.height && rect.height <= iconLowerMat.rows * 0.8) {
-        rects.push(rect);
-      }
-    }
-    // 1桁目、2桁目の数字の底辺のy座標を算出
-    const rightLimit = iconLowerMat.cols * 0.8;
-    const numberBottomY = rects
-      .filter(r => r.x > rightLimit)
-      .reduce((max, r) => Math.max(max, r.y + r.height), 0);
-    // 共通の底辺を持つ輪郭（＝数字の輪郭の可能性が高い）を抽出
-    const yThreshold = iconLowerMat.rows * 0.1;
-    const targetRects = rects
-      .filter(r => Math.abs(r.y + r.height - numberBottomY) <= yThreshold);
-    // 数字らしき輪郭がなければ null を返す
-    if (targetRects.length === 0) {
-      return null;
-    }
-    // 全ての数字を内包する矩形を算出
-    const minX = Math.min(...targetRects.map(r => r.x));
-    const minY = Math.min(...targetRects.map(r => r.y));
-    const maxX = Math.max(...targetRects.map(r => r.x + r.width));
-    const maxY = Math.max(...targetRects.map(r => r.y + r.height));
-    // 少し余裕をもって切り出す
-    const padding = 2;
-    const x = minX - padding < 0 ? 0 : minX - padding;
-    const y = minY - padding < 0 ? 0 : minY - padding;
-    const width = x + maxX - minX + padding * 2 > binaryMat.cols ? binaryMat.cols - minX : maxX - minX + padding * 2;
-    const height = y + maxY - minY + padding * 2 > binaryMat.rows ? binaryMat.rows - minY : maxY - minY + padding * 2;
-    const numberMat = matManager.add(crop(binaryMat, x, y, width, height));
-    // 反転
-    const invertedMat = matManager.add(invert(numberMat));
-    const recognizedText = await this.tesseractOcrService.recognizeAsync(invertedMat);
-    // 数字のみを抽出
-    const digits = recognizedText.replace(/\D/g, '');
-    if (digits === null || digits === '') {
-      return null;
-    }
-
-    return parseInt(digits);
   }
 
   /**
