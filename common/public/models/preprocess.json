@@ -1,0 +1,50 @@
+{
+  "grid": {
+    "cell_size": 130,
+    "cols": 5,
+    "origin_x": 503,
+    "origin_y": 145,
+    "pitch_x": 149,
+    "pitch_y": 148.5,
+    "reference_height": 1080,
+    "reference_width": 1920,
+    "rows": 5
+  },
+  "input_width": 96,
+  "normalize": {
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "number_area": {
+    "fill_rgb": [
+      124,
+      116,
+      104
+    ],
+    "mode": "mask",
+    "strip_ratio": 0.2
+  },
+  "frame": {
+    "fill_rgb": [
+      124,
+      116,
+      104
+    ],
+    "mode": "mask",
+    "ring_ratio": 0.07
+  },
+  "digit": {
+    "digits": 6,
+    "input_height": 32,
+    "input_width": 96,
+    "strip_top_ratio": 0.68
+  }
+}
