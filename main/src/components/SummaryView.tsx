@@ -245,9 +245,9 @@ export const SummaryView: React.FC<SummaryViewProps> = ({ results, masterData })
           <thead>
             <tr>
               <th style={thStyle}></th>
-              <th style={thStyle}>70</th>
-              <th style={thStyle}>80</th>
-              <th style={thStyle}>90</th>
+              <th style={thStyle}>騎士</th>
+              <th style={thStyle}>信仰</th>
+              <th style={thStyle}>冒険</th>
             </tr>
           </thead>
           <tbody>
