@@ -33,4 +33,4 @@ docker compose run --rm --service-ports manager
 
 - `run` は既定では compose の ports 設定を公開しないため、`--service-ports` が必須。
   付け忘れるとサーバーは起動してもブラウザから接続できない (ERR_CONNECTION_REFUSED)
-- アクセス先は起動時に表示される URL (http://localhost:3001/stellasora-inventory-ocr/manager/)
+- アクセス先は起動時に表示される URL (http://localhost:3001/stellasora-inventory-cnn/manager/)

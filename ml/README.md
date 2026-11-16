@@ -9,7 +9,8 @@
 
 ## 共通 (アイコン・数字の土台)
 
-前提: スクリーンショットは PC 版の解像度 (1920x1080 / 1600x900 / 1280x720) の PNG。
+前提: スクリーンショットは PC 版の解像度 (1920x1080 / 1600x900 / 1280x720) が
+中心で、スマホ版 (2340x1080) の実スクショも学習データに含む。
 切り出しはアイコン枠の検出方式 (detect_cells) なので、スクロールした画面でもよい。
 config の grid は検出のサイズ基準 (セル 130px @1920幅) として使う。
 
@@ -51,7 +52,7 @@ python src/label_assist.py --cells-dir data/cells --backend model \
 
 ```bash
 python src/label_assist.py --cells-dir data/cells --quantity-backend glyph \
-  --glyph-run runs/glyph_v1 --master ../common/public/master-dictionary.json
+  --glyph-run runs/glyph_v2 --master ../common/public/master-dictionary.json
 ```
 
 Tesseract OCR で下書きする (要イメージ再ビルド: Dockerfile に tesseract-ocr を追加済み)。
@@ -72,7 +73,7 @@ python src/label_assist.py --cells-dir data/cells --quantity-backend model \
 
 ```bash
 python src/label_assist.py --cells-dir data/cells --backend model \
-  --run runs/icon_v1 --quantity-backend glyph --glyph-run runs/glyph_v1 \
+  --run runs/icon_v1 --quantity-backend glyph --glyph-run runs/glyph_v2 \
   --master ../common/public/master-dictionary.json
 ```
 
@@ -86,7 +87,8 @@ python src/label_assist.py --cells-dir data/cells --backend model \
   (build_dataset.py は item_name 列で書かれた CSV も変換して読める。
   辞書に無い名前は警告して飛ばす)
 - ラベルが空の行は build_dataset が無言で飛ばすので注意
-- quantity は今は使わない (数字モデルを作る段階で埋める)
+- quantity は手順2の下書きを目視で確認・修正しておく
+  (グリフ学習はこの列が正である前提で自動ラベル付けするため)
 
 ### 4. train/val 分割
 
@@ -140,7 +142,7 @@ python src/predict.py --run runs/icon_v1 --screenshot data/shots/shot1.png
 読めなかったセルは、原因切り分け用にグリフごとの内訳 (上位2候補) も表示する。
 
 ```bash
-python src/predict.py --run runs/icon_v1 --glyph-run runs/glyph_v1 --screenshot data/shots/shot1.png
+python src/predict.py --run runs/icon_v1 --glyph-run runs/glyph_v2 --screenshot data/shots/shot1.png
 ```
 
 旧方式の数字モデルは `--digit-run runs/digit_v1` で付けられる
@@ -194,7 +196,7 @@ python src/build_glyph_dataset.py --cells-csv data/cells/labels_template.csv
 glyph_meta.json と preprocess.json が同梱され、読み取り側が run だけで完結する。
 
 ```bash
-python src/train_glyphs.py --dataset data/glyph_dataset --epochs 30 --out runs/glyph_v1
+python src/train_glyphs.py --dataset data/glyph_dataset --epochs 30 --out runs/glyph_v2
 ```
 
 ### 13. 評価
@@ -203,7 +205,7 @@ python src/train_glyphs.py --dataset data/glyph_dataset --epochs 30 --out runs/g
 (旧方式の evaluate と同じ土俵の数字) を出す。
 
 ```bash
-python src/evaluate_glyphs.py --run runs/glyph_v1
+python src/evaluate_glyphs.py --run runs/glyph_v2
 ```
 
 `--train-check` を付けると、学習グリフをモデルで再判定して自動ラベルと
@@ -212,9 +214,9 @@ python src/evaluate_glyphs.py --run runs/glyph_v1
 build_glyph_dataset.py の `--exclude` に渡す。
 
 ```bash
-python src/evaluate_glyphs.py --run runs/glyph_v1 --train-check
+python src/evaluate_glyphs.py --run runs/glyph_v2 --train-check
 python src/build_glyph_dataset.py --cells-csv data/cells/labels_template.csv \
-  --exclude runs/glyph_v1/label_suspects.csv
+  --exclude runs/glyph_v2/label_suspects.csv
 ```
 
 ### 14. ONNX 書き出し
@@ -225,7 +227,7 @@ glyph_meta.json にはグリフ抽出の幾何ガードの定数も含めてあ�
 Web 側 (TS) が抽出を再現できるようにしてある。
 
 ```bash
-python src/export_glyph_onnx.py --run runs/glyph_v1
+python src/export_glyph_onnx.py --run runs/glyph_v2
 ```
 
 ## 数字モデル (旧方式: 6ヘッド)

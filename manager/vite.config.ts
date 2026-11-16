@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   // リポジトリ名に合わせて変更
-  base: '/stellasora-inventory-ocr/manager/',
+  base: '/stellasora-inventory-cnn/manager/',
   plugins: [
     react(),
     // common/public をルートにコピー
