@@ -279,6 +279,39 @@ export const SummaryView: React.FC<SummaryViewProps> = ({ results, masterData })
         </table>
       </div>
 
+      <div style={cardStyle}>
+        <h3 style={h3Style}>昇格箱</h3>
+        <table style={{ borderCollapse: 'collapse', textAlign: 'center', backgroundColor: '#fff' }}>
+          <thead>
+            <tr>
+              <th style={thStyle}></th>
+              <th style={thStyle}>新米</th>
+              <th style={thStyle}>厳選</th>
+              <th style={thStyle}>豪華</th>
+              <th style={thStyle}>個分</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              { type: '巡遊者', low: '新米巡遊者昇格箱', mid: '厳選巡遊者昇格箱', high: '豪華巡遊者昇格箱', divisor: 1930 },
+              { type: 'ロスレコ', low: '新米ロスレコ昇格箱', mid: '厳選ロスレコ昇格箱', high: '豪華ロスレコ昇格箱', divisor: 2553 },
+              { type: 'カセット', low: '新米スキルカセット箱', mid: '厳選スキルカセット箱', high: '豪華スキルカセット箱', divisor: 3267 },
+            ].map(row => {
+              const equivalent = getQty(row.low) + getQty(row.mid) * 3 + getQty(row.high) * 9;
+              return (
+                <tr key={row.type}>
+                  <td style={rowThStyle}>{row.type}</td>
+                  {renderCell(row.low)}
+                  {renderCell(row.mid)}
+                  {renderCell(row.high)}
+                  <td style={valTdStyle}>{(equivalent / row.divisor).toFixed(1)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
     </div>
   );
 };
