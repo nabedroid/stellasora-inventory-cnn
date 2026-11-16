@@ -103,7 +103,9 @@ function App() {
   const handleUpdateEntry = (index: number, field: keyof ItemMasterData, value: any) => {
     setEntries((prev) => {
       const updated = [...prev]
-      updated[index] = { ...updated[index], [field]: value }
+      // スプレッドで複製するとクラスのメソッドが落ちるため、その場で書き換える
+      const target = updated[index] as any
+      target[field] = value
       return updated
     })
   }
@@ -163,6 +165,10 @@ function App() {
         const img = await imageFromDataUrl(entry.iconDataUrl);
         const mat = cv.imread(img);
         const features = iconFeatureService.computeFeatures(mat);
+        if (features === null) {
+          mat.delete();
+          throw new Error(`特徴量を計算できませんでした: ${entry.name}`);
+        }
         const colorHash = iconFeatureService.computeColorHash(mat);
         mat.delete();
 

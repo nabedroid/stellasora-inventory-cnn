@@ -1,10 +1,19 @@
-import type { IconRegion, DictionaryEntry } from '@common/types';
+import type { IconRegion } from '@common/types';
 import { TesseractOcrService } from '@common/services/tesseractOcrService';
 import { IconFeatureService } from '@common/services/iconFeatureService';
 import { IconExtractService } from '@common/services/iconExtractService';
-import { MatManager, crop, toDataUrl } from '@common/utils/mat';
+import { crop, toDataUrl } from '@common/utils/mat';
 
 declare const cv: any;
+
+/** 抽出結果 (辞書への登録前なので ID はまだ振られていない) */
+export interface ExtractedItemData {
+  id: null;
+  iconDataUrl: string;
+  name: string;
+  features: string;
+  colorHash: number[];
+}
 
 /**
  * 物資画面のスクショからアイテムの情報を抽出する
@@ -34,7 +43,7 @@ export class ItemDataExtractService {
    */
   public async extractAsync(
     src: any,
-  ): Promise<DictionaryEntry> {
+  ): Promise<ExtractedItemData> {
 
     // アイコン領域を大まかに切り出す
     const iconAreaRect = { x: src.cols * 0.68, y: src.rows * 0.11, w: src.cols * 0.1, h: src.rows * 0.18 };
@@ -52,6 +61,9 @@ export class ItemDataExtractService {
 
     // 特徴量と色の計算
     const features = this.iconFeatureService.computeFeatures(iconMat);
+    if (features === null) {
+      throw new Error('特徴量を計算できませんでした。');
+    }
     const colorHash = this.iconFeatureService.computeColorHash(iconMat);
 
     // 名前の OCR
